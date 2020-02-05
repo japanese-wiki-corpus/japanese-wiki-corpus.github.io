@@ -45,6 +45,12 @@ def parse(fn, jp, cat):
 	outfn = cat+"/"+outfn+".html"
 	out = open("out/"+outfn, "w", encoding="utf8")
 	out.write("<html>\n")
+	
+	out.write("<head>\n");
+	out.write('<meta name="viewport" content="width=device-width, initial-scale=1">\n')
+	out.write("</head>\n")
+	out.write("<body>\n")
+	
 	out.write("<h1>"+engl+" ("+jp+")</h1>\n")
 	
 	sa = {}
@@ -93,6 +99,7 @@ def parse(fn, jp, cat):
 			prev_is_br = write_sentence(out, id, txt, pars, prev_is_br)
 		out.write("</p>\n")
 	
+	out.write("</body>\n")
 	out.write("</html>\n")
 	out.close()
 	
