@@ -3,17 +3,17 @@ body {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 18px;
 }
 p {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 input {
-  font-size: 20px;
+  font-size: 18px;
 }
 td {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 @media only screen and (min-width: 768px) {
