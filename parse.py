@@ -51,6 +51,7 @@ def parse(fn, jp, cat):
 	out.write("<head>\n");
 	out.write('<meta name="viewport" content="width=device-width, initial-scale=1">\n')
 	out.write('<link rel="stylesheet" type="text/css" href="../style.css">\n')
+	out.write('<link rel="shortcut icon" type="image/x-icon" href="../logo.png" />\n')
 	out.write("</head>\n")
 	out.write("<body>\n")
 	out.write("<a href='https://shinsengumi-archives.github.io/japanese-wiki-corpus/'>Home</a>\n")
@@ -131,6 +132,7 @@ for cat in cats:
 	out.write("<head>\n")
 	out.write('<meta name="viewport" content="width=device-width, initial-scale=1">\n')
 	out.write('<link rel="stylesheet" type="text/css" href="style.css">\n')
+	out.write('<link rel="shortcut icon" type="image/x-icon" href="logo.png" />\n')
 	out.write("</head>\n")
 	out.write("<body>\n")
 	out.write("<a href='https://shinsengumi-archives.github.io/japanese-wiki-corpus/'>Home</a>\n")
