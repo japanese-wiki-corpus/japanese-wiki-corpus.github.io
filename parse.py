@@ -49,6 +49,15 @@ def parse(fn, jp, cat):
 	out.write("<html>\n")
 	
 	out.write("<head>\n");
+	analytics = "<!-- Global site tag (gtag.js) - Google Analytics --> \n" \
+	+"<script async src='https://www.googletagmanager.com/gtag/js?id=G-7D81XDQSVH'></script> \n" \
+	+"<script> \n" \
+	+" window.dataLayer = window.dataLayer || []; \n" \
+	+" function gtag(){dataLayer.push(arguments);} \n" \
+	+" gtag('js', new Date()); \n" \
+	+" gtag('config', 'G-7D81XDQSVH'); \n" \
+	+"</script>\n"
+	out.write(analytics)
 	out.write('<meta name="viewport" content="width=device-width, initial-scale=1">\n')
 	out.write('<link rel="stylesheet" type="text/css" href="../style.css">\n')
 	out.write('<link rel="shortcut icon" type="image/x-icon" href="../logo.ico" />\n')

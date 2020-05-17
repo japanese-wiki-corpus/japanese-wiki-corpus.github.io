@@ -48,10 +48,11 @@ def linkPages(keywords):
 			if testing:
 				file = 'Toshizo HIJIKATA.html' #testing
 			filepath = cat+"/"+file
-			if os.path.getmtime(filepath) > 1589688000:
-				continue
 			inp = open(filepath, "r", encoding="utf8")
-			content = inp.read()				
+			content = inp.read()
+			if '<meta charset="UTF-8">' in content:
+				continue
+			content = content.replace('<head>\n', '<head>\n<meta charset="UTF-8">\n')
 			for keyword in keys:
 				if keyword.lower() == filename2keyword(file).lower():
 					continue
