@@ -4,6 +4,12 @@ import re
 
 testing = False
 
+def filename2keyword(file):
+	keyword = os.path.splitext(file)[0]
+	keyword = re.sub("[\(\[].*?[\)\]]", "", keyword)
+	keyword = keyword.strip(" .")
+	return keyword
+
 def removeBlacklistedLinks(content):
 	blacklist = [['Court', 'history/Court (local administrative organ).html'], ['Village', 'geographical/Village.html'], ['Castle', 'building/Castle.html']]
 	for bl in blacklist:
@@ -34,6 +40,21 @@ def addCharset(content):
 		content = content.replace('<head>\n', '<head>\n<meta charset="UTF-8">\n')
 	return content
 
+def addPageTitle(file, content):
+	if "<title" in content:
+		return content
+	title = filename2keyword(file)
+	title = "<title>"+title+"</title>\n"
+	content = content.replace('<head>\n', '<head>\n'+title)
+	return content
+
+def addPageTitleCategory(cat, content):
+	if ")</title>" in content:
+		return content
+	title = " ("+cat+")</title>"
+	content = content.replace('</title>', title)
+	return content
+
 def fixPages():
 	cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
 	if testing:
@@ -50,8 +71,10 @@ def fixPages():
 			content = inp.read()
 			
 			#content = removeBlacklistedLinks(content)
-			content = addAnalytics(content)
+			#content = addAnalytics(content)
 			#content = addCharset(content)
+			#content = addPageTitle(file, content)
+			content = addPageTitleCategory(cat, content)
 			
 			if testing:
 				out = open("t.html", "w", encoding="utf8") #test
