@@ -55,18 +55,22 @@ def addPageTitleCategory(cat, content):
 	content = content.replace('</title>', title)
 	return content
 
+def replaceAnalyticsTrackingCode(content):
+	content = content.replace('G-7D81XDQSVH', 'UA-157500608-2')
+	return content
+
 def fixPages():
 	cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
 	if testing:
-		cats = ['person']
+		cats = ['Buddhism']
 	
 	for cat in cats:
 		print(cat, flush=True)
 		files = os.listdir(cat)
 		for file in files:
-			filepath = cat+"/"+file
 			if testing:
-				filepath = 'Buddhism/Ashura.html' #testing
+				file = 'Ashura.html' #testing
+			filepath = cat+"/"+file
 			inp = open(filepath, "r", encoding="utf8")
 			content = inp.read()
 			
@@ -74,7 +78,8 @@ def fixPages():
 			#content = addAnalytics(content)
 			#content = addCharset(content)
 			#content = addPageTitle(file, content)
-			content = addPageTitleCategory(cat, content)
+			#content = addPageTitleCategory(cat, content)
+			content = replaceAnalyticsTrackingCode(content)
 			
 			if testing:
 				out = open("t.html", "w", encoding="utf8") #test
