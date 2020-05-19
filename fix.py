@@ -42,7 +42,7 @@ def addCharset(content):
 
 def addPageTitle(file, content):
 	if "<title" in content:
-		return content
+		content = re.sub("<title>.*</title>\n", "", content)
 	title = filename2keyword(file)
 	title = "<title>"+title+"</title>\n"
 	content = content.replace('<head>\n', '<head>\n'+title)
@@ -78,8 +78,8 @@ def fixPages():
 			#content = addAnalytics(content)
 			#content = addCharset(content)
 			#content = addPageTitle(file, content)
-			#content = addPageTitleCategory(cat, content)
-			content = replaceAnalyticsTrackingCode(content)
+			content = addPageTitleCategory(cat, content)
+			#content = replaceAnalyticsTrackingCode(content)
 			
 			if testing:
 				out = open("t.html", "w", encoding="utf8") #test
