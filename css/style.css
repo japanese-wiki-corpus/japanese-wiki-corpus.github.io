@@ -34,6 +34,7 @@ body {
     color: #48929b;
 }
 
+/*
 p {
     font-size: 14px;
     line-height: 1.75;
@@ -46,6 +47,7 @@ p.large {
 h3 {
   font-size: 18px;
 }
+*/
 
 a,
 a:hover,
@@ -378,6 +380,10 @@ fieldset[disabled] .btn-xl.active {
 @media only screen and (min-width: 768px) {
 	p {
 		font-size: 16px;
+	}
+	
+	h3 {
+	  font-size: 18px;
 	}
 }
 
