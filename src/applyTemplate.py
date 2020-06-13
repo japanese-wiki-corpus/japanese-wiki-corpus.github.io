@@ -11,7 +11,7 @@ if testing:
 
 def filename2keyword(file):
 	keyword = os.path.splitext(file)[0]
-	keyword = re.sub("[\(\[].*?[\)\]]", "", keyword)
+	#keyword = re.sub("[\(\[].*?[\)\]]", "", keyword)
 	keyword = keyword.strip(" .")
 	return keyword
 
