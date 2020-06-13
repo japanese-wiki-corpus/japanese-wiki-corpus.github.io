@@ -34,6 +34,10 @@ body {
     color: #48929b;
 }
 
+p {
+	line-height: 1.75;
+}
+
 /*
 p {
     font-size: 14px;
