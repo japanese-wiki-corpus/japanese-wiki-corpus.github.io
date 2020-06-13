@@ -29,7 +29,7 @@ def write_sentence(out, id, txt, pars, prev_is_br):
 	return prev_is_br
 
 def parse(fn, jp, cat):
-	inp = open("../japanese_wiki_corpus_2/"+fn[0:3]+"/"+fn, "r", encoding="utf8")
+	inp = open("../japanese_wiki_corpus_orig/"+fn[0:3]+"/"+fn, "r", encoding="utf8")
 	xml = inp.read()
 	xml = xml.replace('&i', "")
 	parser = ET.XMLParser(encoding="utf-8")
@@ -128,46 +128,50 @@ def parse(fn, jp, cat):
 
 illegal = ['NUL','\',''//',':','*','"','<','>','|', '/', "'"]
 
-file = open("../japanese_wiki_corpus_2/Wiki_Corpus_List_2.01.csv", "r", encoding="utf8")
+def parseAll():
+	file = open("../japanese_wiki_corpus_orig/Wiki_Corpus_List_2.01.csv", "r", encoding="utf8")
 
-sitemap = open("sitemap.xml", "w", encoding="utf8")
-sitemap.write('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n')
-sitemap.close()
+	sitemap = open("sitemap.xml", "w", encoding="utf8")
+	sitemap.write('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n')
+	sitemap.close()
 
-cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
-for cat in cats:
-	out = open(cat+".html", "w", encoding="utf8")
-	out.write("<html>\n")
-	out.write("<head>\n")
-	out.write('<meta name="viewport" content="width=device-width, initial-scale=1">\n')
-	out.write('<link rel="stylesheet" type="text/css" href="style.css">\n')
-	out.write('<link rel="shortcut icon" type="image/x-icon" href="logo.ico" />\n')
-	out.write('<title>'+cat+'</title>\n')
-	out.write("</head>\n")
-	out.write("<body>\n")
-	out.write("<a href='https://shinsengumi-archives.github.io/japanese-wiki-corpus/'>Home</a>\n")
-	out.write("<h1>"+cat+"</h1>\n")
-	out.close()
-	if not os.path.exists(cat):
-		os.mkdir(cat)
+	cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
+	for cat in cats:
+		out = open(cat+".html", "w", encoding="utf8")
+		out.write("<html>\n")
+		out.write("<head>\n")
+		out.write('<meta name="viewport" content="width=device-width, initial-scale=1">\n')
+		out.write('<link rel="stylesheet" type="text/css" href="style.css">\n')
+		out.write('<link rel="shortcut icon" type="image/x-icon" href="logo.ico" />\n')
+		out.write('<title>'+cat+'</title>\n')
+		out.write("</head>\n")
+		out.write("<body>\n")
+		out.write("<a href='https://shinsengumi-archives.github.io/japanese-wiki-corpus/'>Home</a>\n")
+		out.write("<h1>"+cat+"</h1>\n")
+		out.close()
+		if not os.path.exists(cat):
+			os.mkdir(cat)
 
-for line in file:
-	val = line.split(',')
-	fn = val[0]
-	jp = val[2]
-	cat = val[3].split(' ')[0]
+	for line in file:
+		val = line.split(',')
+		fn = val[0]
+		jp = val[2]
+		cat = val[3].split(' ')[0]
 
-	parse(fn, jp, cat)
+		parse(fn, jp, cat)
 
 
-for cat in cats:
-	out = open(cat+".html", "a", encoding="utf8")
-	out.write("</body>\n")
-	out.write("</html>\n")
-	out.close()
+	for cat in cats:
+		out = open(cat+".html", "a", encoding="utf8")
+		out.write("</body>\n")
+		out.write("</html>\n")
+		out.close()
 
-sitemap = open("sitemap.xml", "a", encoding="utf8")
-sitemap.write("</urlset>\n")
-sitemap.close()
+	sitemap = open("sitemap.xml", "a", encoding="utf8")
+	sitemap.write("</urlset>\n")
+	sitemap.close()
 
-file.close()
+	file.close()
+
+#parseAll()
+parse('PNM01372.xml', '', 'person')

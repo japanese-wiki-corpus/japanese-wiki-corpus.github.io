@@ -3,6 +3,7 @@ import os
 import re
 
 testing = False
+replaceFile = False
 
 def filename2keyword(file):
 	keyword = os.path.splitext(file)[0]
@@ -59,6 +60,15 @@ def replaceAnalyticsTrackingCode(content):
 	content = content.replace('G-7D81XDQSVH', 'UA-157500608-2')
 	return content
 
+def getData(content):
+	istart = content.find('<body>')
+	if istart == -1:
+		return content
+	iend = content.find('</body>')
+	content = content[istart+7:iend]
+	content = content.replace("<a href='https://shinsengumi-archives.github.io/japanese-wiki-corpus/'>Home</a>\n", '')
+	return content
+
 def fixPages():
 	cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
 	if testing:
@@ -78,17 +88,25 @@ def fixPages():
 			#content = addAnalytics(content)
 			#content = addCharset(content)
 			#content = addPageTitle(file, content)
-			content = addPageTitleCategory(cat, content)
+			#content = addPageTitleCategory(cat, content)
 			#content = replaceAnalyticsTrackingCode(content)
 			
-			if testing:
-				out = open("t.html", "w", encoding="utf8") #test
-			else:
-				out = open(filepath, "w", encoding="utf8")
-	
-			out.write(content)
-			out.close()
+			#content = getData(content)
 			
+			#if content == "":
+			#	print(filepath)
+			
+			
+
+			if replaceFile:
+				if testing:
+					out = open("t.html", "w", encoding="utf8") #test
+				else:
+					out = open(filepath, "w", encoding="utf8")
+		
+				out.write(content)
+				out.close()
+				
 			inp.close()
 			if testing:
 				break #test

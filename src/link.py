@@ -2,7 +2,7 @@ import sys
 import os
 import re
 
-testing = False
+testing = True
 cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
 blacklist = ['Court', 'Village', 'Castle']
 aliases = [['Keisuke YAMANAMI', 'Keisuke SANNAN']]
@@ -46,7 +46,7 @@ def linkPages(keywords):
 		files = os.listdir(cat)
 		for file in files:
 			if testing:
-				file = 'Toshizo HIJIKATA.html' #testing
+				file = 'Mototoyo HIROHATA.html' #testing
 			filepath = cat+"/"+file
 			inp = open(filepath, "r", encoding="utf8")
 			content = inp.read()
