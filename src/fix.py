@@ -73,6 +73,8 @@ def fixPages():
 	cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
 	if testing:
 		cats = ['Buddhism']
+		
+	maxlen = 0
 	
 	for cat in cats:
 		print(cat, flush=True)
@@ -96,6 +98,10 @@ def fixPages():
 			#if content == "":
 			#	print(filepath)
 			
+			contentlen = len(content)
+			if contentlen > maxlen:
+				maxlen = contentlen
+			
 			
 
 			if replaceFile:
@@ -111,5 +117,6 @@ def fixPages():
 			if testing:
 				break #test
 
+	print(maxlen)
 
 fixPages()

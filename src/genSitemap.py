@@ -1,6 +1,10 @@
 import sys
 import os
 import re
+from datetime import datetime, timedelta
+
+yesterday = datetime.now() - timedelta(days=1)
+lastmod = yesterday.strftime('%Y-%m-%d')
 
 testing = False
 
@@ -23,7 +27,7 @@ def run():
 			content = inp.read()
 			
 			
-			sitemap.write("<url><loc>https://shinsengumi-archives.github.io/japanese-wiki-corpus/"+file+"</loc><lastmod>2020-02-05T03:17:57+00:00</lastmod><priority>0.64</priority></url>\n")
+			sitemap.write("<url><loc>https://shinsengumi-archives.github.io/japanese-wiki-corpus/"+file+"</loc><lastmod>"+lastmod+"T03:17:57+00:00</lastmod><priority>0.64</priority></url>\n")
 			
 			inp.close()
 			if testing:
