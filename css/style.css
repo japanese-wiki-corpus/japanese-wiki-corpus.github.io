@@ -298,10 +298,6 @@ fieldset[disabled] .btn-xl.active {
 	margin-bottom: 0px;
 }
 
-.gsc-customize {
-	margin-bottom: -0.5em;
-}
-
 .col-right {
     width: 100%; 
     float: right;
@@ -375,10 +371,6 @@ fieldset[disabled] .btn-xl.active {
 
 .nav-search {
 	padding: 1rem;
-}
-
-.nav-search .gsc-control-searchbox-only {
-	background-color: transparent;
 }
 
 @media only screen and (min-width: 768px) {
