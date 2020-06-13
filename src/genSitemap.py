@@ -9,10 +9,9 @@ cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 
 if testing:
 	cats = ['Buddhism']
 
-def applyPageTemplate():
-	templateFile = open('templates/page.html', "r", encoding="utf8")
-	template = templateFile.read()
-	
+def run():
+	sitemap = open("sitemap.xml", "w", encoding="utf8")
+
 	for cat in cats:
 		print(cat, flush=True)
 		files = os.listdir(cat)
@@ -23,22 +22,13 @@ def applyPageTemplate():
 			inp = open(dataPath+filepath, "r", encoding="utf8")
 			content = inp.read()
 			
-			name = filename2keyword(file)
-			content = template.replace('{{content}}', content)
-			content = content.replace('{{name}}', name)
-			content = content.replace('{{category}}', cat)
 			
-			if testing:
-				out = open("t.html", "w", encoding="utf8") #test
-			else:
-				out = open(filepath, "w", encoding="utf8")
-	
-			out.write(content)
-			out.close()
+			sitemap.write("<url><loc>https://shinsengumi-archives.github.io/japanese-wiki-corpus/"+file+"</loc><lastmod>2020-02-05T03:17:57+00:00</lastmod><priority>0.64</priority></url>\n")
 			
 			inp.close()
 			if testing:
 				break #test
 
+	sitemap.close()
 
-applyPageTemplate()
+run()
