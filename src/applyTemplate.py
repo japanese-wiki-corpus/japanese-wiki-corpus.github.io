@@ -120,4 +120,4 @@ def applyCategoryTemplate():
 	templateFile.close()
 
 applyPageTemplate()
-#applyCategoryTemplate()
+applyCategoryTemplate()
