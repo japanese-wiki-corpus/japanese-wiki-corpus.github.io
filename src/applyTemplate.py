@@ -119,5 +119,5 @@ def applyCategoryTemplate():
 	listTemplateFile.close()	
 	templateFile.close()
 
-#applyPageTemplate()
-applyCategoryTemplate()
+applyPageTemplate()
+#applyCategoryTemplate()
