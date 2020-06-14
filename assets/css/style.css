@@ -50,6 +50,10 @@ body {
 	padding-top: 1em;
 }
 
+.bg-black {
+	background-color: #fff;
+}
+
 p {
 	line-height: 1.75;
 }
@@ -393,6 +397,7 @@ fieldset[disabled] .btn-xl.active {
 	border: 1px solid rgba(0,0,0,.1);
 	background-color: transparent;
 	color: rgba(0,0,0,.5);
+	margin-top: 5px;
 }
 
 .cat-search {
