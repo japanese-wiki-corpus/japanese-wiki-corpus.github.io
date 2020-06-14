@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Japanese-English Bilingual Corpus of Wikipedia's Kyoto Articles</title>
+<title>Japanese Wiki Corpus</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
@@ -21,36 +21,183 @@
 <script src="https://cse.google.com/cse.js?cx=000697064956386539004:poziv1zz8so"></script>
 <link href="assets/css/gsc.css" rel="stylesheet">
 </head>
-<body>
-<main role="main" id="page-top" class="bg-black">
-<section class="jumbotron text-center">
+<body class="bg-black">
+
+<nav class="navbar navbar-dark fixed-top">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse bg-black" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item link-item">
+				<strong><a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/">Home</a></strong>
+			</li>
+			<li class="nav-item link-item">
+				<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/history.html">History</a>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					People
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/person.html">Historical Figures</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/emperor.html">Emperors</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/family.html">Clans</a>
+				</div>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Places
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/building.html">Buildings</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/geographical.html">Locations</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/railway.html">Railways</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/road.html">Roads</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/shrines.html">Shrines</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/school.html">Schools</a>
+				</div>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Cultural
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/Buddhism.html">Buddhism</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/Shinto.html">Shinto</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/literature.html">Literature</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/title.html">Titles</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/culture.html">Culture</a>
+				</div>
+			</li>
+			
+			<div class="dropdown-divider"></div>
+			<li class="nav-item nav-search">
+				<div class="gcse-searchbox-only" data-resultsUrl="https://shinsengumi-archives.github.io/japanese-wiki-corpus/search-results.html" data-newWindow="false"></div>
+			</li>
+			<div class="dropdown-divider bottom-border"></div>
+		</ul>
+	</div>
+</nav>
+
+
+
+<main role="main" id="page-top" class="text-light fill">
+<section class="jumbotron text-center bg-transparent">
 	<div class="container">
-		<h1>Japanese Wikipedia</h1>
-		<p class="lead text-muted">Generated from the <a href='https://alaginrc.nict.go.jp/WikiCorpus/index_E.html'>Japanese-English Bilingual Corpus of Wikipedia's Kyoto Articles.</a></p>
+		<h1 class="text-white">Japanese Wiki Corpus</h1>
+		<p class="lead text-secondary">Generated from the <a href='https://alaginrc.nict.go.jp/WikiCorpus/index_E.html' class="text-light">Japanese-English Bilingual Corpus of Wikipedia's Kyoto Articles.</a></p>
 		<p>
-		<a href="#" class="btn btn-primary my-2">Main call to action</a>
-		<a href="#" class="btn btn-secondary my-2">Secondary action</a>
+		<div class="main-search">
+			<div class="gcse-searchbox-only" data-resultsUrl="https://shinsengumi-archives.github.io/japanese-wiki-corpus/search-results.html" data-newWindow="false"></div>
+		</div>
 		</p>
 	</div>
 </section>
 
+<section class="text-center bg-transparent" id="categories">
+	<div class="row">
+		<div class="col-md tile thumb-img-history">
+			<a href="history.html" class="text-white">
+			<div class="tile-content"><h3>History</h3></div>
+			</a>
+		</div>
+		<div class="col-md tile thumb-img-person">
+			<a href="person.html" class="text-white">
+			<div class="tile-content"><h3>Historical Figures</h3></div>
+			</a>
+		</div>
+		<div class="col-md tile thumb-img-culture">
+			<a href="culture.html" class="text-white">
+			<div class="tile-content"><h3>Culture</h3></div>
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md tile thumb-img-geographical">
+			<a href="geographical.html" class="text-white">
+			<div class="tile-content"><h3>Locations</h3></div>
+			</a>
+		</div>
+		<div class="col-md tile thumb-img-building">
+			<a href="building.html" class="text-white">
+			<div class="tile-content"><h3>Buildings</h3></div>
+			</a>
+		</div>
+		<div class="col-md tile thumb-img-literature">
+			<a href="literature.html" class="text-white">
+			<div class="tile-content"><h3>Literature</h3></div>
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md tile thumb-img-Buddhism">
+			<a href="Buddhism.html" class="text-white">
+			<div class="tile-content"><h3>Buddhism</h3></div>
+			</a>
+		</div>
+		<div class="col-md tile thumb-img-Shinto">
+			<a href="Shinto.html" class="text-white">
+			<div class="tile-content"><h3>Shinto</h3></div>
+			</a>
+		</div>
+		<div class="col-md tile thumb-img-shrines">
+			<a href="shrines.html" class="text-white">
+			<div class="tile-content"><h3>Shrines</h3></div>
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md tile thumb-img-emperor">
+			<a href="emperor.html" class="text-white">
+			<div class="tile-content"><h3>Emperors</h3></div>
+			</a>
+		</div>
+		<div class="col-md tile thumb-img-family">
+			<a href="family.html" class="text-white">
+			<div class="tile-content"><h3>Clans</h3></div>
+			</a>
+		</div>
+		<div class="col-md tile thumb-img-title">
+			<a href="title.html" class="text-white">
+			<div class="tile-content"><h3>Titles</h3></div>
+			</a>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md tile thumb-img-railway">
+			<a href="railway.html" class="text-white">
+			<div class="tile-content"><h3>Railways</h3></div>
+			</a>
+		</div>
+		<div class="col-md tile thumb-img-road">
+			<a href="road.html" class="text-white">
+			<div class="tile-content"><h3>Roads</h3></div>
+			</a>
+		</div>
+		<div class="col-md tile thumb-img-school">
+			<a href="school.html" class="text-white">
+			<div class="tile-content"><h3>Schools</h3></div>
+			</a>
+		</div>
+	</div>
 
-<h1>Categories:</h1>
-<p><a href='Buddhism.html'>Buddhism</a></p>
-<p><a href='building.html'>building</a></p>
-<p><a href='culture.html'>culture</a></p>
-<p><a href='emperor.html'>emperor</a></p>
-<p><a href='family.html'>family</a></p>
-<p><a href='geographical.html'>geographical</a></p>
-<p><a href='history.html'>history</a></p>
-<p><a href='literature.html'>literature</a></p>
-<p><a href='person.html'>person</a></p>
-<p><a href='railway.html'>railway</a></p>
-<p><a href='road.html'>road</a></p>
-<p><a href='shrines.html'>shrines</a></p>
-<p><a href='school.html'>school</a></p>
-<p><a href='Shinto.html'>Shinto</a></p>
-<p><a href='title.html'>title</a></p>
+</section>
 </main>
+
+<div class="right-corner"><a href="#page-top" class="page-scroll"><button type="button" class="btn btn-dark">
+	<svg class="bi bi-chevron-bar-up" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  <path fill-rule="evenodd" d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zM2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4z"/>
+	</svg>
+</button></a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="assets/js/site.js"></script>
 </body>
 </html>
