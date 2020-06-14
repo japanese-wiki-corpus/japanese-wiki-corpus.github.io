@@ -7,6 +7,7 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 18px;
 }
 
 .project-info {
@@ -55,7 +56,7 @@ body {
 }
 
 p {
-	line-height: 1.75;
+	line-height: 2rem;
 }
 
 /*
@@ -428,8 +429,10 @@ fieldset[disabled] .btn-xl.active {
 
 
 @media only screen and (min-width: 768px) {
-	p {
+	body {
 		font-size: 16px;
+	}
+	p {
 		line-height: 1.75;
 	}
 	
