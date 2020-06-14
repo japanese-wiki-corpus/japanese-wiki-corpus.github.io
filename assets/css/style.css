@@ -508,10 +508,12 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
+		padding-bottom: 0px;
     }
 	
 	.navbar-dark {
 		background-color: transparent;
+		padding-bottom: 0px;
 	}
 	.navbar-dark .navbar-toggler {
 		border-color: rgba(255,255,255,.4);
