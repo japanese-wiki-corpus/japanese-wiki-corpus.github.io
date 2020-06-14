@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/x-icon" href="../logo.ico" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<link href="../css/style.css" rel="stylesheet">
+<link href="../assets/css/style.css" rel="stylesheet">
 
 <!-- Global site tag (gtag.js) - Google Analytics --> 
 <script async src='https://www.googletagmanager.com/gtag/js?id=UA-157500608-2'></script> 
@@ -19,7 +19,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="https://cse.google.com/cse.js?cx=000697064956386539004:poziv1zz8so"></script>
-<link href="../css/gsc.css" rel="stylesheet">
+<link href="../assets/css/gsc.css" rel="stylesheet">
 </head>
 <body>
 
@@ -35,6 +35,9 @@
 
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
+			<li class="nav-item link-item">
+				<strong><a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/">Home</a></strong>
+			</li>
 			<li class="nav-item link-item">
 				<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/history.html">History</a>
 			</li>
@@ -311,16 +314,6 @@ He named himself Boichiro. He established Ritsumeikan Private School within the 
 
 </div>
 </main>
-<script>
-	$(document).ready(function () {
-		$(document).click(function (event) {
-			var clickover = $(event.target);
-			var _opened = $(".navbar-collapse").hasClass("show");
-			if (_opened === true && !clickover.parents().hasClass("navbar-collapse")) {
-				$(".navbar-toggler").click();
-			}
-		});
-	});
-</script>
+<script src="../assets/js/site.js"></script>
 </body>
 </html>

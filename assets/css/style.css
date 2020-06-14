@@ -34,6 +34,22 @@ body {
     color: #48929b;
 }
 
+.overlay .section {
+	background-color: #fff;
+	margin: 2.5em 0em;
+	padding-top: 50px;
+	padding-bottom: 35px;
+}
+
+.top-padding {
+	padding-top: 80px !important;
+	margin: 0px !important;
+}
+
+.jump {
+	padding-top: 1em;
+}
+
 p {
 	line-height: 1.75;
 }
@@ -373,6 +389,39 @@ fieldset[disabled] .btn-xl.active {
 	padding: 1rem;
 }
 
+.btn-light {
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: transparent;
+	color: rgba(0,0,0,.5);
+}
+
+.cat-search {
+	padding-top: 2em;
+}
+
+.left-corner {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	margin: 1em;
+}
+
+.right-corner {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	margin: 1em;
+}
+
+.page-scroll .btn:focus {
+	outline: none;
+	box-shadow: none;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: transparent;
+	color: rgba(0,0,0,.5);
+}
+
+
 @media only screen and (min-width: 768px) {
 	p {
 		font-size: 16px;
@@ -380,7 +429,7 @@ fieldset[disabled] .btn-xl.active {
 	}
 	
 	h3 {
-	  font-size: 18px;
+	  font-size: 20px;
 	}
 }
 
@@ -1062,4 +1111,110 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #48929b;
+}
+
+.background-img-Buddhism {
+	background: url('../img/bg/Buddhism.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-building {
+	background: url('../img/bg/building.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-culture {
+	background: url('../img/bg/culture.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-emperor {
+	background: url('../img/bg/emperor.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-family {
+	background: url('../img/bg/family.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-geographical {
+	background: url('../img/bg/geographical.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-history {
+	background: url('../img/bg/history.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-literature {
+	background: url('../img/bg/literature.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-person {
+	background: url('../img/bg/person.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-railway {
+	background: url('../img/bg/railway.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-road {
+	background: url('../img/bg/road.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-school {
+	background: url('../img/bg/school.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-Shinto {
+	background: url('../img/bg/Shinto.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-shrines {
+	background: url('../img/bg/shrines.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.background-img-title {
+	background: url('../img/bg/title.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }

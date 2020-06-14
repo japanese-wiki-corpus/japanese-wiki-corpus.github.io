@@ -1,5 +1,12 @@
 <html>
 <head>
+<title>railway</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link href="assets/css/style.css" rel="stylesheet">
+
 <!-- Global site tag (gtag.js) - Google Analytics --> 
 <script async src='https://www.googletagmanager.com/gtag/js?id=UA-157500608-2'></script> 
 <script> 
@@ -8,303 +15,584 @@
  gtag('js', new Date()); 
  gtag('config', 'UA-157500608-2'); 
 </script>
-<title>railway</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cse.google.com/cse.js?cx=000697064956386539004:poziv1zz8so"></script>
+<link href="assets/css/gsc.css" rel="stylesheet">
 </head>
-<body>
-<a href='https://shinsengumi-archives.github.io/japanese-wiki-corpus/'>Home</a>
-<h1>railway</h1>
-<p><a href='railway/Kyoto Municipal Subway, Karasuma Line.html'>Kyoto Municipal Subway, Karasuma Line</a> (京都市営地下鉄烏丸線) - Karasuma Line is a part of the Kyoto Municipal Subway in Kyoto city, Kyoto, running from Kokusaikaikan Station (Sakyo-ward) to Takeda Station (Fushimi-ward).</p>
-<p><a href='railway/Sagano Scenic Railway.html'>Sagano Scenic Railway</a> (嵯峨野観光鉄道) - Sagano Scenic Railway is the company operating Torokko trams on the Sagano Sight-seeing Tram Line, which utilizes the old San-in Line in Kyoto City, Kyoto Prefecture.</p>
-<p><a href='railway/The Sanjyo-Keihan Station.html'>The Sanjyo-Keihan Station</a> (三条京阪駅) - Information</p>
+<body class="background-img-railway">
+
+<nav class="navbar navbar-light fixed-top">
+	<a href='https://shinsengumi-archives.github.io/japanese-wiki-corpus/' class="navbar-brand">
+		<svg class="bi bi-chevron-left" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+		</svg>
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item link-item">
+				<strong><a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/">Home</a></strong>
+			</li>
+			<li class="nav-item link-item">
+				<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/history.html">History</a>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					People
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/person.html">Historical Figures</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/emperor.html">Emperors</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/family.html">Clans</a>
+				</div>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Places
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/building.html">Buildings</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/geographical.html">Locations</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/railway.html">Railways</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/road.html">Roads</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/shrines.html">Shrines</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/school.html">Schools</a>
+				</div>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Cultural
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/Buddhism.html">Buddhism</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/Shinto.html">Shinto</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/literature.html">Literature</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/title.html">Titles</a>
+					<a class="nav-link" href="https://shinsengumi-archives.github.io/japanese-wiki-corpus/culture.html">Culture</a>
+				</div>
+			</li>
+			
+			<div class="dropdown-divider"></div>
+			<li class="nav-item nav-search">
+				<div class="gcse-searchbox-only" data-resultsUrl="https://shinsengumi-archives.github.io/japanese-wiki-corpus/search-results.html" data-newWindow="false"></div>
+			</li>
+			<div class="dropdown-divider bottom-border"></div>
+		</ul>
+	</div>
+</nav>
+
+
+<div class="overlay" id="page-top">
+<div class="section top-padding">
+<div class="container">
+	<h1>Railways</h1>
+	<div class="jump">
+		<a href="#other" class="page-scroll"><button type="button" class="btn btn-light">?</button></a>
+<a href="#a" class="page-scroll"><button type="button" class="btn btn-light">A</button></a>
+<a href="#b" class="page-scroll"><button type="button" class="btn btn-light">B</button></a>
+<a href="#c" class="page-scroll"><button type="button" class="btn btn-light">C</button></a>
+<a href="#d" class="page-scroll"><button type="button" class="btn btn-light">D</button></a>
+<a href="#e" class="page-scroll"><button type="button" class="btn btn-light">E</button></a>
+<a href="#f" class="page-scroll"><button type="button" class="btn btn-light">F</button></a>
+<a href="#g" class="page-scroll"><button type="button" class="btn btn-light">G</button></a>
+<a href="#h" class="page-scroll"><button type="button" class="btn btn-light">H</button></a>
+<a href="#i" class="page-scroll"><button type="button" class="btn btn-light">I</button></a>
+<a href="#j" class="page-scroll"><button type="button" class="btn btn-light">J</button></a>
+<a href="#k" class="page-scroll"><button type="button" class="btn btn-light">K</button></a>
+<a href="#l" class="page-scroll"><button type="button" class="btn btn-light">L</button></a>
+<a href="#m" class="page-scroll"><button type="button" class="btn btn-light">M</button></a>
+<a href="#n" class="page-scroll"><button type="button" class="btn btn-light">N</button></a>
+<a href="#o" class="page-scroll"><button type="button" class="btn btn-light">O</button></a>
+<a href="#p" class="page-scroll"><button type="button" class="btn btn-light">P</button></a>
+<a href="#q" class="page-scroll"><button type="button" class="btn btn-light">Q</button></a>
+<a href="#r" class="page-scroll"><button type="button" class="btn btn-light">R</button></a>
+<a href="#s" class="page-scroll"><button type="button" class="btn btn-light">S</button></a>
+<a href="#t" class="page-scroll"><button type="button" class="btn btn-light">T</button></a>
+<a href="#u" class="page-scroll"><button type="button" class="btn btn-light">U</button></a>
+<a href="#v" class="page-scroll"><button type="button" class="btn btn-light">V</button></a>
+<a href="#w" class="page-scroll"><button type="button" class="btn btn-light">W</button></a>
+<a href="#x" class="page-scroll"><button type="button" class="btn btn-light">X</button></a>
+<a href="#y" class="page-scroll"><button type="button" class="btn btn-light">Y</button></a>
+<a href="#z" class="page-scroll"><button type="button" class="btn btn-light">Z</button></a>
+
+	</div>
+	<div class="cat-search">
+		<div class="gcse-searchbox-only" data-resultsUrl="https://shinsengumi-archives.github.io/japanese-wiki-corpus/search-results.html" data-newWindow="false"></div>
+	</div>
+</div>
+</div>
+
+<div class="section" id="other">
+<div class="container">
+<h2>?</h2>
 <p><a href='railway/(JR) Nara Line.html'>(JR) Nara Line</a> (奈良線) - The JR Nara Line is a railway line (arterial line) of the West Japan Railway Company (JR West) that runs between Kizu Station (Kyoto Prefecture) in Kizugawa City, Kyoto Prefecture, and Kyoto Station in the Shimogyo Ward of Kyoto City, Kyoto Prefecture.</p>
-<p><a href='railway/JR Kyoto Line.html'>JR Kyoto Line</a> (JR京都線) - JR Kyoto-sen (JR Kyoto Line) is the unofficial name given to the section of the Tokaido Main Line of the West Japan Railway (JR West) that runs between Kyoto Station and Osaka Station.</p>
-<p><a href='railway/Kyoto Municipal Subway.html'>Kyoto Municipal Subway</a> (京都市営地下鉄) - Kyoto Municipal Subway is operated by the Kyoto Municipal Transportation Bureau.</p>
-<p><a href='railway/Kyoto Station.html'>Kyoto Station</a> (京都駅) - Kyoto Station, located in Higashi-Shiokojicho, Shimogyo Ward / Minami Ward, Kyoto City, Kyoto Prefecture, is a railway station served by the lines of West Japan Railway Company (JR West), Central Japan Railway Company (JR Central), Kintetsu Corporation and the Kyoto Municipal Transportation Bureau.</p>
-<p><a href='railway/Hankyu Railway.html'>Hankyu Railway</a> (阪急電鉄) - Hankyu Corporation (Hankyu Dentetsu) is a major private railway company operating the railways that connect Osaka Umeda Station with Kobe City, Takarazuka City and Kyoto City.</p>
-<p><a href='railway/Surutto KANSAI (KANSAI THRU PASS).html'>Surutto KANSAI (KANSAI THRU PASS)</a> (スルッとKANSAI) - Surutto KANSAI is the network of the railway cards for the public transport system in Kansai (Kinki area), or the biggest company in its association, which has a head office in Osaka City, Osaka-Prefecture.</p>
+
+</div>
+</div>
+<div class="section" id="a">
+<div class="container">
+<h2>A</h2>
+<p><a href='railway/Amanohashidate Cable Railway.html'>Amanohashidate Cable Railway</a> (天橋立鋼索鉄道) - The Amanohashidate Cable Railway is a cable car line operated by the Tango Kairiku Kotsu Co., Ltd. that connects Fuchu Station (in Miyazu City, Kyoto Prefecture) and Kasamatsu Station.</p>
+<p><a href='railway/Amanohashidate Station.html'>Amanohashidate Station</a> (天橋立駅) - Amanohashidate Station, located in Aza-Monju of Miyazu City, Kyoto Prefecture, is a stop on the Miyazu Line of the Kitakinki Tango Railway.</p>
+<p><a href='railway/Amino Station.html'>Amino Station</a> (網野駅) - Amino Station, located in Amino-cho, Tango City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Araga-Kashinokidai Station.html'>Araga-Kashinokidai Station</a> (荒河かしの木台駅) - Araga-Kashinokidai Station, located in Fukuchiyama City, Kyoto Prefecture, is a railroad facility on the Miyafuku Line of the Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Arashiyama Main Line, Keifuku Electric Railroad Co., Ltd..html'>Arashiyama Main Line, Keifuku Electric Railroad Co., Ltd.</a> (京福電気鉄道嵐山本線) - The Arashiyama Main Line is a Keifuku Electric Railroad route which links Shijo-Omiya Station (Shimogyo Ward, Kyoto City, Kyoto Prefecture) to Arashiyama Station (Ukyo Ward).</p>
+<p><a href='railway/Arashiyama Station.html'>Arashiyama Station</a> (嵐山駅) - Arashiyama stations are stations located in Kyoto City.</p>
+<p><a href='railway/Arashiyama Station (Hankyu Railway).html'>Arashiyama Station (Hankyu Railway)</a> (嵐山駅 (阪急)) - Arashiyama Station, located at 7 Arashiyama Higashi Ichikawa-cho, Nishikyo Ward, Kyoto City, is the terminal of Hankyu Arashiyama Line, which is operated by Hankyu Railway.</p>
+<p><a href='railway/Arashiyama Station (Keifuku Electric Railroad Co., Ltd.).html'>Arashiyama Station (Keifuku Electric Railroad Co., Ltd.)</a> (嵐山駅 (京福電気鉄道)) - Arashiyama Station, located in Saga-tenryuji-tsukurimichii-cho, Ukyo Ward, Kyoto City, is a railway facility of the Arashiyama Main Line operated by Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Arashiyama Torokko Station.html'>Arashiyama Torokko Station</a> (トロッコ嵐山駅) - Arashiyama Torokko Station, located in Saga Ogurayama-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Saga Sightseeing Tram Line of the Sagano Scenic Railway.</p>
+<p><a href='railway/Arisugawa Station.html'>Arisugawa Station</a> (有栖川駅) - Arisugawa Station, located in Sagano-kaminoki-cho, Ukyo Ward, Kyoto City, is a stop on the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Atagoyama Railway.html'>Atagoyama Railway</a> (愛宕山鉄道) - Atagoyama Railway ("Atagoyama Tetsudo" in Japanese) was a railroad company that, before the war, managed a flat railway line that ran from Arashiyama Station (operated by Keifuku Electric Railway and located in present-day Ukyo Ward, Kyoto City, Kyoto Prefecture) to Kiyotaki Station, as well as a cable car line (funicular railway) that ran from Kiyotakigawa Station to Atago Station.</p>
+<p><a href='railway/Ayabe Station.html'>Ayabe Station</a> (綾部駅) - Located in Ayabe City, Kyoto Prefecture, Ayabe Station is a stop owned by West Japan Railway Company (JR West).</p>
+
+</div>
+</div>
+<div class="section" id="b">
+<div class="container">
+<h2>B</h2>
 <p><a href='railway/Biwako Line.html'>Biwako Line</a> (琵琶湖線) - The Biwako Line is the name of the train line that runs between Kyoto Station and Maibara Station of the Tokaido Main Line, and also between Maibara Station and Nagahama Station of the Hokuriku Main Line, both of which are run by West Japan Railway Company (JR West).</p>
-<p><a href='railway/Kyoto Electric Railway.html'>Kyoto Electric Railway</a> (京都鉄道) - Kyoto Electric Railway is a private rail company established in 1893.</p>
-<p><a href='railway/Kansai Railway Company.html'>Kansai Railway Company</a> (関西鉄道) - Kansai Railway Company (It's pronounced in kanji characters as either Kansai Railway Company or Kansei Railway Company) is a railway industry that runs railroads across Central Japan Railway Company (JR Central) and West Japan Railway Company (JR West)'s current railroad, which existed during the Meiji period; it is the predecessor of the Kansai Main Line, Kusatsu Line, Katamachi Line, Kisei Main Line, Sakurai Line, Wakayama Line, Nara Line and Osaka Loop Line.</p>
-<p><a href='railway/ICOCA.html'>ICOCA</a> (ICOCA) - ICOCA (ikoka) is an IC card, mainly used as a ticket, electronic money and locker key, that West Japan Railway Company (JR West) launched in the Kinki District Urban Network on November 1, 2003.</p>
-<p><a href='railway/Keihan Uji Line.html'>Keihan Uji Line</a> (京阪宇治線) - The Uji Line is a railway line of Keihan Electric Railway that connects Chushojima Station located in Fushimi Ward, Kyoto City, Kyoto Prefecture and Uji Station (Keihan) located in Uji City, Kyoto Prefecture.</p>
-<p><a href='railway/Kintetsu Kyoto Line.html'>Kintetsu Kyoto Line</a> (近鉄京都線) - The Kintetsu Kyoto Line (Kintetsu Kyoto-sen) is a railway line of Kintetsu Corporation (Kintetsu) and it connects Kyoto Station located in Shimogyo Ward, Kyoto City, Kyoto Prefecture and Yamato-Saidaiji Station in Nara City, Nara Prefecture.</p>
+
+</div>
+</div>
+<div class="section" id="c">
+<div class="container">
+<h2>C</h2>
+<p><a href='railway/Cable Sakamoto Station.html'>Cable Sakamoto Station</a> (ケーブル坂本駅) - Cable Sakamoto Station, located in Sakamoto-honmachi, Otsu City, Shiga Prefecture, is a stop on the Hieizan Railway Line (Sakamoto Cable) operated by the Hieizan Railway.</p>
+<p><a href='railway/Chayama Station (Kyoto Prefecture).html'>Chayama Station (Kyoto Prefecture)</a> (茶山駅 (京都府)) - Chayama Station, located in Sakyo Ward, Kyoto City, is a stop on the Eizan Main Line, which is operated by Eizan Electric Railway Co., Ltd. (Eiden).</p>
+<p><a href='railway/Chiyokawa Station.html'>Chiyokawa Station</a> (千代川駅) - Chiyokawa Station, located in Imazu, Chiyokawa-cho of Kameoka City, Kyoto Prefecture, is a stop on San'in Main Line of West Japan Railway Company (JR West).</p>
+<p><a href='railway/Chushojima Station.html'>Chushojima Station</a> (中書島駅) - Chushojima Station, located in Yoshijima Yagura-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a facility of Keihan Electric Railway.</p>
+
+</div>
+</div>
+<div class="section" id="d">
+<div class="container">
+<h2>D</h2>
+<p><a href='railway/Demachiyanagi Station.html'>Demachiyanagi Station</a> (出町柳駅) - Demachiyanagi Station, located in Tanaka Kamiyanagi-cho/Shimoyanagi-cho, Sakyo Ward, Kyoto City, is a stop operated by the Keihan Electric Railway and the Eizan Electric Railway Co., Ltd.</p>
+<p><a href='railway/Doshishamae Station.html'>Doshishamae Station</a> (同志社前駅) - Doshishamae Station, located in Miyamaki Kakinouchi, Kyotanabe City, Kyoto Prefecture, is a stop on the Katamachi Line of the West Japan Railway Company (JR West).</p>
+
+</div>
+</div>
+<div class="section" id="e">
+<div class="container">
+<h2>E</h2>
+<p><a href='railway/Eizan Electric Railway Co., Ltd..html'>Eizan Electric Railway Co., Ltd.</a> (叡山電鉄) - Eizan Electric Railway Co., Ltd. is a railway business operator managing lines between Demachiyanagi Station in Kyoto City's Sakyo Ward and Yase/Kurama.</p>
+<p><a href='railway/Eizan Main Line, Eizan Electric Railway Co., Ltd..html'>Eizan Main Line, Eizan Electric Railway Co., Ltd.</a> (叡山電鉄叡山本線) - The Eizan Main Line is a railway line operated by Eizan Electric Railway that connects Demachiyanagi Station (Sakyo Ward, Kyoto City, Kyoto Prefecture) and Yase-Hieizanguchi Station.</p>
+<p><a href='railway/Emmachi Station.html'>Emmachi Station</a> (円町駅) - Emmachi Station, located in Nishinokyo Emmachi, Nakagyo Ward, Kyoto City, is a stop on the Sanin Main Line (Sagano Line), which is operated by the West Japan Railway Company (JR West).</p>
+
+</div>
+</div>
+<div class="section" id="f">
+<div class="container">
+<h2>F</h2>
+<p><a href='railway/Fujinomori Station.html'>Fujinomori Station</a> (藤森駅) - Fujinomori Station, located in Fukakusa-kitoro-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line, which is operated by Keihan Electric Railway.</p>
+<p><a href='railway/Fukakusa Station.html'>Fukakusa Station</a> (深草駅) - Fukakusa Station, located in Fukakusa-kenasa-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line, which is operated by Keihan Electric Railway.</p>
+<p><a href='railway/Fukuchiyama Line.html'>Fukuchiyama Line</a> (福知山線) - The Fukuchiyama Line is a (trunk) railway line operated by the West Japan Railway Company that connects Amagasaki Station in Amagasaki City, Hyogo Prefecture, and Fukuchiyama Station in Fukuchiyama City, Kyoto Prefecture.</p>
+<p><a href='railway/Fukuchiyama Station.html'>Fukuchiyama Station</a> (福知山駅) - Located in Fukuchiyama City, Kyoto Prefecture, Fukuchiyama Station is a station owned by West Japan Railway Company (JR West) and Kitakinki Tango Railway Corporation (KTR).</p>
+<p><a href='railway/Funaoka Station (Kyoto Prefecture).html'>Funaoka Station (Kyoto Prefecture)</a> (船岡駅 (京都府)) - Funaoka Station, located in Sonobe-cho, Nantan City, Kyoto Prefecture, is a railway station on the Sanin Main Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Fushimi Station (Kyoto Prefecture).html'>Fushimi Station (Kyoto Prefecture)</a> (伏見駅 (京都府)) - Fushimi Station, located in Shibatayashiki-cho, Fukakusa, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a railroad facility on the Kintetsu Kyoto Line of Kintetsu Corporation.</p>
+<p><a href='railway/Fushimi-inari Station.html'>Fushimi-inari Station</a> (伏見稲荷駅) - Fushimi-inari Station, located in Fukakusa-ichinotsubo-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line, which is operated by Keihan Electric Railway.</p>
+<p><a href='railway/Fushimi-momoyama Station.html'>Fushimi-momoyama Station</a> (伏見桃山駅) - Fushimi-momoyama Station, located in 4-chome, Ryogae-machi, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a railway stop on the Keihan Main Line of Keihan Electric Railway.</p>
+<p><a href='railway/Futamata Station.html'>Futamata Station</a> (二俣駅) - Futamata station, located in Futamata (Kyoto Prefecture), Oe-cho, Fukuchiyama City, Kyoto Prefecture, is a railroad station on the Miyafuku Line, which is operated by Kitakinki Tango Railway (KTR).</p>
+
+</div>
+</div>
+<div class="section" id="g">
+<div class="container">
+<h2>G</h2>
+<p><a href='railway/Gojo Station.html'>Gojo Station</a> (五条駅) - Gojo Station</p>
+<p><a href='railway/Gojo Station (Keihan).html'>Gojo Station (Keihan)</a> (五条駅 (京阪)) - Located at 8-chome Miyagawa-suji, Higashiyama Ward, Kyoto City, in Kyoto Prefecture, Gojo Station is a stop on the Keihan Main Line of the Keihan Electric Railway.</p>
+<p><a href='railway/Gojo Station (Kyoto Municipal Subway).html'>Gojo Station (Kyoto Municipal Subway)</a> (五条駅 (京都市営地下鉄)) - Gojo Station, located in Osaka-cho, Shimogyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Karasuma Line, which is operated by Kyoto Municipal Subway.</p>
+<p><a href='railway/Goma Station.html'>Goma Station</a> (胡麻駅) - Located in Hiyoshi-cho, Nantan City, Kyoto Prefecture, Goma Station is a stop on the Sanin Main Line, which is operated by West Japan Railway Company (JR West).</p>
+<p><a href='railway/Gujo Station.html'>Gujo Station</a> (公庄駅) - Gujo Station, located in Gujo, Oe-cho (Kyoto Prefecture), Fukuchiyama City, Kyoto Prefecture, is a railroad facility of the Miyafuku Line, which is operated by Kitakinki Tango Railway (KTR).</p>
+
+</div>
+</div>
+<div class="section" id="h">
+<div class="container">
+<h2>H</h2>
+<p><a href='railway/Hachimanmae Station (Kyoto Prefecture).html'>Hachimanmae Station (Kyoto Prefecture)</a> (八幡前駅 (京都府)) - Hachimanmae Station, located in the Sakyo ward of Kyoto City, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
+<p><a href='railway/Hanazono Station (Kyoto Prefecture).html'>Hanazono Station (Kyoto Prefecture)</a> (花園駅 (京都府)) - Hanazono Station, located in Hanazono Teranouchi-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Sanin Main Line (Sagano Line), which is operated by the West Japan Railway Company (JR West).</p>
 <p><a href='railway/Hankyu Arashiyama Line.html'>Hankyu Arashiyama Line</a> (阪急嵐山線) - The Hankyu Arashiyama Line (Hankyu Arashiyama-sen) is a railway of Hankyu Corporation that connects from Katsura Station located in Saikyo Ward, Kyoto City, Kyoto Prefecture, to Arashiyama Station (Hankyu).</p>
+<p><a href='railway/Hankyu Kyoto Main Line.html'>Hankyu Kyoto Main Line</a> (阪急京都本線) - The Kyoto Main Line is a railway of Hankyu Railway that connects Juso Station in Yodogawa Ward, Osaka City, Osaka Prefecture, with Kawaramachi Station (Kyoto Prefecture) in Shimogyo Ward, Kyoto City, Kyoto Prefecture.</p>
+<p><a href='railway/Hankyu Railway.html'>Hankyu Railway</a> (阪急電鉄) - Hankyu Corporation (Hankyu Dentetsu) is a major private railway company operating the railways that connect Osaka Umeda Station with Kobe City, Takarazuka City and Kyoto City.</p>
+<p><a href='railway/Hashidate (a train).html'>Hashidate (a train)</a> (はしだて (列車)) - Hashidate is the name of a limited express train that the West Japan Railway Company (JR West) operates between Kyoto Station and Amanohashidate Station via the Sanin Main Line, the Miyafuku Line of the Kitakinki Tango Railway Corporation and the Miyazu Line of the Kitakinki Tango Railway Corporation.</p>
+<p><a href='railway/Hashimoto Station (Kyoto Prefecture).html'>Hashimoto Station (Kyoto Prefecture)</a> (橋本駅 (京都府)) - Hashimoto Station, located in Yawata City, Kyoto Prefecture, is a railroad facility on the Keihan Main Line, which is operated by the Keihan Electric Railway.</p>
+<p><a href='railway/Heianjingu-mae Station.html'>Heianjingu-mae Station</a> (平安神宮前駅) - Heianjingu-mae Station was a railway station located in Kyoto City's Higashiyama Ward.</p>
+<p><a href='railway/Higashi-Maizuru Station.html'>Higashi-Maizuru Station</a> (東舞鶴駅) - Located in 661-1, Aza-goku, Maizuru City, Kyoto Prefecture, Higashi-Maizuru Station is a station owned by West Japan Railway Company (JR West).</p>
+<p><a href='railway/Higashimuko Station.html'>Higashimuko Station</a> (東向日駅) - Higashimuko Station, located in Muko City, Kyoto Prefecture, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
+<p><a href='railway/Higashino Station (Kyoto Prefecture).html'>Higashino Station (Kyoto Prefecture)</a> (東野駅 (京都府)) - Higashino Station, located in Yamashina Ward, Kyoto City, is a railroad facility on the Kyoto Municipal Subway Tozai Line.</p>
+<p><a href='railway/Higashiyama Station (Kyoto Prefecture).html'>Higashiyama Station (Kyoto Prefecture)</a> (東山駅 (京都府)) - Higashiyama Station, located in Higashiyama Ward, Kyoto City, is a stop on the Kyoto Municipal Subway Tozai Line.</p>
+<p><a href='railway/Higashiyama-sanjo Station.html'>Higashiyama-sanjo Station</a> (東山三条駅) - Higashiyama-sanjo Station, located in Furukawa-cho, Sanjoyamato-oji Kudaru, Higashiyama Ward, Kyoto City, was a stop on the Keihan Keishin Line operated by the Keihan Electric Railway Co., Ltd.</p>
+<p><a href='railway/History of Steam Locomotives of Japan.html'>History of Steam Locomotives of Japan</a> (日本の蒸気機関車史) - We would like to describe the history of steam locomotives in Japan.</p>
+<p><a href='railway/Hiyoshi Station (Kyoto Prefecture).html'>Hiyoshi Station (Kyoto Prefecture)</a> (日吉駅 (京都府)) - Located in Hiyoshi-cho, Nantan City, Kyoto Prefecture, Hiyoshi Station is a stop on the Sanin Main Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Hokutan Railway.html'>Hokutan Railway</a> (北丹鉄道) - Hokutan Railway is a railway operator which operated a line running northward from the Fukuchiyama Station in Fukichiyama City, Kyoto Prefecture to Komori Station.</p>
+<p><a href='railway/Hosono Station.html'>Hosono Station</a> (祝園駅) - Hosono Station, located in Koaza-Nagatsuka, Oaza-Hosono, Seika-cho, Sorakugun of Kyoto Prefecture, is a stop on the Katamachi Line of West Japan Railway Company (JR West).</p>
+<p><a href='railway/Hozukyo Station.html'>Hozukyo Station</a> (保津峡駅) - Hozukyo Station, located over the boundary of Nishikyo Ward, Kyoto City, Kyoto Prefecture and Hozu-cho, Kameoka City, Kyoto Prefecture, is a stop on the Sanin Main Line (Sagano Line) of the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Hozukyo Torokko Station.html'>Hozukyo Torokko Station</a> (トロッコ保津峡駅) - Hozukyo Torokko Station, located in Arashiyama Kita Matsuoyama, Nishikyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Saga Sightseeing Tram Line of Sagano Scenic Railway.</p>
+
+</div>
+</div>
+<div class="section" id="i">
+<div class="container">
+<h2>I</h2>
+<p><a href='railway/Ichihara Station.html'>Ichihara Station</a> (市原駅) - Ichihara Station, located in the Sakyo ward of Kyoto City, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
+<p><a href='railway/Ichijoji Station.html'>Ichijoji Station</a> (一乗寺駅) - Ichijoji Station, located in Ichijoji Satononishi-cho, Sakyo Ward, Kyoto City, is a stop on the Eizan Main Line, which is operated by the Eizan Electric Railway Co., Ltd.</p>
+<p><a href='railway/ICOCA.html'>ICOCA</a> (ICOCA) - ICOCA (ikoka) is an IC card, mainly used as a ticket, electronic money and locker key, that West Japan Railway Company (JR West) launched in the Kinki District Urban Network on November 1, 2003.</p>
+<p><a href='railway/Imadegawa Station.html'>Imadegawa Station</a> (今出川駅) - Imadegawa Station, located in Kamigyo Ward, Kyoto City, Kyoto Prefecture, is a facility of the Kyoto Municipal Subway Karasuma Line.</p>
+<p><a href='railway/Inari Station.html'>Inari Station</a> (稲荷駅) - Inari Station, located in the Fushimi ward of Kyoto City, Kyoto Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
+<p><a href='railway/Isa Station (Kyoto Prefecture).html'>Isa Station (Kyoto Prefecture)</a> (石原駅 (京都府)) - Isa Station, located in Fukuchiyama City, Kyoto Prefecture, is a stop on the Sanin Main Line of the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Iseda Station.html'>Iseda Station</a> (伊勢田駅) - Iseda Station, located in Uji City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of Kintetsu Railways.</p>
+<p><a href='railway/Ishida Station (Kyoto Prefecture).html'>Ishida Station (Kyoto Prefecture)</a> (石田駅 (京都府)) - Ishida Station, located in Ishida-morihigashi-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a railway facility of the Tozai Line of the Kyoto Municipal Subway.</p>
+<p><a href='railway/Iwakura Station (Kyoto Prefecture).html'>Iwakura Station (Kyoto Prefecture)</a> (岩倉駅 (京都府)) - Located in the Sakyo ward of Kyoto City, Iwakura Station is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
+<p><a href='railway/Iwatakiguchi Station.html'>Iwatakiguchi Station</a> (岩滝口駅) - Iwatakiguchi Station, located in Suzu, Miyazu City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by the Kitakinki Tango Railway.</p>
+
+</div>
+</div>
+<div class="section" id="j">
+<div class="container">
+<h2>J</h2>
+<p><a href='railway/Joyo Station.html'>Joyo Station</a> (城陽駅) - Joyo Station, located at 7 Hayashinokuchi Oaza-Terada, Joyo City, Kyoto Prefecture, is a stop on the Nara Line of the West Japan Railway Company (JR West).</p>
+<p><a href='railway/JR Katsura Station.html'>JR Katsura Station</a> (JR桂駅) - JR Katsura Station is a facility that is to be opened in Kuze-takada-cho, Minami Ward (Kyoto City), Kyoto City, Kyoto Prefecture, on the Tokaido Main Line (JR Kyoto Line), which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/JR Kyoto Line.html'>JR Kyoto Line</a> (JR京都線) - JR Kyoto-sen (JR Kyoto Line) is the unofficial name given to the section of the Tokaido Main Line of the West Japan Railway (JR West) that runs between Kyoto Station and Osaka Station.</p>
+<p><a href='railway/JR Obama Line.html'>JR Obama Line</a> (小浜線) - Obama Line refers to the railway (local line) in West Japan Railway Company (JR West) from Suruga station in Suruga city, Fukui prefecture to Higashi-Maizuru station in Maizuru city, Kyoto prefecture.</p>
+<p><a href='railway/JR-Fujinomori Station.html'>JR-Fujinomori Station</a> (JR藤森駅) - JR-Fujinomori Station, located at Fukakusa Okamedani Oyama-cho 99, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Nara Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/JR-Miyamaki Station.html'>JR-Miyamaki Station</a> (JR三山木駅) - JR-Miyamaki Station, located in Miyamaki Takatobi, Kyotanabe City, Kyoto Prefecture, is a stop on the Katamachi Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/JR-Ogura Station.html'>JR-Ogura Station</a> (JR小倉駅) - JR-Ogura Station, located in Ogura-cho, Uji City, Kyoto Prefecture, is a stop on the Nara Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Jujo Station.html'>Jujo Station</a> (十条駅) - Jujo Station (Tokyo), located in the Kita Ward of Tokyo, is a station on the Saikyo Line (Akabane Line) of the East Japan Railway Company (JR East).</p>
+<p><a href='railway/Jujo Station (Kintetsu).html'>Jujo Station (Kintetsu)</a> (十条駅 (近鉄)) - Jujo Station, located in Yanaginouchi-cho, Nishi-Kujo, Minami Ward, Kyoto City, Kyoto Prefecture, is a railway station on the Kintetsu Kyoto Line, which is operated by Kintetsu Corporation.</p>
+<p><a href='railway/Jujo Station (Kyoto Municipal Subway).html'>Jujo Station (Kyoto Municipal Subway)</a> (十条駅 (京都市営地下鉄)) - Located in the Minami Ward of Kyoto City, Kyoto Prefecture, Jujo Station is a stop on the Karasuma Line of the Kyoto Municipal Subway.</p>
+
+</div>
+</div>
+<div class="section" id="k">
+<div class="container">
+<h2>K</h2>
+<p><a href='railway/K-Limited Express (K-tokkyu).html'>K-Limited Express (K-tokkyu)</a> (K特急) - Introduced in 2003, "K-tokkyu" is a type of train owned by Keihan Electric Railway Co., Ltd., and represents the best type offered by the company.</p>
+<p><a href='railway/Kaikonoyashiro Station.html'>Kaikonoyashiro Station</a> (蚕ノ社駅) - Kaikonoyashiro Station, located in Uzumasa-morigamae-cho, Ukyo Ward, Kyoto City, is a stop on the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Kameoka City Community Bus.html'>Kameoka City Community Bus</a> (亀岡市コミュニティバス) - Kameoka City Community Bus is a community bus that operates in Kameoka City, Kyoto Prefecture.</p>
+<p><a href='railway/Kameoka Station.html'>Kameoka Station</a> (亀岡駅) - Kameoka Station, located in Tanisuji, Oiwake-cho, Kameoka City, Kyoto Prefecture, is a facility of the Sanin Main Line (Sagano Line), which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Kami-Kawaguchi Station.html'>Kami-Kawaguchi Station</a> (上川口駅) - Kami-Kawaguchi Station, located at 12-2 Koaza Ishigori, Kamioda, Oaza Musochi, Fukuchiyama City, Kyoto Prefecture, is a stop on the Sanin Main Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Kamikatsura Station.html'>Kamikatsura Station</a> (上桂駅) - Katsura Station, located in Nishikyo Ward, Kyoto City, is a stop on the Hankyu Arashiyama Line, which is operated by the Hankyu Railway.</p>
+<p><a href='railway/Kamikoma Station.html'>Kamikoma Station</a> (上狛駅) - Kamikoma Station, located in Kita-Nodashiba, Kamikoma, Yamashiro-cho, Kizugawa City in Kyoto Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
+<p><a href='railway/Kamitobaguchi Station.html'>Kamitobaguchi Station</a> (上鳥羽口駅) - Kamitobaguchi Station, located in Takeda-Mukaidaimachikawa-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a railway facility on the Kyoto Line of Kintetsu Corporation.</p>
+<p><a href='railway/Kamiyakuno Station.html'>Kamiyakuno Station</a> (上夜久野駅) - Kamiyakuno Station, located at 1284-2, Hirano Mutsu-machi, Yakuno-cho, Fukuchiyama City, Kyoto Prefecture, is a stop on the Sanin Main Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Kamo Station (Kyoto Prefecture).html'>Kamo Station (Kyoto Prefecture)</a> (加茂駅 (京都府)) - Kamo Station, located in 1-6-3, Eki-Nishi, Kamo-cho, Kizugawa City, Kyoto Prefecture, is the station of the Kansai Main Line that is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Kangetsukyo Station.html'>Kangetsukyo Station</a> (観月橋駅) - Kangetsukyo Station, located in Bungobashi-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop of the Keihan Uji Line, which is operated by the Keihan Electric Railway.</p>
+<p><a href='railway/Kansai Main Line.html'>Kansai Main Line</a> (関西本線) - The Kansai Main Line is a railway line (main line) running from Nagoya Station, located in Nakamura Ward, Nagoya City, Aichi Prefecture, to the JR Namba Station, located in Naniwa Ward, Osaka City, Osaka Prefecture, via the Kameyama Station (Mie Prefecture) and the Nara Station.</p>
+<p><a href='railway/Kansai Railway Company.html'>Kansai Railway Company</a> (関西鉄道) - Kansai Railway Company (It's pronounced in kanji characters as either Kansai Railway Company or Kansei Railway Company) is a railway industry that runs railroads across Central Japan Railway Company (JR Central) and West Japan Railway Company (JR West)'s current railroad, which existed during the Meiji period; it is the predecessor of the Kansai Main Line, Kusatsu Line, Katamachi Line, Kisei Main Line, Sakurai Line, Wakayama Line, Nara Line and Osaka Loop Line.</p>
+<p><a href='railway/Karasuma Oike Station.html'>Karasuma Oike Station</a> (烏丸御池駅) - Karasuma Oike Station, located in Nakagyo Ward, Kyoto City, Kyoto, Kyoto Prefecture, is a stop on the Kyoto Municipal Subway line.</p>
+<p><a href='railway/Karasuma Station.html'>Karasuma Station</a> (烏丸駅) - Karasuma Station, located at 17, Naginataboko-cho, Shijo-dori Karasuma Higashi-iru, Shimogyo Ward, Kyoto City, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
+<p><a href='railway/Kasagi Station.html'>Kasagi Station</a> (笠置駅) - Located in Kasagi-cho, Soraku-gun, Kyoto Prefecture, Kasagi Station is a stop on the Kansai Main Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Katabiranotsuji Station.html'>Katabiranotsuji Station</a> (帷子ノ辻駅) - Katabiranotsuji Station, located in Uzumasa-katabiranotsuji-cho, Ukyo Ward, Kyoto City, is a facility of Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Katamachi Line.html'>Katamachi Line</a> (片町線) - Katamachi Line refers to the railway (trunk line) of West Japan Railway Company (JR West Japan) between Kizu Station (Kyoto Prefecture) in Kizu City, Kyoto Prefecture and Kyobashi Station (Osaka Prefecture) in Osaka City, Osaka Prefecture.</p>
+<p><a href='railway/Katamachi Station.html'>Katamachi Station</a> (片町駅) - Historically, there used to be two Katamachi stations in Miyakojima Ward of Osaka City, as shown below, but both had already been abolished.</p>
+<p><a href='railway/Katsura Station.html'>Katsura Station</a> (桂駅) - Katsura Station, located in Nishikyo Ward, Kyoto City, is a stop that is operated by the Hankyu Railway.</p>
+<p><a href='railway/Kawaramachi Station (Kyoto Prefecture).html'>Kawaramachi Station (Kyoto Prefecture)</a> (河原町駅 (京都府)) - Kawaramachi Station is the last station on the Hankyu Railway Hankyu Kyoto Main Line, and is located at 52 Shin-cho, Kawaramachi-Nishi-iru, Shijo-dori, Simogyo Ward, Kyoto City, Kyoto Prefecture.</p>
+<p><a href='railway/Kaya Tetsudo (Kaya Railway).html'>Kaya Tetsudo (Kaya Railway)</a> (加悦鉄道) - "Kaya Tetsudo" refers to the railway which connected Tango Yamada Station (the present Nodagawa Station of Kitakinki Tango Railway Miyazu Line) located at Nodagawa Town (the present Yosano Town), Yosa County, Kyoto Prefecture, with Kaya Station located at Kaya Town (the present Yosano Town) in the Yosa County.</p>
+<p><a href='railway/Keage Station.html'>Keage Station</a> (蹴上駅) - Located in Higashiyama Ward, Kyoto City, Keage Station is a stop on the Kyoto Municipal Subway Tozai Line.</p>
+<p><a href='railway/Keage Station (Keihan).html'>Keage Station (Keihan)</a> (蹴上駅 (京阪)) - Keage Station, located in Keage, Higashiyama Ward, Kyoto City, was a stop on the Keihan Keishin Line operated by the Keihan Electric Railway.</p>
+<p><a href='railway/Keifuku Electric Railroad.html'>Keifuku Electric Railroad</a> (京福電気鉄道) - Keifuku Electric Railroad Co., Ltd. is a company that operates a tramway business (electric tramway), cable cars and cableways in Kyoto City.</p>
+<p><a href='railway/Keihan Keishin Line.html'>Keihan Keishin Line</a> (京阪京津線) - The Keishin Line is a railway line of Keihan Electric Railway Co., Ltd., that connects Misasagi Station, located in Yamashina Ward, Kyoto City, Kyoto Prefecture, and Hamaotsu Station, located in Otsu City, Shiga Prefecture.</p>
 <p><a href='railway/Keihan Main Line.html'>Keihan Main Line</a> (京阪本線) - The Keihan Main Line (Keihan Hon-sen) is a railway of Keihan Electric Railway connecting Yodoyabashi Station located in Chuo Ward, Osaka City, Osaka Prefecture (Osaka City) with Sanjo Station in Higashiyama Ward, Kyoto City, Kyoto Prefecture (Kyoto Prefecture).</p>
 <p><a href='railway/Keihan Oto Line.html'>Keihan Oto Line</a> (京阪鴨東線) - The Oto Line (鴨東線: pronounced Oto-sen) is a railway of Keihan Electric Railway that connects Sanjo Station in the Higashiyama Ward of Kyoto City, Kyoto Prefecture with Demachiyanagi Station in the Sakyo ward of the same city.</p>
-<p><a href='railway/Hankyu Kyoto Main Line.html'>Hankyu Kyoto Main Line</a> (阪急京都本線) - The Kyoto Main Line is a railway of Hankyu Railway that connects Juso Station in Yodogawa Ward, Osaka City, Osaka Prefecture, with Kawaramachi Station (Kyoto Prefecture) in Shimogyo Ward, Kyoto City, Kyoto Prefecture.</p>
-<p><a href='railway/Omiya Station.html'>Omiya Station</a> (大宮駅) - Omiya Station (Omiya-eki)</p>
-<p><a href='railway/Jujo Station.html'>Jujo Station</a> (十条駅) - Jujo Station (Tokyo), located in the Kita Ward of Tokyo, is a station on the Saikyo Line (Akabane Line) of the East Japan Railway Company (JR East).</p>
-<p><a href='railway/Eizan Electric Railway Co., Ltd..html'>Eizan Electric Railway Co., Ltd.</a> (叡山電鉄) - Eizan Electric Railway Co., Ltd. is a railway business operator managing lines between Demachiyanagi Station in Kyoto City's Sakyo Ward and Yase/Kurama.</p>
-<p><a href='railway/Kusatsu Line.html'>Kusatsu Line</a> (草津線) - The Kusatsu Line is a railway line (arterial line) of the West Japan Railway Company (JR West) that runs between Tsuge Station in Iga City, Mie Prefecture, and Kusatsu Station (Shiga Prefecture) in Kusatsu City, Shiga Prefecture.</p>
-<p><a href='railway/Kosei Line.html'>Kosei Line</a> (湖西線) - The Kosei Line is a railway line (arterial line) of the West Japan Railway Company (JR West) that runs between Yamashina Station in Yamashina Ward, Kyoto City, Kyoto Prefecture, and Omi-Shiotsu Station in Nishiazai-cho, Ika-gun, Shiga Prefecture.</p>
-<p><a href='railway/Fukuchiyama Line.html'>Fukuchiyama Line</a> (福知山線) - The Fukuchiyama Line is a (trunk) railway line operated by the West Japan Railway Company that connects Amagasaki Station in Amagasaki City, Hyogo Prefecture, and Fukuchiyama Station in Fukuchiyama City, Kyoto Prefecture.</p>
-<p><a href='railway/Sanin Main Line.html'>Sanin Main Line</a> (山陰本線) - The Sanin Main Line is a railway line (trunk line) operated by the West Japan Railway Company (JR West) that connects Kyoto Station, located in Shimogyo Ward of Kyoto City, Kyoto Prefecture, and Hatabu Station, located in Shimonoseki City, Yamaguchi Prefecture, via Fukuchiyama Station, Tottori Station, Yonago Station, Izumoshi Station and Nagatoshi Station (trains bound for Hatabu Station, however, run farther to Shimonoseki Station).</p>
-<p><a href='railway/Sagano Line.html'>Sagano Line</a> (嵯峨野線) - The Sagano Line (Sagano-sen) is the nickname for the portion of the San-in main line (JR West Japan Railway) between Kyoto Station and Sonobe Station.</p>
-<p><a href='railway/The Keihan Cable Line.html'>The Keihan Cable Line</a> (京阪鋼索線) - The Keihan Cable Line is run by Keihan Electric Railway's cable cars, and connects Yawatashi Station in Yawata City of Kyoto Prefecture with Otokoyama-sanjo Station.</p>
-<p><a href='railway/Kawaramachi Station (Kyoto Prefecture).html'>Kawaramachi Station (Kyoto Prefecture)</a> (河原町駅 (京都府)) - Kawaramachi Station is the last station on the Hankyu Railway Hankyu Kyoto Main Line, and is located at 52 Shin-cho, Kawaramachi-Nishi-iru, Shijo-dori, Simogyo Ward, Kyoto City, Kyoto Prefecture.</p>
-<p><a href='railway/Tozai Line, Kyoto Municipal Subway.html'>Tozai Line, Kyoto Municipal Subway</a> (京都市営地下鉄東西線) - The Tozai Line is a railway line of Kyoto Municipal Subway, which connects Rokujizo Station in Uji City, Kyoto Prefecture and Uzumasa-tenjingawa Station in Ukyo Ward, Kyoto City.</p>
-<p><a href='railway/Keihan Keishin Line.html'>Keihan Keishin Line</a> (京阪京津線) - The Keishin Line is a railway line of Keihan Electric Railway Co., Ltd., that connects Misasagi Station, located in Yamashina Ward, Kyoto City, Kyoto Prefecture, and Hamaotsu Station, located in Otsu City, Shiga Prefecture.</p>
-<p><a href='railway/Sagano Scenic Railways Sagano Sightseeing Tram.html'>Sagano Scenic Railway's Sagano Sightseeing Tram</a> (嵯峨野観光鉄道嵯峨野観光線) - The Sagano Sightseeing Tram runs along the Sagano Scenic Railway between Saga Torokko Station (Ukyo Ward, Kyoto City, Kyoto Prefecture) and Kameoka Torokko Station (Kameoka City, Kyoto Prefecture).</p>
-<p><a href='railway/Arashiyama Main Line, Keifuku Electric Railroad Co., Ltd..html'>Arashiyama Main Line, Keifuku Electric Railroad Co., Ltd.</a> (京福電気鉄道嵐山本線) - The Arashiyama Main Line is a Keifuku Electric Railroad route which links Shijo-Omiya Station (Shimogyo Ward, Kyoto City, Kyoto Prefecture) to Arashiyama Station (Ukyo Ward).</p>
-<p><a href='railway/Kitano Line, Keifuku Electric Railroad Co., Ltd..html'>Kitano Line, Keifuku Electric Railroad Co., Ltd.</a> (京福電気鉄道北野線) - The Kitano Line (Kitano-sen) is a railway line operated by Keifuku Electric Railroad Co., Ltd. that connects Kitano-Hakubaicho Station (located in the Kita Ward of Kyoto City, Kyoto Prefecture) and Katabiranotsuji Station (Ukyo Ward).</p>
-<p><a href='railway/Eizan Main Line, Eizan Electric Railway Co., Ltd..html'>Eizan Main Line, Eizan Electric Railway Co., Ltd.</a> (叡山電鉄叡山本線) - The Eizan Main Line is a railway line operated by Eizan Electric Railway that connects Demachiyanagi Station (Sakyo Ward, Kyoto City, Kyoto Prefecture) and Yase-Hieizanguchi Station.</p>
-<p><a href='railway/Kurama Line, Eizan Electric Railway Co., Ltd..html'>Kurama Line, Eizan Electric Railway Co., Ltd.</a> (叡山電鉄鞍馬線) - The Kurama Line is a railway line operated by Eizan Electric Railway that connects Takaragaike Station (Sakyo Ward, Kyoto City, Kyoto Prefecture) to Kurama Station.</p>
-<p><a href='railway/Mount Kurama Cable Railway.html'>Mount Kurama Cable Railway</a> (鞍馬山鋼索鉄道) - The Mount Kurama Cable Railway is a funicular line operated for the convenience of visitors to the area by Kurama-dera Temple, which is a religious corporation and a famous temple located in the Rakuhoku area of Sakyo Ward, Kyoto City, Kyoto Prefecture.</p>
-<p><a href='railway/Ogura Station.html'>Ogura Station</a> (小倉駅 (京都府)) - Ogura Station, located in Kaguraden, Ogura-cho, Uji City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line, which is operated by Kintetsu Corporation.</p>
-<p><a href='railway/Maizuru Line.html'>Maizuru Line</a> (舞鶴線) - The Maizuru Line is a regional branch line railway, owned by West Japan Railway Company (JR West), that runs from Ayabe Station in Ayabe City, Kyoto Prefecture, to Higashi-Maizuru Station in Maizuru City, Kyoto Prefecture.</p>
+<p><a href='railway/Keihan Otsu Line.html'>Keihan Otsu Line</a> (京阪大津線) - The Otsu Line refers to two lines: Keihan Keishin Line managed by the Otsu Railway Business Department of Keihan Electric Railway connecting Misasagi Station in Yamashina ward, Kyoto City, Kyoto Prefecture and Hamaotsu Station in the central part of Otsu City, Shiga Prefecture; and Keihan Ishiyama-sakamoto Main Line connecting Sakamoto Station (Shiga Prefecture) in the western part of Otsu City, Shiga Prefecture, and Ishiyamadera Station.</p>
+<p><a href='railway/Keihan Uji Line.html'>Keihan Uji Line</a> (京阪宇治線) - The Uji Line is a railway line of Keihan Electric Railway that connects Chushojima Station located in Fushimi Ward, Kyoto City, Kyoto Prefecture and Uji Station (Keihan) located in Uji City, Kyoto Prefecture.</p>
+<p><a href='railway/Keihan-Yamashina Station.html'>Keihan-Yamashina Station</a> (京阪山科駅) - Keihan-Yamashina Station, located in Anshu-sajiki-cho, Yamashina Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keishin Line, which is operated by Keihan Electric Railway.</p>
+<p><a href='railway/Keihanshin Local Line.html'>Keihanshin Local Line</a> (京阪神緩行線) - Keihanshin Local Line is a common name that has been used since the era of Japan National Railway (JNR) for the local line running, as a part of Urban Network of West Japan Railway Company (JR West) in the metropolitan suburban area, between the Kyoto Station and Kobe Station (Hyogo Prefecture) of the Tokaido Main Line as well as between the Kobe Station and Nishi-akashi Station of the Sanyo Main Line</p>
+<p><a href='railway/Kibuneguchi Station.html'>Kibuneguchi Station</a> (貴船口駅) - Kibuneguchi Station, located in Kurama Kibune-cho, Sakyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Kurama Line, which is operated by Eizan Electric Railway.</p>
+<p><a href='railway/Kino Station.html'>Kino Station</a> (木野駅) - Kino Station, located in the Sakyo ward of Kyoto City, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
+<p><a href='railway/Kinosaki (train).html'>Kinosaki (train)</a> (きのさき (列車)) - "Kinosaki" is a limited express train operated by West Japan Railway Company (JR West) on the section between Kyoto Station and Kinosakionsen Station through the Sanin Main Line (Sagano Line).</p>
+<p><a href='railway/Kintetsu Keihanna Line.html'>Kintetsu Keihanna Line</a> (近鉄けいはんな線) - The Kintetsu Keihanna Line is a train line of Kintetsu Railways (Kintetsu) connecting Nagata Station (Osaka Prefecture) in Higashi-Osaka City, Osaka Prefecture, and Gakken-Nara-Tomigaoka Station in Nara City, Nara Prefecture.</p>
+<p><a href='railway/Kintetsu Kyoto Line.html'>Kintetsu Kyoto Line</a> (近鉄京都線) - The Kintetsu Kyoto Line (Kintetsu Kyoto-sen) is a railway line of Kintetsu Corporation (Kintetsu) and it connects Kyoto Station located in Shimogyo Ward, Kyoto City, Kyoto Prefecture and Yamato-Saidaiji Station in Nara City, Nara Prefecture.</p>
+<p><a href='railway/Kintetsu-Tanbabashi Station.html'>Kintetsu-Tanbabashi Station</a> (近鉄丹波橋駅) - Kintetsu-Tanbabashi Station, located in Momoyama Tsutsui Iga Higashi-machi, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line, which is operated by Kinki Nippon Railway Co., Ltd. (Kintetsu Corporation).</p>
+<p><a href='railway/Kitakinki (train).html'>Kitakinki (train)</a> (北近畿 (列車)) - Kitakinki, an "L-tokkyu (limited express)" operated by the West Japan Railway Company (JR West), runs in the section between Shin-Osaka Station and Kinosakionsen Station via Fukuchiyama Station and Toyooka Station (Hyogo Prefecture) on the track of the Fukuchiyama Line (also called the JR Takarazuka Line) and Sanin Main Line.</p>
 <p><a href='railway/Kitakinki Tango Railway Corporation Co., Ltd..html'>Kitakinki Tango Railway Corporation Co., Ltd.</a> (北近畿タンゴ鉄道) - Kitakinki Tango Tetsudo Kabushiki-gaisha is a public-private joint venture, located in and part financed by Kyoto Prefecture, operating both the Miyafuku Line and Miyazu Line (the former was laid by the Japan Railway Construction Public Corporation, and the latter was once designated as a Specified Local Line of the Japanese National Railways (JNR)).</p>
 <p><a href='railway/Kitakinki Tango Railway Miyafuku Line.html'>Kitakinki Tango Railway Miyafuku Line</a> (北近畿タンゴ鉄道宮福線) - The Miyafuku Line is a railway operated by Kitakinki Tango Railway (KTR), running from Miyazu Station in Miyazu City, Kyoto Prefecture, to Fukuchiyama Station in Fukuchiyama City, Kyoto Prefecture.</p>
 <p><a href='railway/Kitakinki Tango Railway, Miyazu Line.html'>Kitakinki Tango Railway, Miyazu Line</a> (北近畿タンゴ鉄道宮津線) - The Miyazu Line is a railway operated by Kitakinki Tango Railway that connects Nishi-Maizuru Station in Maizuru City, Kyoto Prefecture, with Toyooka Station in Toyooka City, Hyogo Prefecture, via Miyazu Station in Miyazu City.</p>
-<p><a href='railway/Amanohashidate Cable Railway.html'>Amanohashidate Cable Railway</a> (天橋立鋼索鉄道) - The Amanohashidate Cable Railway is a cable car line operated by the Tango Kairiku Kotsu Co., Ltd. that connects Fuchu Station (in Miyazu City, Kyoto Prefecture) and Kasamatsu Station.</p>
-<p><a href='railway/Hiyoshi Station (Kyoto Prefecture).html'>Hiyoshi Station (Kyoto Prefecture)</a> (日吉駅 (京都府)) - Located in Hiyoshi-cho, Nantan City, Kyoto Prefecture, Hiyoshi Station is a stop on the Sanin Main Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Goma Station.html'>Goma Station</a> (胡麻駅) - Located in Hiyoshi-cho, Nantan City, Kyoto Prefecture, Goma Station is a stop on the Sanin Main Line, which is operated by West Japan Railway Company (JR West).</p>
-<p><a href='railway/Keage Station.html'>Keage Station</a> (蹴上駅) - Located in Higashiyama Ward, Kyoto City, Keage Station is a stop on the Kyoto Municipal Subway Tozai Line.</p>
-<p><a href='railway/Sanjo Station.html'>Sanjo Station</a> (三条駅 (京都府)) - Located in Goken-cho, Higashiyama Ward, Kyoto City, Kyoto Prefecture, Sanjo Station is a station owned by Keihan Electric Railway (KER).</p>
-<p><a href='railway/Okawara Station (Kyoto Prefecture).html'>Okawara Station (Kyoto Prefecture)</a> (大河原駅 (京都府)) - Located in Kakegahara, Kita-okawara, Minami-yamashiro-mura, Soraku-gun, Kyoto Prefecture, Okawara Station is a stop on the Kansai Main Line, which is operated by the West Japan Railway Company.</p>
-<p><a href='railway/Kasagi Station.html'>Kasagi Station</a> (笠置駅) - Located in Kasagi-cho, Soraku-gun, Kyoto Prefecture, Kasagi Station is a stop on the Kansai Main Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Fukuchiyama Station.html'>Fukuchiyama Station</a> (福知山駅) - Located in Fukuchiyama City, Kyoto Prefecture, Fukuchiyama Station is a station owned by West Japan Railway Company (JR West) and Kitakinki Tango Railway Corporation (KTR).</p>
-<p><a href='railway/Nishi-Maizuru Station.html'>Nishi-Maizuru Station</a> (西舞鶴駅) - Located in 213-1 Aza Komoike-nishi, Isazu, Maizuru City, Kyoto Prefecture, Nishi-Maizuru Station is a station owned by West Japan Railway Company (JR West) and Kitakinki Tango Railway Corporation (KTR).</p>
-<p><a href='railway/Higashi-Maizuru Station.html'>Higashi-Maizuru Station</a> (東舞鶴駅) - Located in 661-1, Aza-goku, Maizuru City, Kyoto Prefecture, Higashi-Maizuru Station is a station owned by West Japan Railway Company (JR West).</p>
-<p><a href='railway/Ayabe Station.html'>Ayabe Station</a> (綾部駅) - Located in Ayabe City, Kyoto Prefecture, Ayabe Station is a stop owned by West Japan Railway Company (JR West).</p>
-<p><a href='railway/Takatsu Station (Kyoto Prefecture).html'>Takatsu Station (Kyoto Prefecture)</a> (高津駅 (京都府)) - Takatsu Station, located in Ayabe City, Kyoto Prefecture, is a stop on the Sanin Main Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Isa Station (Kyoto Prefecture).html'>Isa Station (Kyoto Prefecture)</a> (石原駅 (京都府)) - Isa Station, located in Fukuchiyama City, Kyoto Prefecture, is a stop on the Sanin Main Line of the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Kamiyakuno Station.html'>Kamiyakuno Station</a> (上夜久野駅) - Kamiyakuno Station, located at 1284-2, Hirano Mutsu-machi, Yakuno-cho, Fukuchiyama City, Kyoto Prefecture, is a stop on the Sanin Main Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Kami-Kawaguchi Station.html'>Kami-Kawaguchi Station</a> (上川口駅) - Kami-Kawaguchi Station, located at 12-2 Koaza Ishigori, Kamioda, Oaza Musochi, Fukuchiyama City, Kyoto Prefecture, is a stop on the Sanin Main Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Wachi Station.html'>Wachi Station</a> (和知駅) - Wachi Station, located at 19-1 Honjo Baba, Kyotanba-cho, Funai-gun, Kyoto Prefecture, is a stop on the Sanin Main Line of the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Iseda Station.html'>Iseda Station</a> (伊勢田駅) - Iseda Station, located in Uji City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of Kintetsu Railways.</p>
-<p><a href='railway/Okubo Station (Kyoto Prefecture).html'>Okubo Station (Kyoto Prefecture)</a> (大久保駅 (京都府)) - Okubo Station, located at 81-2 Nishiura, Hirono-cho, Uji City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of Kintetsu Railways.</p>
-<p><a href='railway/Kyotanabe Station.html'>Kyotanabe Station</a> (京田辺駅) - Kyotanabe Station, located in Tanabe Kudo, Kyotanabe City, Kyoto Prefecture, is a stop on the Katamachi Line of the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Sonobe Station.html'>Sonobe Station</a> (園部駅) - Sonobe Station, located in Sonobe-cho Nantan City, Kyoto Prefecture, is a stop on the Sanin Main Line of the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Tanbabashi Station.html'>Tanbabashi Station</a> (丹波橋駅) - Tanbabashi Station, located in Momoyama Tsutsui Iga Nishi-machi, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line of the Keihan Electric Railway.</p>
-<p><a href='railway/Nagaoka Station.html'>Nagaoka Station</a> (長岡駅) - Nagaoka Station, a railway station of the East Japan Railway Company (JR East), is located in Jonai-cho, Nagaoka City, Niigata Prefecture.</p>
-<p><a href='railway/Kamo Station (Kyoto Prefecture).html'>Kamo Station (Kyoto Prefecture)</a> (加茂駅 (京都府)) - Kamo Station, located in 1-6-3, Eki-Nishi, Kamo-cho, Kizugawa City, Kyoto Prefecture, is the station of the Kansai Main Line that is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Kizu Station (Kyoto Prefecture).html'>Kizu Station (Kyoto Prefecture)</a> (木津駅 (京都府)) - Kizu Station, located at 116-2 Kizu Ikeda, Kizugawa City, Kyoto Prefecture, is a railway station of the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Katamachi Station.html'>Katamachi Station</a> (片町駅) - Historically, there used to be two Katamachi stations in Miyakojima Ward of Osaka City, as shown below, but both had already been abolished.</p>
-<p><a href='railway/Kameoka Station.html'>Kameoka Station</a> (亀岡駅) - Kameoka Station, located in Tanisuji, Oiwake-cho, Kameoka City, Kyoto Prefecture, is a facility of the Sanin Main Line (Sagano Line), which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Umahori Station.html'>Umahori Station</a> (馬堀駅) - Umahori Station, located in Umahori, Shino-cho, Kameoka City, Kyoto Prefecture, is a facility of Sanin Main Line that is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Nishioji Station.html'>Nishioji Station</a> (西大路駅) - Nishioji Station, located in Karahashi-nishi-hiragaki-cho, Minami Ward, Kyoto City, Kyoto Prefecture, is a railway station of the Tokaido Main Line (JR Kyoto Line) that is operated by West Japan Railway Company (JR West).</p>
-<p><a href='railway/Mukomachi Station.html'>Mukomachi Station</a> (向日町駅) - Mukomachi Station, located in Kuguso, Terado-cho, Muko City, Kyoto Prefecture, is a railway facility of the Tokaido Main Line (JR Kyoto Line), which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Nagaokakyo Station.html'>Nagaokakyo Station</a> (長岡京駅) - Nagaokakyo Station, located at 1-chome Kotari, Nagaokakyo City, Kyoto Prefecture, is a railway facility of the Tokaido Main Line (JR Kyoto Line), which is operated by West Japan Railway Company (JR West).</p>
-<p><a href='railway/Yamazaki Station (Kyoto Prefecture).html'>Yamazaki Station (Kyoto Prefecture)</a> (山崎駅 (京都府)) - Yamazaki Station, located in Oyamazaki-cho, Otokuni-gun, Kyoto Prefecture, is a stop on the Tokaido Main Line (JR Kyoto Line), which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Yamashina Station.html'>Yamashina Station</a> (山科駅) - Yamashina Station, located in Ueno Goshonouchi-cho, Yamashina Ward, Kyoto City, Kyoto Prefecture, is a stop of the West Japan Railway Company (JR West) and the Kyoto Municipal Subway.</p>
-<p><a href='railway/Oyamazaki Station.html'>Oyamazaki Station</a> (大山崎駅) - Oyamazaki Station, located in Oyamazaki-cho, Otokuni-gun, Kyoto Prefecture, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
-<p><a href='railway/Nagaokatenjin Station.html'>Nagaokatenjin Station</a> (長岡天神駅) - Nagaokatenjin Station, located in Nagaokakyo City, Kyoto Prefecture, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
-<p><a href='railway/Nishimuko Station.html'>Nishimuko Station</a> (西向日駅) - Nishimuko Station, located in Muko City, Kyoto Prefecture, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
-<p><a href='railway/Higashimuko Station.html'>Higashimuko Station</a> (東向日駅) - Higashimuko Station, located in Muko City, Kyoto Prefecture, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
-<p><a href='railway/Katsura Station.html'>Katsura Station</a> (桂駅) - Katsura Station, located in Nishikyo Ward, Kyoto City, is a stop that is operated by the Hankyu Railway.</p>
-<p><a href='railway/Nishikyogoku Station.html'>Nishikyogoku Station</a> (西京極駅) - Nishikyogoku Station, located in Ukyo Ward, Kyoto City, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
-<p><a href='railway/Saiin Station (Hankyu) Sai Station (Keifuku).html'>Saiin Station (Hankyu) /Sai Station (Keifuku)</a> (西院駅) - Located in Nishioji Shijo, Ukyo Ward, Kyoto City, Saiin Station and Sai Station are stops operated by the Hankyu Railway and the Keifuku Electric Railroad Co., Ltd., respectively.</p>
-<p><a href='railway/Omiya Station (Kyoto Prefecture).html'>Omiya Station (Kyoto Prefecture)</a> (大宮駅 (京都府)) - Omiya Station, located at 127, Nishiki Omiya-cho, Shijo-dori Omiya-nishi-iru, Nakagyo Ward, Kyoto City, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
-<p><a href='railway/Karasuma Station.html'>Karasuma Station</a> (烏丸駅) - Karasuma Station, located at 17, Naginataboko-cho, Shijo-dori Karasuma Higashi-iru, Shimogyo Ward, Kyoto City, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
-<p><a href='railway/Rakusaiguchi Station.html'>Rakusaiguchi Station</a> (洛西口駅) - Rakusaiguchi Station, located on the boundary between Nishikyo Ward, Kyoto City and Muko City, both located in Kyoto Prefecture, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
-<p><a href='railway/Kamikatsura Station.html'>Kamikatsura Station</a> (上桂駅) - Katsura Station, located in Nishikyo Ward, Kyoto City, is a stop on the Hankyu Arashiyama Line, which is operated by the Hankyu Railway.</p>
-<p><a href='railway/Matsuo Station (Kyoto Prefecture).html'>Matsuo Station (Kyoto Prefecture)</a> (松尾駅 (京都府)) - Matsuo Station, located in Arashiyama Miyanomae-cho, Nishikyo Ward, Kyoto City, is a stop on the Hankyu Arashiyama Line, which is operated by the Hankyu Railway.</p>
-<p><a href='railway/Arashiyama Station (Hankyu Railway).html'>Arashiyama Station (Hankyu Railway)</a> (嵐山駅 (阪急)) - Arashiyama Station, located at 7 Arashiyama Higashi Ichikawa-cho, Nishikyo Ward, Kyoto City, is the terminal of Hankyu Arashiyama Line, which is operated by Hankyu Railway.</p>
-<p><a href='railway/Arashiyama Station.html'>Arashiyama Station</a> (嵐山駅) - Arashiyama stations are stations located in Kyoto City.</p>
-<p><a href='railway/Shinkeihan Railway.html'>Shinkeihan Railway</a> (新京阪鉄道) - The Shinkeihan Railway was a company that owned lines in Kyoto and Osaka prefectures.</p>
-<p><a href='railway/Higashino Station (Kyoto Prefecture).html'>Higashino Station (Kyoto Prefecture)</a> (東野駅 (京都府)) - Higashino Station, located in Yamashina Ward, Kyoto City, is a railroad facility on the Kyoto Municipal Subway Tozai Line.</p>
-<p><a href='railway/Misasagi Station.html'>Misasagi Station</a> (御陵駅) - Misasagi Station is a railway facility located in the Yamashina Ward, Kyoto City, which is jointly operated by the Kyoto Municipal Transportation Bureau and the Keihan Electric Railway.</p>
-<p><a href='railway/Higashiyama Station (Kyoto Prefecture).html'>Higashiyama Station (Kyoto Prefecture)</a> (東山駅 (京都府)) - Higashiyama Station, located in Higashiyama Ward, Kyoto City, is a stop on the Kyoto Municipal Subway Tozai Line.</p>
-<p><a href='railway/Hashimoto Station (Kyoto Prefecture).html'>Hashimoto Station (Kyoto Prefecture)</a> (橋本駅 (京都府)) - Hashimoto Station, located in Yawata City, Kyoto Prefecture, is a railroad facility on the Keihan Main Line, which is operated by the Keihan Electric Railway.</p>
-<p><a href='railway/Nagitsuji Station.html'>Nagitsuji Station</a> (椥辻駅) - Nagitsuji Station, located in Nagitsuji Kusakaido-cho of the Yamashina Ward, Kyoto City, is a railroad facility on the Kyoto Municipal Subway Tozai Line.</p>
-<p><a href='railway/Ono Station (Kyoto Prefecture).html'>Ono Station (Kyoto Prefecture)</a> (小野駅 (京都府)) - Ono Station, located in Yamashina Ward, Kyoto City, is a railroad station on the Kyoto Municipal Subway Tozai Line.</p>
-<p><a href='railway/Imadegawa Station.html'>Imadegawa Station</a> (今出川駅) - Imadegawa Station, located in Kamigyo Ward, Kyoto City, Kyoto Prefecture, is a facility of the Kyoto Municipal Subway Karasuma Line.</p>
-<p><a href='railway/Shin-Tanabe Station.html'>Shin-Tanabe Station</a> (新田辺駅) - Shin-Tanabe Station, located in Kyotanabe City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of Kintetsu Railways.</p>
-<p><a href='railway/Saga Torokko Station.html'>Saga Torokko Station</a> (トロッコ嵯峨駅) - Saga Torokko Station, located in Sakyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Saga Sightseeing Tram Line of Sagano Scenic Railway.</p>
-<p><a href='railway/Arashiyama Torokko Station.html'>Arashiyama Torokko Station</a> (トロッコ嵐山駅) - Arashiyama Torokko Station, located in Saga Ogurayama-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Saga Sightseeing Tram Line of the Sagano Scenic Railway.</p>
-<p><a href='railway/Hozukyo Torokko Station.html'>Hozukyo Torokko Station</a> (トロッコ保津峡駅) - Hozukyo Torokko Station, located in Arashiyama Kita Matsuoyama, Nishikyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Saga Sightseeing Tram Line of Sagano Scenic Railway.</p>
-<p><a href='railway/Doshishamae Station.html'>Doshishamae Station</a> (同志社前駅) - Doshishamae Station, located in Miyamaki Kakinouchi, Kyotanabe City, Kyoto Prefecture, is a stop on the Katamachi Line of the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Kintetsu Keihanna Line.html'>Kintetsu Keihanna Line</a> (近鉄けいはんな線) - The Kintetsu Keihanna Line is a train line of Kintetsu Railways (Kintetsu) connecting Nagata Station (Osaka Prefecture) in Higashi-Osaka City, Osaka Prefecture, and Gakken-Nara-Tomigaoka Station in Nara City, Nara Prefecture.</p>
-<p><a href='railway/Funaoka Station (Kyoto Prefecture).html'>Funaoka Station (Kyoto Prefecture)</a> (船岡駅 (京都府)) - Funaoka Station, located in Sonobe-cho, Nantan City, Kyoto Prefecture, is a railway station on the Sanin Main Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Takeda Station (Kyoto Prefecture).html'>Takeda Station (Kyoto Prefecture)</a> (竹田駅 (京都府)) - Takeda Station, located in Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on Kyoto Municipal Subway and Kintetsu Railways.</p>
-<p><a href='railway/Kyoto Shiyakusho-mae Station.html'>Kyoto Shiyakusho-mae Station</a> (京都市役所前駅) - Located in Nakagyo Ward, Kyoto City, Kyoto Shiyakusho-mae Station is a stop on the Tozai Line of the Kyoto Municipal Subway.</p>
-<p><a href='railway/Karasuma Oike Station.html'>Karasuma Oike Station</a> (烏丸御池駅) - Karasuma Oike Station, located in Nakagyo Ward, Kyoto City, Kyoto, Kyoto Prefecture, is a stop on the Kyoto Municipal Subway line.</p>
-<p><a href='railway/Shijo Station.html'>Shijo Station</a> (四条駅) - Shijo stations are located in Kyoto City, Kyoto Prefecture.</p>
-<p><a href='railway/Gojo Station.html'>Gojo Station</a> (五条駅) - Gojo Station</p>
-<p><a href='railway/Hozukyo Station.html'>Hozukyo Station</a> (保津峡駅) - Hozukyo Station, located over the boundary of Nishikyo Ward, Kyoto City, Kyoto Prefecture and Hozu-cho, Kameoka City, Kyoto Prefecture, is a stop on the Sanin Main Line (Sagano Line) of the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Tanbaguchi Station.html'>Tanbaguchi Station</a> (丹波口駅) - Tanbaguchi Station, located in Chudoji Minami-machi, Shimogyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Sanin Main Line (Sagano Line) of the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Tanba (train).html'>Tanba (train)</a> (たんば (列車)) - "Tanba" is the name of a limited express train that the West Japan Railway Company (JR West) operates between Kyoto Station and Fukuchiyama Station via the Sanin Main Line.</p>
-<p><a href='railway/Hashidate (a train).html'>Hashidate (a train)</a> (はしだて (列車)) - Hashidate is the name of a limited express train that the West Japan Railway Company (JR West) operates between Kyoto Station and Amanohashidate Station via the Sanin Main Line, the Miyafuku Line of the Kitakinki Tango Railway Corporation and the Miyazu Line of the Kitakinki Tango Railway Corporation.</p>
-<p><a href='railway/Chushojima Station.html'>Chushojima Station</a> (中書島駅) - Chushojima Station, located in Yoshijima Yagura-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a facility of Keihan Electric Railway.</p>
-<p><a href='railway/Fushimi-momoyama Station.html'>Fushimi-momoyama Station</a> (伏見桃山駅) - Fushimi-momoyama Station, located in 4-chome, Ryogae-machi, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a railway stop on the Keihan Main Line of Keihan Electric Railway.</p>
-<p><a href='railway/Marutamachi Station (Keihan Line).html'>Marutamachi Station (Keihan Line)</a> (丸太町駅 (京阪)) - Marutamachi Station, located in Higashi-Maruta-cho, Sakyo Ward, Kyoto City, Kyoto Prefecture, is a stop of the Keihan Oto Line, which is operated by Keihan Electric Railway.</p>
-<p><a href='railway/Kangetsukyo Station.html'>Kangetsukyo Station</a> (観月橋駅) - Kangetsukyo Station, located in Bungobashi-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop of the Keihan Uji Line, which is operated by the Keihan Electric Railway.</p>
-<p><a href='railway/Marutamachi Station.html'>Marutamachi Station</a> (丸太町駅) - Marutamachi stations are located in Kyoto City, Kyoto Prefecture.</p>
-<p><a href='railway/Matsuiyamate Station.html'>Matsuiyamate Station</a> (松井山手駅) - Matsuiyamate Station, located in Yamate-Chuo, Kyotanabe City, Kyoto Prefecture, is a stop on the Katamachi Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Nijojo-mae Station.html'>Nijojo-mae Station</a> (二条城前駅) - Nijojo-mae station, located in Nijojo-cho, Nakagyo Ward, Kyoto City, is a stop on the Tozai Line, which is operated by Kyoto Municipal Subway.</p>
-<p><a href='railway/Nijo Station.html'>Nijo Station</a> (二条駅) - Two Nijo stations are located in Nishinokyo Toganoo-cho, Nakagyo Ward, Kyoto City, Kyoto Prefecture, one being Nijo Station of the West Japan Railway Company (JR West) and the other being Nijo Station of the Kyoto Municipal Transportation Bureau.</p>
-<p><a href='railway/醍醐駅→Daigo Station.html'>醍醐駅→Daigo Station</a> (醍醐駅 (京都府)) - Daigo Station, located in Daigo Takahata-cho, Fushimi Ward, Kyoto City, is a stop on the Tozai Line, which is operated by Kyoto Municipal Subway.</p>
-<p><a href='railway/Marutamachi Station (Kyoto Municipal Subway).html'>Marutamachi Station (Kyoto Municipal Subway)</a> (丸太町駅 (京都市営地下鉄)) - Marutamachi Station, located in Nakagyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Karasuma Line, which is operated by Kyoto Municipal Subway.</p>
-<p><a href='railway/Shijo Station (Kyoto Municipal Subway).html'>Shijo Station (Kyoto Municipal Subway)</a> (四条駅 (京都市営地下鉄)) - Shijo Station, located in Shimogyo Ward, Kyoto City, Kyoto Prefecture, is a stop of the Karasuma Line, which is operated by Kyoto Municipal Subway.</p>
-<p><a href='railway/Gojo Station (Kyoto Municipal Subway).html'>Gojo Station (Kyoto Municipal Subway)</a> (五条駅 (京都市営地下鉄)) - Gojo Station, located in Osaka-cho, Shimogyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Karasuma Line, which is operated by Kyoto Municipal Subway.</p>
-<p><a href='railway/JR-Ogura Station.html'>JR-Ogura Station</a> (JR小倉駅) - JR-Ogura Station, located in Ogura-cho, Uji City, Kyoto Prefecture, is a stop on the Nara Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/JR-Fujinomori Station.html'>JR-Fujinomori Station</a> (JR藤森駅) - JR-Fujinomori Station, located at Fukakusa Okamedani Oyama-cho 99, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Nara Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/JR-Miyamaki Station.html'>JR-Miyamaki Station</a> (JR三山木駅) - JR-Miyamaki Station, located in Miyamaki Takatobi, Kyotanabe City, Kyoto Prefecture, is a stop on the Katamachi Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Osumi Station.html'>Osumi Station</a> (大住駅) - Osumi Station, located in Osumi Maruyama, Kyotanabe City, Kyoto Prefecture, is a stop on the Katamachi Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Kitakinki (train).html'>Kitakinki (train)</a> (北近畿 (列車)) - Kitakinki, an "L-tokkyu (limited express)" operated by the West Japan Railway Company (JR West), runs in the section between Shin-Osaka Station and Kinosakionsen Station via Fukuchiyama Station and Toyooka Station (Hyogo Prefecture) on the track of the Fukuchiyama Line (also called the JR Takarazuka Line) and Sanin Main Line.</p>
-<p><a href='railway/Monju (train).html'>Monju (train)</a> (文殊 (列車)) - "Monju" is the name of a limited express train operated by West Japan Railway Company (JR West), which runs in the section between Shin-Osaka Station and Amanohashidate Station by way of the JR West Fukuchiyama Line, Kitakinki Tango Railway Corporation (KTR) Miyafuku Line and KTR Miyazu Line.</p>
-<p><a href='railway/Kinosaki (train).html'>Kinosaki (train)</a> (きのさき (列車)) - "Kinosaki" is a limited express train operated by West Japan Railway Company (JR West) on the section between Kyoto Station and Kinosakionsen Station through the Sanin Main Line (Sagano Line).</p>
-<p><a href='railway/Demachiyanagi Station.html'>Demachiyanagi Station</a> (出町柳駅) - Demachiyanagi Station, located in Tanaka Kamiyanagi-cho/Shimoyanagi-cho, Sakyo Ward, Kyoto City, is a stop operated by the Keihan Electric Railway and the Eizan Electric Railway Co., Ltd.</p>
-<p><a href='railway/Emmachi Station.html'>Emmachi Station</a> (円町駅) - Emmachi Station, located in Nishinokyo Emmachi, Nakagyo Ward, Kyoto City, is a stop on the Sanin Main Line (Sagano Line), which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Shijo Station (Keihan Electric Railway).html'>Shijo Station (Keihan Electric Railway)</a> (四条駅 (京阪)) - Shijo Station, located in 1 Miyagawasuji, Higashiyama Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line, which is operated by Keihan Electric Railway.</p>
-<p><a href='railway/Mototanaka Station.html'>Mototanaka Station</a> (元田中駅) - Mototanaka Station, located in Sakyo Ward, Kyoto City, is a railway stop on the Eizan Main Line, which is operated by the Eizan Electric Railway Co., Ltd. (Eiden).</p>
-<p><a href='railway/Chayama Station (Kyoto Prefecture).html'>Chayama Station (Kyoto Prefecture)</a> (茶山駅 (京都府)) - Chayama Station, located in Sakyo Ward, Kyoto City, is a stop on the Eizan Main Line, which is operated by Eizan Electric Railway Co., Ltd. (Eiden).</p>
-<p><a href='railway/Hanazono Station (Kyoto Prefecture).html'>Hanazono Station (Kyoto Prefecture)</a> (花園駅 (京都府)) - Hanazono Station, located in Hanazono Teranouchi-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Sanin Main Line (Sagano Line), which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Uzumasa Station.html'>Uzumasa Station</a> (太秦駅) - Uzumasa Station, located in Uzumasa Tarumiyama-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Sanin Main Line (Sagano Line), which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Saga-Arashiyama Station.html'>Saga-Arashiyama Station</a> (嵯峨嵐山駅) - Saga-Arashiyama Station, located in Saga Tenryuji Kurumamichi-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Sanin Main Line (Sagano Line), which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Ichijoji Station.html'>Ichijoji Station</a> (一乗寺駅) - Ichijoji Station, located in Ichijoji Satononishi-cho, Sakyo Ward, Kyoto City, is a stop on the Eizan Main Line, which is operated by the Eizan Electric Railway Co., Ltd.</p>
-<p><a href='railway/Kintetsu-Tanbabashi Station.html'>Kintetsu-Tanbabashi Station</a> (近鉄丹波橋駅) - Kintetsu-Tanbabashi Station, located in Momoyama Tsutsui Iga Higashi-machi, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line, which is operated by Kinki Nippon Railway Co., Ltd. (Kintetsu Corporation).</p>
-<p><a href='railway/K-Limited Express (K-tokkyu).html'>K-Limited Express (K-tokkyu)</a> (K特急) - Introduced in 2003, "K-tokkyu" is a type of train owned by Keihan Electric Railway Co., Ltd., and represents the best type offered by the company.</p>
-<p><a href='railway/Umekoji Station.html'>Umekoji Station</a> (梅小路駅) - Umekoji Station, located at 10 Umekoji Kashira-cho, Shimogyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Tokaido Main Line, which is operated by the Japan Freight Railway Company (JR Freight).</p>
-<p><a href='railway/Shugakuin Station.html'>Shugakuin Station</a> (修学院駅) - Shugakuin Station, located in Sakyo Ward, Kyoto City, is a railway station of the Eizan Main Line operated by Eizan Electric Railway Co., Ltd.</p>
-<p><a href='railway/Kuramaguchi Station.html'>Kuramaguchi Station</a> (鞍馬口駅) - Kuramaguchi Station, located in Kamigoryo Nakamachi, Kamigyo Ward, Kyoto City, Kyoto Prefecture, is a railway facility of the Karasuma Line of the Kyoto Municipal Subway.</p>
+<p><a href='railway/Kitano Line, Keifuku Electric Railroad Co., Ltd..html'>Kitano Line, Keifuku Electric Railroad Co., Ltd.</a> (京福電気鉄道北野線) - The Kitano Line (Kitano-sen) is a railway line operated by Keifuku Electric Railroad Co., Ltd. that connects Kitano-Hakubaicho Station (located in the Kita Ward of Kyoto City, Kyoto Prefecture) and Katabiranotsuji Station (Ukyo Ward).</p>
+<p><a href='railway/Kitano Station (Kyoto Prefecture).html'>Kitano Station (Kyoto Prefecture)</a> (北野駅 (京都府)) - Kitano Station, located in Kyoto City, Kyoto Prefecture, was a stop on the Kitano Line operated by the Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Kitano-Hakubaicho Station.html'>Kitano-Hakubaicho Station</a> (北野白梅町駅) - Kitano-Hakubaicho Station, located in Shimohakubai-cho, Kita Ward (Kyoto City), Kyoto City, is a stop on the Kitano Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
 <p><a href='railway/Kitaoji Station.html'>Kitaoji Station</a> (北大路駅) - Kitaoji Station, located in Koyama Kita Kamifusa-cho, Kita Ward (Kyoto City), Kyoto City, Kyoto Prefecture, is a railway facility of the Karasuma Line of Kyoto Municipal Subway.</p>
-<p><a href='railway/Shichijo Station.html'>Shichijo Station</a> (七条駅) - Located in Shimo-Horitsumecho, in the Higashiyama Ward of Kyoto City, Kyoto Prefecture, Shichijo Station is a stop on the Keihan Main Line of the Keihan Electric Railway.</p>
-<p><a href='railway/Gojo Station (Keihan).html'>Gojo Station (Keihan)</a> (五条駅 (京阪)) - Located at 8-chome Miyagawa-suji, Higashiyama Ward, Kyoto City, in Kyoto Prefecture, Gojo Station is a stop on the Keihan Main Line of the Keihan Electric Railway.</p>
-<p><a href='railway/Shin-Hosono Station.html'>Shin-Hosono Station</a> (新祝園駅) - Located at Seika-cho, Soraku-gun in Kyoto Prefecture, Shin-Hosono Station is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
-<p><a href='railway/Momoyama Goryo-mae Station.html'>Momoyama Goryo-mae Station</a> (桃山御陵前駅) - Momoyama Goryo-mae Station, located in Kannonji-cho of Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
-<p><a href='railway/Kujo Station (Kyoto Prefecture).html'>Kujo Station (Kyoto Prefecture)</a> (九条駅 (京都府)) - Kujo Station, located in Higashi-Kujo, Minami Karasuma-cho of Minami Ward, Kyoto City, Kyoto Prefecture, is a stop on the Karasuma Line of the Kyoto Municipal Subway.</p>
-<p><a href='railway/Jujo Station (Kyoto Municipal Subway).html'>Jujo Station (Kyoto Municipal Subway)</a> (十条駅 (京都市営地下鉄)) - Located in the Minami Ward of Kyoto City, Kyoto Prefecture, Jujo Station is a stop on the Karasuma Line of the Kyoto Municipal Subway.</p>
-<p><a href='railway/Kuinabashi Station.html'>Kuinabashi Station</a> (くいな橋駅) - Kuinabashi Station, located in the Fushimi Ward of Kyoto City, Kyoto Prefecture, is a stop on the Karasuma Line of the Kyoto Municipal Subway.</p>
 <p><a href='railway/Kitayama Station.html'>Kitayama Station</a> (北山駅) - Kitayama Station</p>
-<p><a href='railway/Toji Station.html'>Toji Station</a> (東寺駅) - Toji Station, located at Nishi-Kujo-Zaocho in Minami Ward, Kyoto City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
-<p><a href='railway/Mukaijima Station.html'>Mukaijima Station</a> (向島駅) - Mukaijima Station, located in Mukaijima Higashi-Jouke, in the Fushimi ward of Kyoto City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
-<p><a href='railway/Kutsukawa Station.html'>Kutsukawa Station</a> (久津川駅) - Located in Joyo City of Kyoto Prefecture, Kutsukawa Station is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
-<p><a href='railway/Terada Station (Kyoto Prefecture).html'>Terada Station (Kyoto Prefecture)</a> (寺田駅 (京都府)) - Located in Joyo City of Kyoto Prefecture, Terada Station is a stop on the Kyoto Line of the Kintetsu Corporation.</p>
-<p><a href='railway/Tonosho Station.html'>Tonosho Station</a> (富野荘駅) - Tonosho Station, located in Tono of Joyo City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
-<p><a href='railway/Miyamaki Station.html'>Miyamaki Station</a> (三山木駅) - Miyamaki Station, located in Kyotanabe City of Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
-<p><a href='railway/Joyo Station.html'>Joyo Station</a> (城陽駅) - Joyo Station, located at 7 Hayashinokuchi Oaza-Terada, Joyo City, Kyoto Prefecture, is a stop on the Nara Line of the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Uji Station (JR West).html'>Uji Station (JR West)</a> (宇治駅 (JR西日本)) - Uji Station, located at 16 Uji-Umonji, Uji City, Kyoto Prefecture, is a stop on the Nara Line of the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Miyazu Station.html'>Miyazu Station</a> (宮津駅) - Miyazu Station, located in Aza-Tsuruga of Miyazu City, Kyoto Prefecture, is a stop on the Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Amanohashidate Station.html'>Amanohashidate Station</a> (天橋立駅) - Amanohashidate Station, located in Aza-Monju of Miyazu City, Kyoto Prefecture, is a stop on the Miyazu Line of the Kitakinki Tango Railway.</p>
-<p><a href='railway/Mineyama Station.html'>Mineyama Station</a> (峰山駅) - Mineyama Station, located in Mineyama-cho of Tango City, Kyoto Prefecture, is a stop on the Miyazu Line of the Kitakinki Tango Railway.</p>
-<p><a href='railway/Shimokoma Station.html'>Shimokoma Station</a> (下狛駅) - Shimokoma Station, located in Seika-cho, Sorakugun of Kyoto Prefecture, is a stop on the Katamachi Line of West Japan Railway Company (JR West).</p>
-<p><a href='railway/Hosono Station.html'>Hosono Station</a> (祝園駅) - Hosono Station, located in Koaza-Nagatsuka, Oaza-Hosono, Seika-cho, Sorakugun of Kyoto Prefecture, is a stop on the Katamachi Line of West Japan Railway Company (JR West).</p>
-<p><a href='railway/Kohata Station (JR West).html'>Kohata Station (JR West)</a> (木幡駅 (JR西日本)) - Kohata Station, located in Uji City of Kyoｔo Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
-<p><a href='railway/Namikawa Station.html'>Namikawa Station</a> (並河駅) - Namikawa Station, located in Tsuchida, Oi-cho of Kameoka City, Kyoto Prefecture, is a stop on the San'in Main Line (Sagano Line) of West Japan Railway Company (JR West).</p>
-<p><a href='railway/Chiyokawa Station.html'>Chiyokawa Station</a> (千代川駅) - Chiyokawa Station, located in Imazu, Chiyokawa-cho of Kameoka City, Kyoto Prefecture, is a stop on San'in Main Line of West Japan Railway Company (JR West).</p>
-<p><a href='railway/Yoshitomi Station (Kyoto Prefecture).html'>Yoshitomi Station (Kyoto Prefecture)</a> (吉富駅 (京都府)) - Located in Yagi-cho, Nantan City of Kyoto Prefecture, Yoshitomi Station is a stop on the San'in Main Line (Sagano Line) of West Japan Railway Company (JR West).</p>
-<p><a href='railway/Inari Station.html'>Inari Station</a> (稲荷駅) - Inari Station, located in the Fushimi ward of Kyoto City, Kyoto Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
-<p><a href='railway/Momoyama Station.html'>Momoyama Station</a> (桃山駅) - Momoyama Station, located at 34 Nabeshima, Momoyama-cho, Fushimi ward of Kyoto City, Kyoto Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
-<p><a href='railway/Rokujizo Station.html'>Rokujizo Station</a> (六地蔵駅) - Located in the Fushimi ward of Kyoto City and in Uji City of Kyoto Prefecture, Rokujizo Station is a stop on Keihan Electric Railway, West Japan Railway Company (JR West) and Kyoto Municipal Subway lines.</p>
-<p><a href='railway/Tofukuji Station.html'>Tofukuji Station</a> (東福寺駅) - Located in Kishinokami-cho, Fukuine, Higashiyama Ward of Kyoto City, Kyoto Prefecture, Tofukuji Station is a stop on the Keihan Electric Railway and West Japan Railway Company (JR West) lines.</p>
-<p><a href='railway/Obaku Station.html'>Obaku Station</a> (黄檗駅) - Obaku Station, located in Uji City of Kyoto Prefecture, is a stop on the Keihan Electric Railway and West Japan Railway Company (JR West) lines.</p>
-<p><a href='railway/Tamamizu Station.html'>Tamamizu Station</a> (玉水駅) - Tamamizu Station, located in Ide-cho, Tsuzuki-gun of Kyoto Prefecture, is a stop on the Nara Line of the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Tanakura Station.html'>Tanakura Station</a> (棚倉駅) - Tanakura Station, located in Satoyashiki, Hirao, Yamashiro-cho, Kizu City in Kyoto Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
-<p><a href='railway/Kamikoma Station.html'>Kamikoma Station</a> (上狛駅) - Kamikoma Station, located in Kita-Nodashiba, Kamikoma, Yamashiro-cho, Kizugawa City in Kyoto Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
-<p><a href='railway/Shinden Station (Kyoto Prefecture).html'>Shinden Station (Kyoto Prefecture)</a> (新田駅 (京都府)) - Shinden Station, located in Higashi-ura, Hirono-cho of Uji City, Kyoto Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
-<p><a href='railway/Gujo Station.html'>Gujo Station</a> (公庄駅) - Gujo Station, located in Gujo, Oe-cho (Kyoto Prefecture), Fukuchiyama City, Kyoto Prefecture, is a railroad facility of the Miyafuku Line, which is operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Oe Kokomae Station.html'>Oe Kokomae Station</a> (大江高校前駅) - Oe Kokomae Station, located at Kanaya, Oe-cho (Kyoto Prefecture), Fukuchiyama City, Kyoto Prefecture, is a railroad facility on the Miyafuku Line which is operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Matsunoodera Station.html'>Matsunoodera Station</a> (松尾寺駅) - Matsunoodera Station is a railway facility on the Obama Line of the West Japan Railway Company (JR West), and is located in Aza-Kissaka-mubanchi, Maizuru City, Kyoto Prefecture.</p>
-<p><a href='railway/Tobakaido Station.html'>Tobakaido Station</a> (鳥羽街道駅) - Tobakaido Station, located in Shimo-Takamatsu-cho, Fukuine, Higashiyama Ward, Kyoto City, Kyoto Prefecture, is a railway facility on the Keihan Main Line of the Keihan Electric Railway.</p>
-<p><a href='railway/Yamadagawa Station.html'>Yamadagawa Station</a> (山田川駅) - Yamadagawa Station, located at 3-1, Koaza Shimogawara, Oaza Yamada, Seika-cho, Soraku-gun, Kyoto Prefecture, is a railway facility on the Kintetsu Kyoto Line, which is operated by the Kintetsu Corporation.</p>
+<p><a href='railway/Kitayama Station (Kyoto Prefecture).html'>Kitayama Station (Kyoto Prefecture)</a> (北山駅 (京都府)) - Kitayama Station, located in Kita Ward (Kyoto City), Kyoto City, Kyoto Prefecture, is a stop on the Karasuma Line, which is operated by Kyoto Municipal Subway.</p>
+<p><a href='railway/Kitsu-onsen Station.html'>Kitsu-onsen Station</a> (木津温泉駅) - Kitsu-onsen (hot spring) Station, located in Kitsu, Amino-cho, Kyotango City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Kizu Station (Kyoto Prefecture).html'>Kizu Station (Kyoto Prefecture)</a> (木津駅 (京都府)) - Kizu Station, located at 116-2 Kizu Ikeda, Kizugawa City, Kyoto Prefecture, is a railway station of the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Kizugawa Station (Kyoto Prefecture).html'>Kizugawa Station (Kyoto Prefecture)</a> (木津川駅 (京都府)) - Kizugawa Station was a temporary station that once existed on the Nara Electric Railway Line (later the Kintetsu Kyoto Line) in Kyotanabe City (Tanabe City at that time), Kyoto Prefecture.</p>
 <p><a href='railway/Kizugawadai Station.html'>Kizugawadai Station</a> (木津川台駅) - Kizugawadai Station, located at 10-2, Takahi, Haze, Kizugawa City, Kyoto Prefecture, is a railway facility on the Kintetsu Kyoto Line of Kintetsu Corporation.</p>
-<p><a href='railway/Jujo Station (Kintetsu).html'>Jujo Station (Kintetsu)</a> (十条駅 (近鉄)) - Jujo Station, located in Yanaginouchi-cho, Nishi-Kujo, Minami Ward, Kyoto City, Kyoto Prefecture, is a railway station on the Kintetsu Kyoto Line, which is operated by Kintetsu Corporation.</p>
-<p><a href='railway/Kamitobaguchi Station.html'>Kamitobaguchi Station</a> (上鳥羽口駅) - Kamitobaguchi Station, located in Takeda-Mukaidaimachikawa-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a railway facility on the Kyoto Line of Kintetsu Corporation.</p>
-<p><a href='railway/Fushimi Station (Kyoto Prefecture).html'>Fushimi Station (Kyoto Prefecture)</a> (伏見駅 (京都府)) - Fushimi Station, located in Shibatayashiki-cho, Fukakusa, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a railroad facility on the Kintetsu Kyoto Line of Kintetsu Corporation.</p>
+<p><a href='railway/Kohata Station (JR West).html'>Kohata Station (JR West)</a> (木幡駅 (JR西日本)) - Kohata Station, located in Uji City of Kyoｔo Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
+<p><a href='railway/Kokusaikaikan Station.html'>Kokusaikaikan Station</a> (国際会館駅) - Kokusaikaikan Station, located in Iwakura, Sakyo Ward, Kyoto, City Kyoto Prefecture, is a terminal on the Karasuma Line, which is operated by Kyoto Municipal Subway.</p>
+<p><a href='railway/Kokutetsu (Japan National Railways (JNR)) Steam Locomotive Type 120.html'>Kokutetsu (Japan National Railways (JNR)) Steam Locomotive Type 120</a> (国鉄120形蒸気機関車) - Type 120 was a steam locomotive that was imported from U.K. in 1874 when a railway began operation between Osaka and Kobe.</p>
+<p><a href='railway/Kosei Line.html'>Kosei Line</a> (湖西線) - The Kosei Line is a railway line (arterial line) of the West Japan Railway Company (JR West) that runs between Yamashina Station in Yamashina Ward, Kyoto City, Kyoto Prefecture, and Omi-Shiotsu Station in Nishiazai-cho, Ika-gun, Shiga Prefecture.</p>
+<p><a href='railway/Kuinabashi Station.html'>Kuinabashi Station</a> (くいな橋駅) - Kuinabashi Station, located in the Fushimi Ward of Kyoto City, Kyoto Prefecture, is a stop on the Karasuma Line of the Kyoto Municipal Subway.</p>
+<p><a href='railway/Kujo Station (Kyoto Prefecture).html'>Kujo Station (Kyoto Prefecture)</a> (九条駅 (京都府)) - Kujo Station, located in Higashi-Kujo, Minami Karasuma-cho of Minami Ward, Kyoto City, Kyoto Prefecture, is a stop on the Karasuma Line of the Kyoto Municipal Subway.</p>
+<p><a href='railway/Kumihama Station.html'>Kumihama Station</a> (久美浜駅) - Kumihama Station, located in Kumihama-cho, Kyotango City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by the Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Kurama Denki Tetsudo (Kurama Electric Railway).html'>Kurama Denki Tetsudo (Kurama Electric Railway)</a> (鞍馬電気鉄道) - Kurama Denki Tetsudo Kabushiki Kaisha (Kurama Electric Railway Company Limited) was a railway company that operated a railway line from Yamabana (current Takaragaike Station) in present Sakyo Ward, Kyoto City, to Kurama Station.</p>
+<p><a href='railway/Kurama Line, Eizan Electric Railway Co., Ltd..html'>Kurama Line, Eizan Electric Railway Co., Ltd.</a> (叡山電鉄鞍馬線) - The Kurama Line is a railway line operated by Eizan Electric Railway that connects Takaragaike Station (Sakyo Ward, Kyoto City, Kyoto Prefecture) to Kurama Station.</p>
+<p><a href='railway/Kurama Station.html'>Kurama Station</a> (鞍馬駅) - Kurama Station, located in Kurama Honmachi, Sakyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Kurama Line, which is operated by Eizan Electric Railway.</p>
+<p><a href='railway/Kuramaguchi Station.html'>Kuramaguchi Station</a> (鞍馬口駅) - Kuramaguchi Station, located in Kamigoryo Nakamachi, Kamigyo Ward, Kyoto City, Kyoto Prefecture, is a railway facility of the Karasuma Line of the Kyoto Municipal Subway.</p>
+<p><a href='railway/Kurumazakijinja Station.html'>Kurumazakijinja Station</a> (車折神社駅) - Kurumazakijinja Station, located in Saga-nakamata-cho, Ukyo Ward, Kyoto City, is a railway facility of the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Kusatsu Line.html'>Kusatsu Line</a> (草津線) - The Kusatsu Line is a railway line (arterial line) of the West Japan Railway Company (JR West) that runs between Tsuge Station in Iga City, Mie Prefecture, and Kusatsu Station (Shiga Prefecture) in Kusatsu City, Shiga Prefecture.</p>
+<p><a href='railway/Kutsukawa Station.html'>Kutsukawa Station</a> (久津川駅) - Located in Joyo City of Kyoto Prefecture, Kutsukawa Station is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
+<p><a href='railway/Kyotanabe Station.html'>Kyotanabe Station</a> (京田辺駅) - Kyotanabe Station, located in Tanabe Kudo, Kyotanabe City, Kyoto Prefecture, is a stop on the Katamachi Line of the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Kyoto Bus Co., Ltd..html'>Kyoto Bus Co., Ltd.</a> (京都バス) - Kyoto Bus Co., Ltd., whose head office is located in Ukyo Ward, Kyoto City, is a route bus operator belonging to the Keihan Electric Railway Group.</p>
+<p><a href='railway/Kyoto Electric Railway.html'>Kyoto Electric Railway</a> (京都鉄道) - Kyoto Electric Railway is a private rail company established in 1893.</p>
+<p><a href='railway/Kyoto Municipal Subway.html'>Kyoto Municipal Subway</a> (京都市営地下鉄) - Kyoto Municipal Subway is operated by the Kyoto Municipal Transportation Bureau.</p>
+<p><a href='railway/Kyoto Municipal Subway, Karasuma Line.html'>Kyoto Municipal Subway, Karasuma Line</a> (京都市営地下鉄烏丸線) - Karasuma Line is a part of the Kyoto Municipal Subway in Kyoto city, Kyoto, running from Kokusaikaikan Station (Sakyo-ward) to Takeda Station (Fushimi-ward).</p>
+<p><a href='railway/Kyoto Seikadaimae Station.html'>Kyoto Seikadaimae Station</a> (京都精華大前駅) - Kyoto Seikadaimae Station, located in the Sakyo ward of Kyoto City, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
+<p><a href='railway/Kyoto Shiyakusho-mae Station.html'>Kyoto Shiyakusho-mae Station</a> (京都市役所前駅) - Located in Nakagyo Ward, Kyoto City, Kyoto Shiyakusho-mae Station is a stop on the Tozai Line of the Kyoto Municipal Subway.</p>
+<p><a href='railway/Kyoto Station.html'>Kyoto Station</a> (京都駅) - Kyoto Station, located in Higashi-Shiokojicho, Shimogyo Ward / Minami Ward, Kyoto City, Kyoto Prefecture, is a railway station served by the lines of West Japan Railway Company (JR West), Central Japan Railway Company (JR Central), Kintetsu Corporation and the Kyoto Municipal Transportation Bureau.</p>
+<p><a href='railway/Kyoto Uji Rakunan One-Day Ticket.html'>Kyoto Uji Rakunan One-Day Ticket</a> (京都 宇治・洛南1dayチケット) - The "Kyoto Uji Rakunan One-Day Ticket" electronic card, which allows unlimited rides and comes with coupons offering various discounts and special benefits as part of the package, is sold jointly by the Osaka Municipal Transportation Bureau, Keihan Electric Railway (Keihan), Semboku Rapid Railway (Semboku Rapid) of Osaka Prefectural Urban Development Co., Ltd., and Nankai Electric Railway (Nankai).</p>
+
+</div>
+</div>
+<div class="section" id="l">
+<div class="container">
+<h2>L</h2>
 <p><a href='railway/Limited Express Maizuru (train).html'>Limited Express Maizuru (train)</a> (まいづる (列車)) - "Maizuru" is a limited express train operated by the West Japan Railway Company (JR West) between Kyoto Station and Higashi-Maizuru Station via the Sanin Main Line and Maizuru Line.</p>
 <p><a href='railway/Limited Express Tango Discovery.html'>Limited Express Tango Discovery</a> (タンゴディスカバリー) - The "Tango Discovery" is a type of limited express train operated by Kitakinki Tango Railway, and it's the nickname for the Kitakinki Tango Railway KTR Type 8000 diesel multiple unit used for this train service.</p>
+
+</div>
+</div>
+<div class="section" id="m">
+<div class="container">
+<h2>M</h2>
+<p><a href='railway/Maizuru Line.html'>Maizuru Line</a> (舞鶴線) - The Maizuru Line is a regional branch line railway, owned by West Japan Railway Company (JR West), that runs from Ayabe Station in Ayabe City, Kyoto Prefecture, to Higashi-Maizuru Station in Maizuru City, Kyoto Prefecture.</p>
+<p><a href='railway/Marutamachi Station.html'>Marutamachi Station</a> (丸太町駅) - Marutamachi stations are located in Kyoto City, Kyoto Prefecture.</p>
+<p><a href='railway/Marutamachi Station (Keihan Line).html'>Marutamachi Station (Keihan Line)</a> (丸太町駅 (京阪)) - Marutamachi Station, located in Higashi-Maruta-cho, Sakyo Ward, Kyoto City, Kyoto Prefecture, is a stop of the Keihan Oto Line, which is operated by Keihan Electric Railway.</p>
+<p><a href='railway/Marutamachi Station (Kyoto Municipal Subway).html'>Marutamachi Station (Kyoto Municipal Subway)</a> (丸太町駅 (京都市営地下鉄)) - Marutamachi Station, located in Nakagyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Karasuma Line, which is operated by Kyoto Municipal Subway.</p>
 <p><a href='railway/Matsugasaki Station (Kyoto Prefecture).html'>Matsugasaki Station (Kyoto Prefecture)</a> (松ヶ崎駅 (京都府)) - Matsugasaki Station, located in Matsugasaki-Rokunotsubo-cho, Sakyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Karasuma Line, which is operated by Kyoto Municipal Subway.</p>
-<p><a href='railway/Yase-Hieizanguchi Station.html'>Yase-Hieizanguchi Station</a> (八瀬比叡山口駅) - Yase-Hieizanguchi Station, located in Sakyo Ward, Kyoto City, Kyoto Prefecture, is a terminal on the Eizan Main Line, which is operated by Eizan Electric Railway.</p>
-<p><a href='railway/Amino Station.html'>Amino Station</a> (網野駅) - Amino Station, located in Amino-cho, Tango City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Kitayama Station (Kyoto Prefecture).html'>Kitayama Station (Kyoto Prefecture)</a> (北山駅 (京都府)) - Kitayama Station, located in Kita Ward (Kyoto City), Kyoto City, Kyoto Prefecture, is a stop on the Karasuma Line, which is operated by Kyoto Municipal Subway.</p>
-<p><a href='railway/Kokusaikaikan Station.html'>Kokusaikaikan Station</a> (国際会館駅) - Kokusaikaikan Station, located in Iwakura, Sakyo Ward, Kyoto, City Kyoto Prefecture, is a terminal on the Karasuma Line, which is operated by Kyoto Municipal Subway.</p>
-<p><a href='railway/Fushimi-inari Station.html'>Fushimi-inari Station</a> (伏見稲荷駅) - Fushimi-inari Station, located in Fukakusa-ichinotsubo-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line, which is operated by Keihan Electric Railway.</p>
-<p><a href='railway/Shisho Station.html'>Shisho Station</a> (四所駅) - Shisho Station, located in Kamifukui, Maizuru City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Shinonome Station (Kyoto Prefecture).html'>Shinonome Station (Kyoto Prefecture)</a> (東雲駅 (京都府)) - Shinonome Station, located in Mizuma, Maizuru City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Tango-Kanzaki Station.html'>Tango-Kanzaki Station</a> (丹後神崎駅) - Tango-Kanzaki Station, located in Yugo, Maizuru City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Kitsu-onsen Station.html'>Kitsu-onsen Station</a> (木津温泉駅) - Kitsu-onsen (hot spring) Station, located in Kitsu, Amino-cho, Kyotango City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Tango-Kanno Station.html'>Tango-Kanno Station</a> (丹後神野駅) - Tango-Kanno Station, located in Urake Kumihama-cho, Kyotango City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Keihan-Yamashina Station.html'>Keihan-Yamashina Station</a> (京阪山科駅) - Keihan-Yamashina Station, located in Anshu-sajiki-cho, Yamashina Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keishin Line, which is operated by Keihan Electric Railway.</p>
-<p><a href='railway/Tango-Yura Station.html'>Tango-Yura Station</a> (丹後由良駅) - Tango-Yura Station, located in Yura, Miyazu City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/The Kyoto City bus.html'>The Kyoto City bus</a> (京都市営バス) - The Kyoto City bus is operated by Kyoto City, Kyoto Prefecture.</p>
-<p><a href='railway/Uji Station (Keihan).html'>Uji Station (Keihan)</a> (宇治駅 (京阪)) - Uji Station, located in Uji City, Kyoto Prefecture, is a stop on the Keihan Uji Line, which is operated by Keihan Electric Railway.</p>
-<p><a href='railway/Momoyama-Minamiguchi Station.html'>Momoyama-Minamiguchi Station</a> (桃山南口駅) - Momoyama-Minamiguchi Station, located in Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Uji Line, which is operated by Keihan Electric Railway.</p>
-<p><a href='railway/Fukakusa Station.html'>Fukakusa Station</a> (深草駅) - Fukakusa Station, located in Fukakusa-kenasa-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line, which is operated by Keihan Electric Railway.</p>
-<p><a href='railway/JR Katsura Station.html'>JR Katsura Station</a> (JR桂駅) - JR Katsura Station is a facility that is to be opened in Kuze-takada-cho, Minami Ward (Kyoto City), Kyoto City, Kyoto Prefecture, on the Tokaido Main Line (JR Kyoto Line), which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Matsuiyamate Station.html'>Matsuiyamate Station</a> (松井山手駅) - Matsuiyamate Station, located in Yamate-Chuo, Kyotanabe City, Kyoto Prefecture, is a stop on the Katamachi Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Matsunoodera Station.html'>Matsunoodera Station</a> (松尾寺駅) - Matsunoodera Station is a railway facility on the Obama Line of the West Japan Railway Company (JR West), and is located in Aza-Kissaka-mubanchi, Maizuru City, Kyoto Prefecture.</p>
+<p><a href='railway/Matsuo Station (Kyoto Prefecture).html'>Matsuo Station (Kyoto Prefecture)</a> (松尾駅 (京都府)) - Matsuo Station, located in Arashiyama Miyanomae-cho, Nishikyo Ward, Kyoto City, is a stop on the Hankyu Arashiyama Line, which is operated by the Hankyu Railway.</p>
 <p><a href='railway/Mimurodo Station.html'>Mimurodo Station</a> (三室戸駅) - Mimurodo Station, located in Todo-deguchi, Uji City, Kyoto Prefecture, is a stop on the Keihan Uji Line, which is operated by Keihan Electric Railway.</p>
-<p><a href='railway/Tango Explorer.html'>Tango Explorer</a> (タンゴエクスプローラー) - Tango Explorer is the nickname for Kitakinki Tango Railway KTR Type 001 diesel multiple unit and also the nickname for the limited express trains that Kitakinki Tango Railway and West Japan Railway Company run using diesel railcars.</p>
-<p><a href='railway/Shinomiya Station.html'>Shinomiya Station</a> (四宮駅) - Shinomiya Station, located in Shinomiya-donogo-cho, Yamashina Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Keishin Line, which is operated by Keihan Electric Railway.</p>
-<p><a href='railway/Shijo-omiya Station.html'>Shijo-omiya Station</a> (四条大宮駅) - Shijo-omiya Station, located in Shijo-omiya-cho, Shimogyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Nishioji-Sanjo Station.html'>Nishioji-Sanjo Station</a> (西大路三条駅) - Nishioji-Sanjo Station, located in Saiin-imayamada-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Kaikonoyashiro Station.html'>Kaikonoyashiro Station</a> (蚕ノ社駅) - Kaikonoyashiro Station, located in Uzumasa-morigamae-cho, Ukyo Ward, Kyoto City, is a stop on the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Uzumasa-Koryuji Station.html'>Uzumasa-Koryuji Station</a> (太秦広隆寺駅) - Uzumasa-Koryuji Station, located in Uzumasa-kumiishi-cho, Ukyo Ward, Kyoto City, is a stop on the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Katabiranotsuji Station.html'>Katabiranotsuji Station</a> (帷子ノ辻駅) - Katabiranotsuji Station, located in Uzumasa-katabiranotsuji-cho, Ukyo Ward, Kyoto City, is a facility of Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Arisugawa Station.html'>Arisugawa Station</a> (有栖川駅) - Arisugawa Station, located in Sagano-kaminoki-cho, Ukyo Ward, Kyoto City, is a stop on the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Sumizome Station.html'>Sumizome Station</a> (墨染駅) - Sumizome Station, located in Fukakusa-kitashin-machi, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line, which is operated by Keihan Electric Railway.</p>
-<p><a href='railway/Fujinomori Station.html'>Fujinomori Station</a> (藤森駅) - Fujinomori Station, located in Fukakusa-kitoro-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line, which is operated by Keihan Electric Railway.</p>
-<p><a href='railway/Kyoto Bus Co., Ltd..html'>Kyoto Bus Co., Ltd.</a> (京都バス) - Kyoto Bus Co., Ltd., whose head office is located in Ukyo Ward, Kyoto City, is a route bus operator belonging to the Keihan Electric Railway Group.</p>
-<p><a href='railway/Kurumazakijinja Station.html'>Kurumazakijinja Station</a> (車折神社駅) - Kurumazakijinja Station, located in Saga-nakamata-cho, Ukyo Ward, Kyoto City, is a railway facility of the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Ishida Station (Kyoto Prefecture).html'>Ishida Station (Kyoto Prefecture)</a> (石田駅 (京都府)) - Ishida Station, located in Ishida-morihigashi-cho, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a railway facility of the Tozai Line of the Kyoto Municipal Subway.</p>
-<p><a href='railway/Shimo-Amazu Station.html'>Shimo-Amazu Station</a> (下天津駅) - Shimo-Amazu Station, located in Fukuchiyama City, Kyoto Prefecture, is a railway facility on the Miyafuku Line of the Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Randen-Saga Station.html'>Randen-Saga Station</a> (嵐電嵯峨駅) - Randen-Saga Station, located in Saga-tenryuji-imahori-cho, Ukyo Ward, Kyoto City, is a railway facility of the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Rokuoin Station.html'>Rokuoin Station</a> (鹿王院駅) - Rokuoin Station, located in Saga Kitabori-cho, Ukyo Ward, Kyoto City, is a railroad facility on the Arashiyama Main Line of Keifuku Electric Railroad.</p>
-<p><a href='railway/Arashiyama Station (Keifuku Electric Railroad Co., Ltd.).html'>Arashiyama Station (Keifuku Electric Railroad Co., Ltd.)</a> (嵐山駅 (京福電気鉄道)) - Arashiyama Station, located in Saga-tenryuji-tsukurimichii-cho, Ukyo Ward, Kyoto City, is a railway facility of the Arashiyama Main Line operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Nodagawa Station.html'>Nodagawa Station</a> (野田川駅) - Nodagawa Station, located in Koaza Kakiuchi Aza Shimoyamada, Yosano-cho, Yosano-gun, Kyoto Prefecture, is a railway facility of the Miyazu Line operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Kumihama Station.html'>Kumihama Station</a> (久美浜駅) - Kumihama Station, located in Kumihama-cho, Kyotango City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by the Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Kurama Station.html'>Kurama Station</a> (鞍馬駅) - Kurama Station, located in Kurama Honmachi, Sakyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Kurama Line, which is operated by Eizan Electric Railway.</p>
-<p><a href='railway/Araga-Kashinokidai Station.html'>Araga-Kashinokidai Station</a> (荒河かしの木台駅) - Araga-Kashinokidai Station, located in Fukuchiyama City, Kyoto Prefecture, is a railroad facility on the Miyafuku Line of the Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Sanmon Station.html'>Sanmon Station</a> (山門駅) - Sanmon Station is a stop on the Mount Kurama Cable Railway, which is operated by Kurama-dera Temple, a religious corporation located in Sakyo Ward, Kyoto City, Kyoto Prefecture.</p>
-<p><a href='railway/Tahoto Station.html'>Tahoto Station</a> (多宝塔駅) - Tahoto Station is a stop on the Mount Kurama Cable Railway operated by Kurama-dera Temple, a religious corporation located in Sakyo Ward, Kyoto City, Kyoto Prefecture.</p>
-<p><a href='railway/Cable Sakamoto Station.html'>Cable Sakamoto Station</a> (ケーブル坂本駅) - Cable Sakamoto Station, located in Sakamoto-honmachi, Otsu City, Shiga Prefecture, is a stop on the Hieizan Railway Line (Sakamoto Cable) operated by the Hieizan Railway.</p>
-<p><a href='railway/Iwatakiguchi Station.html'>Iwatakiguchi Station</a> (岩滝口駅) - Iwatakiguchi Station, located in Suzu, Miyazu City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by the Kitakinki Tango Railway.</p>
-<p><a href='railway/Tango-Omiya Station.html'>Tango-Omiya Station</a> (丹後大宮駅) - Tango-Omiya Station, located in Kuchiono, Omiya-cho, Kyotango City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by the Kitakinki Tango Railway.</p>
-<p><a href='railway/Nishi-Kizu Station.html'>Nishi-Kizu Station</a> (西木津駅) - Nishi-Kizu Station, located at 55 Saganaka Kawanoshiri, Kizugawa City, Kyoto Prefecture, is a stop on the Katamachi Line, which is operated by the West Japan Railway Company (JR West).</p>
-<p><a href='railway/Oe Station (Kyoto Prefecture).html'>Oe Station (Kyoto Prefecture)</a> (大江駅 (京都府)) - Oe Station, located in Oe-cho of Fukuchiyama City, Kyoto Prefecture, is a railroad station on the Miyafuku Line, which is operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Narutaki Station.html'>Narutaki Station</a> (鳴滝駅) - Narutaki Station, located in Narutaki Sagasono-cho, Ukyo Ward, Kyoto City, is a railroad facility on the Kitano Line of the Keifuku Electric Railroad.</p>
-<p><a href='railway/Utano Station.html'>Utano Station</a> (宇多野駅) - Utano Station, located in Nagao-cho, Utano, Ukyo Ward, Kyoto City, is a railway facility of the Kitano Line, which is operated by Keifuku Electric Railroad.</p>
-<p><a href='railway/Omuro-Ninnaji Station.html'>Omuro-Ninnaji Station</a> (御室仁和寺駅) - Omuro-Ninnaji Station, located in Omuro Komatsuno-cho, Ukyo Ward, Kyoto City, is a stop on the Kitano Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Myoshinji Station.html'>Myoshinji Station</a> (妙心寺駅) - Myoshinji Station, located in Hanazono Tenjugaoka-cho, Ukyo Ward, Kyoto City, is a stop on the Kitano Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Tojiin Station.html'>Tojiin Station</a> (等持院駅) - Tojiin Station, located in Tojiinnishi-machi, Kita Ward, Kyoto City, is a stop on the Kitano Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Kitano-Hakubaicho Station.html'>Kitano-Hakubaicho Station</a> (北野白梅町駅) - Kitano-Hakubaicho Station, located in Shimohakubai-cho, Kita Ward (Kyoto City), Kyoto City, is a stop on the Kitano Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Kibuneguchi Station.html'>Kibuneguchi Station</a> (貴船口駅) - Kibuneguchi Station, located in Kurama Kibune-cho, Sakyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Kurama Line, which is operated by Eizan Electric Railway.</p>
-<p><a href='railway/Hachimanmae Station (Kyoto Prefecture).html'>Hachimanmae Station (Kyoto Prefecture)</a> (八幡前駅 (京都府)) - Hachimanmae Station, located in the Sakyo ward of Kyoto City, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
-<p><a href='railway/Iwakura Station (Kyoto Prefecture).html'>Iwakura Station (Kyoto Prefecture)</a> (岩倉駅 (京都府)) - Located in the Sakyo ward of Kyoto City, Iwakura Station is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
-<p><a href='railway/Kino Station.html'>Kino Station</a> (木野駅) - Kino Station, located in the Sakyo ward of Kyoto City, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
-<p><a href='railway/Kyoto Seikadaimae Station.html'>Kyoto Seikadaimae Station</a> (京都精華大前駅) - Kyoto Seikadaimae Station, located in the Sakyo ward of Kyoto City, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
-<p><a href='railway/Nikenchaya Station (Kyoto Prefecture).html'>Nikenchaya Station (Kyoto Prefecture)</a> (二軒茶屋駅 (京都府)) - Nikenchaya Station, located in the Sakyo ward of Kyoto City, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
-<p><a href='railway/Ichihara Station.html'>Ichihara Station</a> (市原駅) - Ichihara Station, located in the Sakyo ward of Kyoto City, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
-<p><a href='railway/Ninose Station.html'>Ninose Station</a> (二ノ瀬駅) - Ninose Station, located in the Sakyo ward of Kyoto City, Kyoto Prefecture, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
-<p><a href='railway/Takaragaike Station.html'>Takaragaike Station</a> (宝ヶ池駅) - Takaragaike Station, located in the Sakyo ward of Kyoto City, is a stop on the Eizan Main Line and the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
+<p><a href='railway/Mineyama Station.html'>Mineyama Station</a> (峰山駅) - Mineyama Station, located in Mineyama-cho of Tango City, Kyoto Prefecture, is a stop on the Miyazu Line of the Kitakinki Tango Railway.</p>
+<p><a href='railway/Misasagi Station.html'>Misasagi Station</a> (御陵駅) - Misasagi Station is a railway facility located in the Yamashina Ward, Kyoto City, which is jointly operated by the Kyoto Municipal Transportation Bureau and the Keihan Electric Railway.</p>
 <p><a href='railway/Miyakehachiman Station.html'>Miyakehachiman Station</a> (三宅八幡駅) - Miyakehachiman Station, located in the Sakyo ward of Kyoto City, Kyoto Prefecture, is a stop on the Eizan Main Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
-<p><a href='railway/Nishioji-oike Station.html'>Nishioji-oike Station</a> (西大路御池駅) - Nishioji-oike Station, located in the Nakagyo ward of Kyoto City, Kyoto Prefecture, is a stop on the Tozai Line of the Kyoto Municipal Subway.</p>
-<p><a href='railway/Uzumasa-tenjingawa Station.html'>Uzumasa-tenjingawa Station</a> (太秦天神川駅) - Uzumasa-tenjingawa Station, located in the Ukyo ward of Kyoto City, Kyoto Prefecture, is the last stop on the Tozai Line of the Kyoto Municipal Subway and the first subway station built in Ukyo Ward.</p>
-<p><a href='railway/Futamata Station.html'>Futamata Station</a> (二俣駅) - Futamata station, located in Futamata (Kyoto Prefecture), Oe-cho, Fukuchiyama City, Kyoto Prefecture, is a railroad station on the Miyafuku Line, which is operated by Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Oeyamaguchi-naiku Station.html'>Oeyamaguchi-naiku Station</a> (大江山口内宮駅) - Oeyamaguchi-naiku Station, located in Naiku, Oe-cho (Kyoto Prefecture), Fukuchiyama City, Kyoto Prefecture, is a railway station on the Miyafuku Line of the Kitakinki Tango Railway (KTR).</p>
-<p><a href='railway/Kameoka City Community Bus.html'>Kameoka City Community Bus</a> (亀岡市コミュニティバス) - Kameoka City Community Bus is a community bus that operates in Kameoka City, Kyoto Prefecture.</p>
-<p><a href='railway/Rakusai Bus Terminal.html'>Rakusai Bus Terminal</a> (洛西バスターミナル) - Rakusai Bus Terminal is a bus terminal in Nishikyo Ward, Kyoto City, Kyoto Prefecture.</p>
-<p><a href='railway/Keihan Otsu Line.html'>Keihan Otsu Line</a> (京阪大津線) - The Otsu Line refers to two lines: Keihan Keishin Line managed by the Otsu Railway Business Department of Keihan Electric Railway connecting Misasagi Station in Yamashina ward, Kyoto City, Kyoto Prefecture and Hamaotsu Station in the central part of Otsu City, Shiga Prefecture; and Keihan Ishiyama-sakamoto Main Line connecting Sakamoto Station (Shiga Prefecture) in the western part of Otsu City, Shiga Prefecture, and Ishiyamadera Station.</p>
-<p><a href='railway/Kyoto Uji Rakunan One-Day Ticket.html'>Kyoto Uji Rakunan One-Day Ticket</a> (京都 宇治・洛南1dayチケット) - The "Kyoto Uji Rakunan One-Day Ticket" electronic card, which allows unlimited rides and comes with coupons offering various discounts and special benefits as part of the package, is sold jointly by the Osaka Municipal Transportation Bureau, Keihan Electric Railway (Keihan), Semboku Rapid Railway (Semboku Rapid) of Osaka Prefectural Urban Development Co., Ltd., and Nankai Electric Railway (Nankai).</p>
-<p><a href='railway/Kizugawa Station (Kyoto Prefecture).html'>Kizugawa Station (Kyoto Prefecture)</a> (木津川駅 (京都府)) - Kizugawa Station was a temporary station that once existed on the Nara Electric Railway Line (later the Kintetsu Kyoto Line) in Kyotanabe City (Tanabe City at that time), Kyoto Prefecture.</p>
-<p><a href='railway/Higashiyama-sanjo Station.html'>Higashiyama-sanjo Station</a> (東山三条駅) - Higashiyama-sanjo Station, located in Furukawa-cho, Sanjoyamato-oji Kudaru, Higashiyama Ward, Kyoto City, was a stop on the Keihan Keishin Line operated by the Keihan Electric Railway Co., Ltd.</p>
-<p><a href='railway/Keage Station (Keihan).html'>Keage Station (Keihan)</a> (蹴上駅 (京阪)) - Keage Station, located in Keage, Higashiyama Ward, Kyoto City, was a stop on the Keihan Keishin Line operated by the Keihan Electric Railway.</p>
-<p><a href='railway/Kitano Station (Kyoto Prefecture).html'>Kitano Station (Kyoto Prefecture)</a> (北野駅 (京都府)) - Kitano Station, located in Kyoto City, Kyoto Prefecture, was a stop on the Kitano Line operated by the Keifuku Electric Railroad Co., Ltd.</p>
-<p><a href='railway/Keifuku Electric Railroad.html'>Keifuku Electric Railroad</a> (京福電気鉄道) - Keifuku Electric Railroad Co., Ltd. is a company that operates a tramway business (electric tramway), cable cars and cableways in Kyoto City.</p>
-<p><a href='railway/Ranzan-Tenjingawa Station.html'>Ranzan-Tenjingawa Station</a> (嵐電天神川駅) - Ranzan-Tenjingawa Station, located in Uzumasa-shimokeibu-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Arashiyama Main Line, which is operated by the Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Miyamaki Station.html'>Miyamaki Station</a> (三山木駅) - Miyamaki Station, located in Kyotanabe City of Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
+<p><a href='railway/Miyazu Station.html'>Miyazu Station</a> (宮津駅) - Miyazu Station, located in Aza-Tsuruga of Miyazu City, Kyoto Prefecture, is a stop on the Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Momoyama Goryo-mae Station.html'>Momoyama Goryo-mae Station</a> (桃山御陵前駅) - Momoyama Goryo-mae Station, located in Kannonji-cho of Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
+<p><a href='railway/Momoyama Station.html'>Momoyama Station</a> (桃山駅) - Momoyama Station, located at 34 Nabeshima, Momoyama-cho, Fushimi ward of Kyoto City, Kyoto Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
+<p><a href='railway/Momoyama-Minamiguchi Station.html'>Momoyama-Minamiguchi Station</a> (桃山南口駅) - Momoyama-Minamiguchi Station, located in Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Uji Line, which is operated by Keihan Electric Railway.</p>
+<p><a href='railway/Monju (train).html'>Monju (train)</a> (文殊 (列車)) - "Monju" is the name of a limited express train operated by West Japan Railway Company (JR West), which runs in the section between Shin-Osaka Station and Amanohashidate Station by way of the JR West Fukuchiyama Line, Kitakinki Tango Railway Corporation (KTR) Miyafuku Line and KTR Miyazu Line.</p>
+<p><a href='railway/Mototanaka Station.html'>Mototanaka Station</a> (元田中駅) - Mototanaka Station, located in Sakyo Ward, Kyoto City, is a railway stop on the Eizan Main Line, which is operated by the Eizan Electric Railway Co., Ltd. (Eiden).</p>
+<p><a href='railway/Mount Kurama Cable Railway.html'>Mount Kurama Cable Railway</a> (鞍馬山鋼索鉄道) - The Mount Kurama Cable Railway is a funicular line operated for the convenience of visitors to the area by Kurama-dera Temple, which is a religious corporation and a famous temple located in the Rakuhoku area of Sakyo Ward, Kyoto City, Kyoto Prefecture.</p>
+<p><a href='railway/Mukaijima Station.html'>Mukaijima Station</a> (向島駅) - Mukaijima Station, located in Mukaijima Higashi-Jouke, in the Fushimi ward of Kyoto City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
+<p><a href='railway/Mukomachi Station.html'>Mukomachi Station</a> (向日町駅) - Mukomachi Station, located in Kuguso, Terado-cho, Muko City, Kyoto Prefecture, is a railway facility of the Tokaido Main Line (JR Kyoto Line), which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Myoshinji Station.html'>Myoshinji Station</a> (妙心寺駅) - Myoshinji Station, located in Hanazono Tenjugaoka-cho, Ukyo Ward, Kyoto City, is a stop on the Kitano Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
+
+</div>
+</div>
+<div class="section" id="n">
+<div class="container">
+<h2>N</h2>
+<p><a href='railway/Nagaoka Station.html'>Nagaoka Station</a> (長岡駅) - Nagaoka Station, a railway station of the East Japan Railway Company (JR East), is located in Jonai-cho, Nagaoka City, Niigata Prefecture.</p>
 <p><a href='railway/Nagaokakyo Happy Bus.html'>Nagaokakyo Happy Bus</a> (長岡京はっぴぃバス) - The Nagaokakyo Happy Bus is a community bus operated by Nagaokakyo City in Kyoto Prefecture.</p>
-<p><a href='railway/Transportation in Japan.html'>Transportation in Japan</a> (日本の交通) - This section, "Transportation in Japan," describes the history and conditions of transportation in Japan.</p>
-<p><a href='railway/Railways in Japan.html'>Railways in Japan</a> (日本の鉄道) - Railways in Japan include all railways and rail tracks (railway) in Japan.</p>
-<p><a href='railway/Taxis in Japan.html'>Taxis in Japan</a> (日本のタクシー) - This section, "Taxis in Japan" describes the conditions and situations of taxis in Japan.</p>
-<p><a href='railway/Shinkansen (a term related to bullet trains).html'>Shinkansen (a term related to bullet trains)</a> (新幹線) - Following the Tokaido Shinkansen that the former Japan National Railways (JNR) started operation on October 1, 1964, each of the JR group companies has operated its own high-speed railway system, and the term Shinkansen is used for indicating the railways for high-speed operations, the train-cars, and related railway-based transportation systems as a whole.</p>
-<p><a href='railway/Yamatoji Line.html'>Yamatoji Line</a> (大和路線) - Yamatoji Line is the nickname for the electrified section of rail between Kamo Station (Kyoto Prefecture) and JR Nanba Station that runs on the Kansai Main Line of the West Japan Railway Company (JR West Japan).</p>
-<p><a href='railway/Katamachi Line.html'>Katamachi Line</a> (片町線) - Katamachi Line refers to the railway (trunk line) of West Japan Railway Company (JR West Japan) between Kizu Station (Kyoto Prefecture) in Kizu City, Kyoto Prefecture and Kyobashi Station (Osaka Prefecture) in Osaka City, Osaka Prefecture.</p>
-<p><a href='railway/Kansai Main Line.html'>Kansai Main Line</a> (関西本線) - The Kansai Main Line is a railway line (main line) running from Nagoya Station, located in Nakamura Ward, Nagoya City, Aichi Prefecture, to the JR Namba Station, located in Naniwa Ward, Osaka City, Osaka Prefecture, via the Kameyama Station (Mie Prefecture) and the Nara Station.</p>
-<p><a href='railway/JR Obama Line.html'>JR Obama Line</a> (小浜線) - Obama Line refers to the railway (local line) in West Japan Railway Company (JR West) from Suruga station in Suruga city, Fukui prefecture to Higashi-Maizuru station in Maizuru city, Kyoto prefecture.</p>
-<p><a href='railway/Kaya Tetsudo (Kaya Railway).html'>"Kaya Tetsudo" (Kaya Railway)</a> (加悦鉄道) - "Kaya Tetsudo" refers to the railway which connected Tango Yamada Station (the present Nodagawa Station of Kitakinki Tango Railway Miyazu Line) located at Nodagawa Town (the present Yosano Town), Yosa County, Kyoto Prefecture, with Kaya Station located at Kaya Town (the present Yosano Town) in the Yosa County.</p>
-<p><a href='railway/Hokutan Railway.html'>Hokutan Railway</a> (北丹鉄道) - Hokutan Railway is a railway operator which operated a line running northward from the Fukuchiyama Station in Fukichiyama City, Kyoto Prefecture to Komori Station.</p>
-<p><a href='railway/Kokutetsu (Japan National Railways (JNR)) Steam Locomotive Type 120.html'>Kokutetsu (Japan National Railways (JNR)) Steam Locomotive Type 120</a> (国鉄120形蒸気機関車) - Type 120 was a steam locomotive that was imported from U.K. in 1874 when a railway began operation between Osaka and Kobe.</p>
-<p><a href='railway/Keihanshin Local Line.html'>Keihanshin Local Line</a> (京阪神緩行線) - Keihanshin Local Line is a common name that has been used since the era of Japan National Railway (JNR) for the local line running, as a part of Urban Network of West Japan Railway Company (JR West) in the metropolitan suburban area, between the Kyoto Station and Kobe Station (Hyogo Prefecture) of the Tokaido Main Line as well as between the Kobe Station and Nishi-akashi Station of the Sanyo Main Line</p>
-<p><a href='railway/Atagoyama Railway.html'>Atagoyama Railway</a> (愛宕山鉄道) - Atagoyama Railway ("Atagoyama Tetsudo" in Japanese) was a railroad company that, before the war, managed a flat railway line that ran from Arashiyama Station (operated by Keifuku Electric Railway and located in present-day Ukyo Ward, Kyoto City, Kyoto Prefecture) to Kiyotaki Station, as well as a cable car line (funicular railway) that ran from Kiyotakigawa Station to Atago Station.</p>
-<p><a href='railway/Yanagidani Mountain Railway.html'>Yanagidani Mountain Railway</a> (柳谷登山鉄道) - Yanagidani Mountain Railway ("Yanagidani Tozan Tetsudo" in Japanese) was a cable car line, which was intended to run near Yanagidani Kannon (Yokoku-ji Temple) in the present day Nagaokakyo City.</p>
-<p><a href='railway/Yawata - Tanabe Bus Route.html'>Yawata - Tanabe Bus Route</a> (八幡田辺線) - The Yawata - Tanabe Bus Route is the number of bus routes operated by Keihan Bus Co. Ltd., including several principal bus routes that depart from Yawata City Station (located in Yawata City, Kyoto Prefecture), Shin-Tanabe Station, and Kyotanabe Station (located in Kyotanabe City).</p>
-<p><a href='railway/Heianjingu-mae Station.html'>Heianjingu-mae Station</a> (平安神宮前駅) - Heianjingu-mae Station was a railway station located in Kyoto City's Higashiyama Ward.</p>
-<p><a href='railway/Okazaki-michi Station.html'>Okazaki-michi Station</a> (岡崎道駅) - Okazaki-michi Station was a railway station on the Keihan Keishin Line of the Keihan Railway Company.</p>
-<p><a href='railway/Uji-Yodo Route (bus route between Uji City and Fushimi Ward of Kyoto City).html'>Uji-Yodo Route (bus route between Uji City and Fushimi Ward of Kyoto City)</a> (宇治淀線) - The Uji-Yodo Bus Route connects Uji City in Kyoto Prefecture and Fushimi Ward in Kyoto City.</p>
+<p><a href='railway/Nagaokakyo Station.html'>Nagaokakyo Station</a> (長岡京駅) - Nagaokakyo Station, located at 1-chome Kotari, Nagaokakyo City, Kyoto Prefecture, is a railway facility of the Tokaido Main Line (JR Kyoto Line), which is operated by West Japan Railway Company (JR West).</p>
+<p><a href='railway/Nagaokatenjin Station.html'>Nagaokatenjin Station</a> (長岡天神駅) - Nagaokatenjin Station, located in Nagaokakyo City, Kyoto Prefecture, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
+<p><a href='railway/Nagitsuji Station.html'>Nagitsuji Station</a> (椥辻駅) - Nagitsuji Station, located in Nagitsuji Kusakaido-cho of the Yamashina Ward, Kyoto City, is a railroad facility on the Kyoto Municipal Subway Tozai Line.</p>
+<p><a href='railway/Namikawa Station.html'>Namikawa Station</a> (並河駅) - Namikawa Station, located in Tsuchida, Oi-cho of Kameoka City, Kyoto Prefecture, is a stop on the San'in Main Line (Sagano Line) of West Japan Railway Company (JR West).</p>
 <p><a href='railway/Nara Railway.html'>Nara Railway</a> (奈良鉄道) - Nara Railway was a Japanese private railway company that constructed and managed the entire current Nara Line and over half of the current Sakurai Line.</p>
-<p><a href='railway/Kurama Denki Tetsudo (Kurama Electric Railway).html'>Kurama Denki Tetsudo (Kurama Electric Railway)</a> (鞍馬電気鉄道) - Kurama Denki Tetsudo Kabushiki Kaisha (Kurama Electric Railway Company Limited) was a railway company that operated a railway line from Yamabana (current Takaragaike Station) in present Sakyo Ward, Kyoto City, to Kurama Station.</p>
-<p><a href='railway/History of Steam Locomotives of Japan.html'>History of Steam Locomotives of Japan</a> (日本の蒸気機関車史) - We would like to describe the history of steam locomotives in Japan.</p>
+<p><a href='railway/Narutaki Station.html'>Narutaki Station</a> (鳴滝駅) - Narutaki Station, located in Narutaki Sagasono-cho, Ukyo Ward, Kyoto City, is a railroad facility on the Kitano Line of the Keifuku Electric Railroad.</p>
+<p><a href='railway/Nijo Station.html'>Nijo Station</a> (二条駅) - Two Nijo stations are located in Nishinokyo Toganoo-cho, Nakagyo Ward, Kyoto City, Kyoto Prefecture, one being Nijo Station of the West Japan Railway Company (JR West) and the other being Nijo Station of the Kyoto Municipal Transportation Bureau.</p>
+<p><a href='railway/Nijojo-mae Station.html'>Nijojo-mae Station</a> (二条城前駅) - Nijojo-mae station, located in Nijojo-cho, Nakagyo Ward, Kyoto City, is a stop on the Tozai Line, which is operated by Kyoto Municipal Subway.</p>
+<p><a href='railway/Nikenchaya Station (Kyoto Prefecture).html'>Nikenchaya Station (Kyoto Prefecture)</a> (二軒茶屋駅 (京都府)) - Nikenchaya Station, located in the Sakyo ward of Kyoto City, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
+<p><a href='railway/Ninose Station.html'>Ninose Station</a> (二ノ瀬駅) - Ninose Station, located in the Sakyo ward of Kyoto City, Kyoto Prefecture, is a stop on the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
+<p><a href='railway/Nishi-Kizu Station.html'>Nishi-Kizu Station</a> (西木津駅) - Nishi-Kizu Station, located at 55 Saganaka Kawanoshiri, Kizugawa City, Kyoto Prefecture, is a stop on the Katamachi Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Nishi-Maizuru Station.html'>Nishi-Maizuru Station</a> (西舞鶴駅) - Located in 213-1 Aza Komoike-nishi, Isazu, Maizuru City, Kyoto Prefecture, Nishi-Maizuru Station is a station owned by West Japan Railway Company (JR West) and Kitakinki Tango Railway Corporation (KTR).</p>
+<p><a href='railway/Nishikyogoku Station.html'>Nishikyogoku Station</a> (西京極駅) - Nishikyogoku Station, located in Ukyo Ward, Kyoto City, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
+<p><a href='railway/Nishimuko Station.html'>Nishimuko Station</a> (西向日駅) - Nishimuko Station, located in Muko City, Kyoto Prefecture, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
+<p><a href='railway/Nishioji Station.html'>Nishioji Station</a> (西大路駅) - Nishioji Station, located in Karahashi-nishi-hiragaki-cho, Minami Ward, Kyoto City, Kyoto Prefecture, is a railway station of the Tokaido Main Line (JR Kyoto Line) that is operated by West Japan Railway Company (JR West).</p>
+<p><a href='railway/Nishioji-oike Station.html'>Nishioji-oike Station</a> (西大路御池駅) - Nishioji-oike Station, located in the Nakagyo ward of Kyoto City, Kyoto Prefecture, is a stop on the Tozai Line of the Kyoto Municipal Subway.</p>
+<p><a href='railway/Nishioji-Sanjo Station.html'>Nishioji-Sanjo Station</a> (西大路三条駅) - Nishioji-Sanjo Station, located in Saiin-imayamada-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Nodagawa Station.html'>Nodagawa Station</a> (野田川駅) - Nodagawa Station, located in Koaza Kakiuchi Aza Shimoyamada, Yosano-cho, Yosano-gun, Kyoto Prefecture, is a railway facility of the Miyazu Line operated by Kitakinki Tango Railway (KTR).</p>
+
+</div>
+</div>
+<div class="section" id="o">
+<div class="container">
+<h2>O</h2>
+<p><a href='railway/Obaku Station.html'>Obaku Station</a> (黄檗駅) - Obaku Station, located in Uji City of Kyoto Prefecture, is a stop on the Keihan Electric Railway and West Japan Railway Company (JR West) lines.</p>
+<p><a href='railway/Oe Kokomae Station.html'>Oe Kokomae Station</a> (大江高校前駅) - Oe Kokomae Station, located at Kanaya, Oe-cho (Kyoto Prefecture), Fukuchiyama City, Kyoto Prefecture, is a railroad facility on the Miyafuku Line which is operated by Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Oe Station (Kyoto Prefecture).html'>Oe Station (Kyoto Prefecture)</a> (大江駅 (京都府)) - Oe Station, located in Oe-cho of Fukuchiyama City, Kyoto Prefecture, is a railroad station on the Miyafuku Line, which is operated by Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Oeyamaguchi-naiku Station.html'>Oeyamaguchi-naiku Station</a> (大江山口内宮駅) - Oeyamaguchi-naiku Station, located in Naiku, Oe-cho (Kyoto Prefecture), Fukuchiyama City, Kyoto Prefecture, is a railway station on the Miyafuku Line of the Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Ogura Station.html'>Ogura Station</a> (小倉駅 (京都府)) - Ogura Station, located in Kaguraden, Ogura-cho, Uji City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line, which is operated by Kintetsu Corporation.</p>
+<p><a href='railway/Okawara Station (Kyoto Prefecture).html'>Okawara Station (Kyoto Prefecture)</a> (大河原駅 (京都府)) - Located in Kakegahara, Kita-okawara, Minami-yamashiro-mura, Soraku-gun, Kyoto Prefecture, Okawara Station is a stop on the Kansai Main Line, which is operated by the West Japan Railway Company.</p>
+<p><a href='railway/Okazaki-michi Station.html'>Okazaki-michi Station</a> (岡崎道駅) - Okazaki-michi Station was a railway station on the Keihan Keishin Line of the Keihan Railway Company.</p>
+<p><a href='railway/Okubo Station (Kyoto Prefecture).html'>Okubo Station (Kyoto Prefecture)</a> (大久保駅 (京都府)) - Okubo Station, located at 81-2 Nishiura, Hirono-cho, Uji City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of Kintetsu Railways.</p>
+<p><a href='railway/Omiya Station.html'>Omiya Station</a> (大宮駅) - Omiya Station (Omiya-eki)</p>
+<p><a href='railway/Omiya Station (Kyoto Prefecture).html'>Omiya Station (Kyoto Prefecture)</a> (大宮駅 (京都府)) - Omiya Station, located at 127, Nishiki Omiya-cho, Shijo-dori Omiya-nishi-iru, Nakagyo Ward, Kyoto City, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
+<p><a href='railway/Omuro-Ninnaji Station.html'>Omuro-Ninnaji Station</a> (御室仁和寺駅) - Omuro-Ninnaji Station, located in Omuro Komatsuno-cho, Ukyo Ward, Kyoto City, is a stop on the Kitano Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Ono Station (Kyoto Prefecture).html'>Ono Station (Kyoto Prefecture)</a> (小野駅 (京都府)) - Ono Station, located in Yamashina Ward, Kyoto City, is a railroad station on the Kyoto Municipal Subway Tozai Line.</p>
+<p><a href='railway/Osumi Station.html'>Osumi Station</a> (大住駅) - Osumi Station, located in Osumi Maruyama, Kyotanabe City, Kyoto Prefecture, is a stop on the Katamachi Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Oyamazaki Station.html'>Oyamazaki Station</a> (大山崎駅) - Oyamazaki Station, located in Oyamazaki-cho, Otokuni-gun, Kyoto Prefecture, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
+
+</div>
+</div>
+<div class="section" id="p">
+<div class="container">
+<h2>P</h2>
+
+</div>
+</div>
+<div class="section" id="q">
+<div class="container">
+<h2>Q</h2>
+
+</div>
+</div>
+<div class="section" id="r">
+<div class="container">
+<h2>R</h2>
+<p><a href='railway/Railways in Japan.html'>Railways in Japan</a> (日本の鉄道) - Railways in Japan include all railways and rail tracks (railway) in Japan.</p>
+<p><a href='railway/Rakusai Bus Terminal.html'>Rakusai Bus Terminal</a> (洛西バスターミナル) - Rakusai Bus Terminal is a bus terminal in Nishikyo Ward, Kyoto City, Kyoto Prefecture.</p>
+<p><a href='railway/Rakusaiguchi Station.html'>Rakusaiguchi Station</a> (洛西口駅) - Rakusaiguchi Station, located on the boundary between Nishikyo Ward, Kyoto City and Muko City, both located in Kyoto Prefecture, is a stop on the Hankyu Kyoto Line, which is operated by the Hankyu Railway.</p>
+<p><a href='railway/Randen-Saga Station.html'>Randen-Saga Station</a> (嵐電嵯峨駅) - Randen-Saga Station, located in Saga-tenryuji-imahori-cho, Ukyo Ward, Kyoto City, is a railway facility of the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Ranzan-Tenjingawa Station.html'>Ranzan-Tenjingawa Station</a> (嵐電天神川駅) - Ranzan-Tenjingawa Station, located in Uzumasa-shimokeibu-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Arashiyama Main Line, which is operated by the Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Rokujizo Station.html'>Rokujizo Station</a> (六地蔵駅) - Located in the Fushimi ward of Kyoto City and in Uji City of Kyoto Prefecture, Rokujizo Station is a stop on Keihan Electric Railway, West Japan Railway Company (JR West) and Kyoto Municipal Subway lines.</p>
+<p><a href='railway/Rokuoin Station.html'>Rokuoin Station</a> (鹿王院駅) - Rokuoin Station, located in Saga Kitabori-cho, Ukyo Ward, Kyoto City, is a railroad facility on the Arashiyama Main Line of Keifuku Electric Railroad.</p>
+
+</div>
+</div>
+<div class="section" id="s">
+<div class="container">
+<h2>S</h2>
+<p><a href='railway/Saga Torokko Station.html'>Saga Torokko Station</a> (トロッコ嵯峨駅) - Saga Torokko Station, located in Sakyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Saga Sightseeing Tram Line of Sagano Scenic Railway.</p>
+<p><a href='railway/Saga-Arashiyama Station.html'>Saga-Arashiyama Station</a> (嵯峨嵐山駅) - Saga-Arashiyama Station, located in Saga Tenryuji Kurumamichi-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Sanin Main Line (Sagano Line), which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Sagano Line.html'>Sagano Line</a> (嵯峨野線) - The Sagano Line (Sagano-sen) is the nickname for the portion of the San-in main line (JR West Japan Railway) between Kyoto Station and Sonobe Station.</p>
+<p><a href='railway/Sagano Scenic Railway.html'>Sagano Scenic Railway</a> (嵯峨野観光鉄道) - Sagano Scenic Railway is the company operating Torokko trams on the Sagano Sight-seeing Tram Line, which utilizes the old San-in Line in Kyoto City, Kyoto Prefecture.</p>
+<p><a href='railway/Sagano Scenic Railways Sagano Sightseeing Tram.html'>Sagano Scenic Railway's Sagano Sightseeing Tram</a> (嵯峨野観光鉄道嵯峨野観光線) - The Sagano Sightseeing Tram runs along the Sagano Scenic Railway between Saga Torokko Station (Ukyo Ward, Kyoto City, Kyoto Prefecture) and Kameoka Torokko Station (Kameoka City, Kyoto Prefecture).</p>
+<p><a href='railway/Saiin Station (Hankyu) Sai Station (Keifuku).html'>Saiin Station (Hankyu) /Sai Station (Keifuku)</a> (西院駅) - Located in Nishioji Shijo, Ukyo Ward, Kyoto City, Saiin Station and Sai Station are stops operated by the Hankyu Railway and the Keifuku Electric Railroad Co., Ltd., respectively.</p>
+<p><a href='railway/Sanin Main Line.html'>Sanin Main Line</a> (山陰本線) - The Sanin Main Line is a railway line (trunk line) operated by the West Japan Railway Company (JR West) that connects Kyoto Station, located in Shimogyo Ward of Kyoto City, Kyoto Prefecture, and Hatabu Station, located in Shimonoseki City, Yamaguchi Prefecture, via Fukuchiyama Station, Tottori Station, Yonago Station, Izumoshi Station and Nagatoshi Station (trains bound for Hatabu Station, however, run farther to Shimonoseki Station).</p>
+<p><a href='railway/Sanjo Station.html'>Sanjo Station</a> (三条駅 (京都府)) - Located in Goken-cho, Higashiyama Ward, Kyoto City, Kyoto Prefecture, Sanjo Station is a station owned by Keihan Electric Railway (KER).</p>
+<p><a href='railway/Sanmon Station.html'>Sanmon Station</a> (山門駅) - Sanmon Station is a stop on the Mount Kurama Cable Railway, which is operated by Kurama-dera Temple, a religious corporation located in Sakyo Ward, Kyoto City, Kyoto Prefecture.</p>
+<p><a href='railway/Shichijo Station.html'>Shichijo Station</a> (七条駅) - Located in Shimo-Horitsumecho, in the Higashiyama Ward of Kyoto City, Kyoto Prefecture, Shichijo Station is a stop on the Keihan Main Line of the Keihan Electric Railway.</p>
+<p><a href='railway/Shijo Station.html'>Shijo Station</a> (四条駅) - Shijo stations are located in Kyoto City, Kyoto Prefecture.</p>
+<p><a href='railway/Shijo Station (Keihan Electric Railway).html'>Shijo Station (Keihan Electric Railway)</a> (四条駅 (京阪)) - Shijo Station, located in 1 Miyagawasuji, Higashiyama Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line, which is operated by Keihan Electric Railway.</p>
+<p><a href='railway/Shijo Station (Kyoto Municipal Subway).html'>Shijo Station (Kyoto Municipal Subway)</a> (四条駅 (京都市営地下鉄)) - Shijo Station, located in Shimogyo Ward, Kyoto City, Kyoto Prefecture, is a stop of the Karasuma Line, which is operated by Kyoto Municipal Subway.</p>
+<p><a href='railway/Shijo-omiya Station.html'>Shijo-omiya Station</a> (四条大宮駅) - Shijo-omiya Station, located in Shijo-omiya-cho, Shimogyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Shimo-Amazu Station.html'>Shimo-Amazu Station</a> (下天津駅) - Shimo-Amazu Station, located in Fukuchiyama City, Kyoto Prefecture, is a railway facility on the Miyafuku Line of the Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Shimokoma Station.html'>Shimokoma Station</a> (下狛駅) - Shimokoma Station, located in Seika-cho, Sorakugun of Kyoto Prefecture, is a stop on the Katamachi Line of West Japan Railway Company (JR West).</p>
+<p><a href='railway/Shin-Hosono Station.html'>Shin-Hosono Station</a> (新祝園駅) - Located at Seika-cho, Soraku-gun in Kyoto Prefecture, Shin-Hosono Station is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
+<p><a href='railway/Shin-Tanabe Station.html'>Shin-Tanabe Station</a> (新田辺駅) - Shin-Tanabe Station, located in Kyotanabe City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of Kintetsu Railways.</p>
+<p><a href='railway/Shinden Station (Kyoto Prefecture).html'>Shinden Station (Kyoto Prefecture)</a> (新田駅 (京都府)) - Shinden Station, located in Higashi-ura, Hirono-cho of Uji City, Kyoto Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
+<p><a href='railway/Shinkansen (a term related to bullet trains).html'>Shinkansen (a term related to bullet trains)</a> (新幹線) - Following the Tokaido Shinkansen that the former Japan National Railways (JNR) started operation on October 1, 1964, each of the JR group companies has operated its own high-speed railway system, and the term Shinkansen is used for indicating the railways for high-speed operations, the train-cars, and related railway-based transportation systems as a whole.</p>
+<p><a href='railway/Shinkeihan Railway.html'>Shinkeihan Railway</a> (新京阪鉄道) - The Shinkeihan Railway was a company that owned lines in Kyoto and Osaka prefectures.</p>
+<p><a href='railway/Shinomiya Station.html'>Shinomiya Station</a> (四宮駅) - Shinomiya Station, located in Shinomiya-donogo-cho, Yamashina Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Keishin Line, which is operated by Keihan Electric Railway.</p>
+<p><a href='railway/Shinonome Station (Kyoto Prefecture).html'>Shinonome Station (Kyoto Prefecture)</a> (東雲駅 (京都府)) - Shinonome Station, located in Mizuma, Maizuru City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Shisho Station.html'>Shisho Station</a> (四所駅) - Shisho Station, located in Kamifukui, Maizuru City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Shugakuin Station.html'>Shugakuin Station</a> (修学院駅) - Shugakuin Station, located in Sakyo Ward, Kyoto City, is a railway station of the Eizan Main Line operated by Eizan Electric Railway Co., Ltd.</p>
+<p><a href='railway/Sonobe Station.html'>Sonobe Station</a> (園部駅) - Sonobe Station, located in Sonobe-cho Nantan City, Kyoto Prefecture, is a stop on the Sanin Main Line of the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Sumizome Station.html'>Sumizome Station</a> (墨染駅) - Sumizome Station, located in Fukakusa-kitashin-machi, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line, which is operated by Keihan Electric Railway.</p>
+<p><a href='railway/Surutto KANSAI (KANSAI THRU PASS).html'>Surutto KANSAI (KANSAI THRU PASS)</a> (スルッとKANSAI) - Surutto KANSAI is the network of the railway cards for the public transport system in Kansai (Kinki area), or the biggest company in its association, which has a head office in Osaka City, Osaka-Prefecture.</p>
+
+</div>
+</div>
+<div class="section" id="t">
+<div class="container">
+<h2>T</h2>
+<p><a href='railway/Tahoto Station.html'>Tahoto Station</a> (多宝塔駅) - Tahoto Station is a stop on the Mount Kurama Cable Railway operated by Kurama-dera Temple, a religious corporation located in Sakyo Ward, Kyoto City, Kyoto Prefecture.</p>
+<p><a href='railway/Takaragaike Station.html'>Takaragaike Station</a> (宝ヶ池駅) - Takaragaike Station, located in the Sakyo ward of Kyoto City, is a stop on the Eizan Main Line and the Kurama Line of the Eizan-dentetsu (Eizan Electric Railway).</p>
+<p><a href='railway/Takatsu Station (Kyoto Prefecture).html'>Takatsu Station (Kyoto Prefecture)</a> (高津駅 (京都府)) - Takatsu Station, located in Ayabe City, Kyoto Prefecture, is a stop on the Sanin Main Line, which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Takeda Station (Kyoto Prefecture).html'>Takeda Station (Kyoto Prefecture)</a> (竹田駅 (京都府)) - Takeda Station, located in Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on Kyoto Municipal Subway and Kintetsu Railways.</p>
+<p><a href='railway/Tamamizu Station.html'>Tamamizu Station</a> (玉水駅) - Tamamizu Station, located in Ide-cho, Tsuzuki-gun of Kyoto Prefecture, is a stop on the Nara Line of the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Tanakura Station.html'>Tanakura Station</a> (棚倉駅) - Tanakura Station, located in Satoyashiki, Hirao, Yamashiro-cho, Kizu City in Kyoto Prefecture, is a stop on the Nara Line of West Japan Railway Company (JR West).</p>
+<p><a href='railway/Tanba (train).html'>Tanba (train)</a> (たんば (列車)) - "Tanba" is the name of a limited express train that the West Japan Railway Company (JR West) operates between Kyoto Station and Fukuchiyama Station via the Sanin Main Line.</p>
+<p><a href='railway/Tanbabashi Station.html'>Tanbabashi Station</a> (丹波橋駅) - Tanbabashi Station, located in Momoyama Tsutsui Iga Nishi-machi, Fushimi Ward, Kyoto City, Kyoto Prefecture, is a stop on the Keihan Main Line of the Keihan Electric Railway.</p>
+<p><a href='railway/Tanbaguchi Station.html'>Tanbaguchi Station</a> (丹波口駅) - Tanbaguchi Station, located in Chudoji Minami-machi, Shimogyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Sanin Main Line (Sagano Line) of the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Tango Explorer.html'>Tango Explorer</a> (タンゴエクスプローラー) - Tango Explorer is the nickname for Kitakinki Tango Railway KTR Type 001 diesel multiple unit and also the nickname for the limited express trains that Kitakinki Tango Railway and West Japan Railway Company run using diesel railcars.</p>
+<p><a href='railway/Tango-Kanno Station.html'>Tango-Kanno Station</a> (丹後神野駅) - Tango-Kanno Station, located in Urake Kumihama-cho, Kyotango City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Tango-Kanzaki Station.html'>Tango-Kanzaki Station</a> (丹後神崎駅) - Tango-Kanzaki Station, located in Yugo, Maizuru City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Tango-Omiya Station.html'>Tango-Omiya Station</a> (丹後大宮駅) - Tango-Omiya Station, located in Kuchiono, Omiya-cho, Kyotango City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by the Kitakinki Tango Railway.</p>
+<p><a href='railway/Tango-Yura Station.html'>Tango-Yura Station</a> (丹後由良駅) - Tango-Yura Station, located in Yura, Miyazu City, Kyoto Prefecture, is a stop on the Miyazu Line, which is operated by Kitakinki Tango Railway (KTR).</p>
+<p><a href='railway/Taxis in Japan.html'>Taxis in Japan</a> (日本のタクシー) - This section, "Taxis in Japan" describes the conditions and situations of taxis in Japan.</p>
+<p><a href='railway/Terada Station (Kyoto Prefecture).html'>Terada Station (Kyoto Prefecture)</a> (寺田駅 (京都府)) - Located in Joyo City of Kyoto Prefecture, Terada Station is a stop on the Kyoto Line of the Kintetsu Corporation.</p>
+<p><a href='railway/The Keihan Cable Line.html'>The Keihan Cable Line</a> (京阪鋼索線) - The Keihan Cable Line is run by Keihan Electric Railway's cable cars, and connects Yawatashi Station in Yawata City of Kyoto Prefecture with Otokoyama-sanjo Station.</p>
+<p><a href='railway/The Kyoto City bus.html'>The Kyoto City bus</a> (京都市営バス) - The Kyoto City bus is operated by Kyoto City, Kyoto Prefecture.</p>
+<p><a href='railway/The Sanjyo-Keihan Station.html'>The Sanjyo-Keihan Station</a> (三条京阪駅) - Information</p>
+<p><a href='railway/Tobakaido Station.html'>Tobakaido Station</a> (鳥羽街道駅) - Tobakaido Station, located in Shimo-Takamatsu-cho, Fukuine, Higashiyama Ward, Kyoto City, Kyoto Prefecture, is a railway facility on the Keihan Main Line of the Keihan Electric Railway.</p>
+<p><a href='railway/Tofukuji Station.html'>Tofukuji Station</a> (東福寺駅) - Located in Kishinokami-cho, Fukuine, Higashiyama Ward of Kyoto City, Kyoto Prefecture, Tofukuji Station is a stop on the Keihan Electric Railway and West Japan Railway Company (JR West) lines.</p>
+<p><a href='railway/Toji Station.html'>Toji Station</a> (東寺駅) - Toji Station, located at Nishi-Kujo-Zaocho in Minami Ward, Kyoto City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
+<p><a href='railway/Tojiin Station.html'>Tojiin Station</a> (等持院駅) - Tojiin Station, located in Tojiinnishi-machi, Kita Ward, Kyoto City, is a stop on the Kitano Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Tonosho Station.html'>Tonosho Station</a> (富野荘駅) - Tonosho Station, located in Tono of Joyo City, Kyoto Prefecture, is a stop on the Kintetsu Kyoto Line of the Kintetsu Corporation.</p>
+<p><a href='railway/Tozai Line, Kyoto Municipal Subway.html'>Tozai Line, Kyoto Municipal Subway</a> (京都市営地下鉄東西線) - The Tozai Line is a railway line of Kyoto Municipal Subway, which connects Rokujizo Station in Uji City, Kyoto Prefecture and Uzumasa-tenjingawa Station in Ukyo Ward, Kyoto City.</p>
+<p><a href='railway/Transportation in Japan.html'>Transportation in Japan</a> (日本の交通) - This section, "Transportation in Japan," describes the history and conditions of transportation in Japan.</p>
+
+</div>
+</div>
+<div class="section" id="u">
+<div class="container">
+<h2>U</h2>
+<p><a href='railway/Uji Station (JR West).html'>Uji Station (JR West)</a> (宇治駅 (JR西日本)) - Uji Station, located at 16 Uji-Umonji, Uji City, Kyoto Prefecture, is a stop on the Nara Line of the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Uji Station (Keihan).html'>Uji Station (Keihan)</a> (宇治駅 (京阪)) - Uji Station, located in Uji City, Kyoto Prefecture, is a stop on the Keihan Uji Line, which is operated by Keihan Electric Railway.</p>
+<p><a href='railway/Uji-Yodo Route (bus route between Uji City and Fushimi Ward of Kyoto City).html'>Uji-Yodo Route (bus route between Uji City and Fushimi Ward of Kyoto City)</a> (宇治淀線) - The Uji-Yodo Bus Route connects Uji City in Kyoto Prefecture and Fushimi Ward in Kyoto City.</p>
+<p><a href='railway/Umahori Station.html'>Umahori Station</a> (馬堀駅) - Umahori Station, located in Umahori, Shino-cho, Kameoka City, Kyoto Prefecture, is a facility of Sanin Main Line that is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Umekoji Station.html'>Umekoji Station</a> (梅小路駅) - Umekoji Station, located at 10 Umekoji Kashira-cho, Shimogyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Tokaido Main Line, which is operated by the Japan Freight Railway Company (JR Freight).</p>
+<p><a href='railway/Utano Station.html'>Utano Station</a> (宇多野駅) - Utano Station, located in Nagao-cho, Utano, Ukyo Ward, Kyoto City, is a railway facility of the Kitano Line, which is operated by Keifuku Electric Railroad.</p>
+<p><a href='railway/Uzumasa Station.html'>Uzumasa Station</a> (太秦駅) - Uzumasa Station, located in Uzumasa Tarumiyama-cho, Ukyo Ward, Kyoto City, Kyoto Prefecture, is a stop on the Sanin Main Line (Sagano Line), which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Uzumasa-Koryuji Station.html'>Uzumasa-Koryuji Station</a> (太秦広隆寺駅) - Uzumasa-Koryuji Station, located in Uzumasa-kumiishi-cho, Ukyo Ward, Kyoto City, is a stop on the Arashiyama Main Line, which is operated by Keifuku Electric Railroad Co., Ltd.</p>
+<p><a href='railway/Uzumasa-tenjingawa Station.html'>Uzumasa-tenjingawa Station</a> (太秦天神川駅) - Uzumasa-tenjingawa Station, located in the Ukyo ward of Kyoto City, Kyoto Prefecture, is the last stop on the Tozai Line of the Kyoto Municipal Subway and the first subway station built in Ukyo Ward.</p>
+
+</div>
+</div>
+<div class="section" id="v">
+<div class="container">
+<h2>V</h2>
+
+</div>
+</div>
+<div class="section" id="w">
+<div class="container">
+<h2>W</h2>
+<p><a href='railway/Wachi Station.html'>Wachi Station</a> (和知駅) - Wachi Station, located at 19-1 Honjo Baba, Kyotanba-cho, Funai-gun, Kyoto Prefecture, is a stop on the Sanin Main Line of the West Japan Railway Company (JR West).</p>
+
+</div>
+</div>
+<div class="section" id="x">
+<div class="container">
+<h2>X</h2>
+
+</div>
+</div>
+<div class="section" id="y">
+<div class="container">
+<h2>Y</h2>
+<p><a href='railway/Yamadagawa Station.html'>Yamadagawa Station</a> (山田川駅) - Yamadagawa Station, located at 3-1, Koaza Shimogawara, Oaza Yamada, Seika-cho, Soraku-gun, Kyoto Prefecture, is a railway facility on the Kintetsu Kyoto Line, which is operated by the Kintetsu Corporation.</p>
+<p><a href='railway/Yamashina Station.html'>Yamashina Station</a> (山科駅) - Yamashina Station, located in Ueno Goshonouchi-cho, Yamashina Ward, Kyoto City, Kyoto Prefecture, is a stop of the West Japan Railway Company (JR West) and the Kyoto Municipal Subway.</p>
+<p><a href='railway/Yamatoji Line.html'>Yamatoji Line</a> (大和路線) - Yamatoji Line is the nickname for the electrified section of rail between Kamo Station (Kyoto Prefecture) and JR Nanba Station that runs on the Kansai Main Line of the West Japan Railway Company (JR West Japan).</p>
+<p><a href='railway/Yamazaki Station (Kyoto Prefecture).html'>Yamazaki Station (Kyoto Prefecture)</a> (山崎駅 (京都府)) - Yamazaki Station, located in Oyamazaki-cho, Otokuni-gun, Kyoto Prefecture, is a stop on the Tokaido Main Line (JR Kyoto Line), which is operated by the West Japan Railway Company (JR West).</p>
+<p><a href='railway/Yanagidani Mountain Railway.html'>Yanagidani Mountain Railway</a> (柳谷登山鉄道) - Yanagidani Mountain Railway ("Yanagidani Tozan Tetsudo" in Japanese) was a cable car line, which was intended to run near Yanagidani Kannon (Yokoku-ji Temple) in the present day Nagaokakyo City.</p>
+<p><a href='railway/Yase-Hieizanguchi Station.html'>Yase-Hieizanguchi Station</a> (八瀬比叡山口駅) - Yase-Hieizanguchi Station, located in Sakyo Ward, Kyoto City, Kyoto Prefecture, is a terminal on the Eizan Main Line, which is operated by Eizan Electric Railway.</p>
+<p><a href='railway/Yawata - Tanabe Bus Route.html'>Yawata - Tanabe Bus Route</a> (八幡田辺線) - The Yawata - Tanabe Bus Route is the number of bus routes operated by Keihan Bus Co. Ltd., including several principal bus routes that depart from Yawata City Station (located in Yawata City, Kyoto Prefecture), Shin-Tanabe Station, and Kyotanabe Station (located in Kyotanabe City).</p>
+<p><a href='railway/Yoshitomi Station (Kyoto Prefecture).html'>Yoshitomi Station (Kyoto Prefecture)</a> (吉富駅 (京都府)) - Located in Yagi-cho, Nantan City of Kyoto Prefecture, Yoshitomi Station is a stop on the San'in Main Line (Sagano Line) of West Japan Railway Company (JR West).</p>
+
+</div>
+</div>
+<div class="section" id="z">
+<div class="container">
+<h2>Z</h2>
+
+</div>
+</div>
+
+
+</div>
+
+<div class="right-corner"><a href="#page-top" class="page-scroll"><button type="button" class="btn btn-light">
+	<svg class="bi bi-chevron-bar-up" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  <path fill-rule="evenodd" d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zM2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4z"/>
+	</svg>
+</button></a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="assets/js/site.js"></script>
 </body>
 </html>

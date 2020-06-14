@@ -3,6 +3,8 @@ import os
 
 import xml.etree.ElementTree as ET
 
+illegal = ['NUL','\',''//',':','*','"','<','>','|', '/', "'"]
+
 def get_sentences(sa, sens):
 	first_id = None
 	for sen in sens:
@@ -125,8 +127,6 @@ def parse(fn, jp, cat):
 	sitemap = open("sitemap.xml", "a", encoding="utf8")
 	sitemap.write("<url><loc>https://shinsengumi-archives.github.io/japanese-wiki-corpus/"+outfn+"</loc><lastmod>2020-02-05T03:17:57+00:00</lastmod><priority>0.64</priority></url>\n")
 	sitemap.close()
-
-illegal = ['NUL','\',''//',':','*','"','<','>','|', '/', "'"]
 
 def parseAll():
 	file = open("../japanese_wiki_corpus_orig/Wiki_Corpus_List_2.01.csv", "r", encoding="utf8")
