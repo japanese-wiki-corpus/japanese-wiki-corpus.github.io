@@ -6,7 +6,7 @@ testing = False
 
 cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
 if testing:
-	cats = ['person']
+	cats = ['history']
 
 dataPath = '../japanese_wiki_corpus_data/'
 
@@ -60,7 +60,7 @@ def getPageRank(keywords):
 		files = os.listdir(cat)
 		for file in files:
 			if testing:
-				file = 'Toshizo HIJIKATA.html' #testing
+				file = 'Shinsen-gumi.html' #testing
 			filepath = cat+"/"+file
 			inp = open(dataPath+filepath, "r", encoding="utf8")
 			content = inp.read()
@@ -83,6 +83,7 @@ def getPageRank(keywords):
 def pageRankIncludeUnorderedNamesAndSynonyms(ranks, additional):
 	for kw in synonyms:
 		additional[synonyms[kw]] = kw
+	print('additional kw', len(additional), flush=True)
 	orderedRanks = getPageRank(additional)
 	for origName in additional:
 		ordered = additional[origName]
@@ -101,7 +102,7 @@ def run():
 		files = os.listdir(cat)
 		for file in files:
 			if testing:
-				file = 'Toshizo HIJIKATA.html' #testing
+				file = 'Shinsen-gumi.html' #testing
 			filepath = cat+"/"+file
 			inp = open(dataPath+filepath, "r", encoding="utf8")
 			content = inp.read()
@@ -112,7 +113,7 @@ def run():
 			lastname = getLastname(kw)
 			ordered = orderName(kw)
 			kw = kw.lower()
-			ordered.lower()
+			ordered = ordered.lower()
 			
 			if ordered != kw:
 				orderedNames[kw] = ordered
