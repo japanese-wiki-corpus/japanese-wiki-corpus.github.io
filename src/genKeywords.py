@@ -124,8 +124,8 @@ def run():
 			
 			if kw not in keywords:
 				keywords[kw] = 1
-				if lastname or cat=='history':
-					keywords[kw] = 1000 # boost people, history
+				#if lastname or cat=='history':
+				#	keywords[kw] = 1000 # boost people, history
 			keywords[kw] += nlinks
 			
 			if lastname:
