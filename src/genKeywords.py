@@ -110,8 +110,9 @@ def run():
 			kw = filename2keyword(file)
 			if len(kw) < 3:
 				continue
-			lastname = getLastname(kw)
+			
 			ordered = orderName(kw)
+			lastname = getLastname(ordered)
 			kw = kw.lower()
 			ordered = ordered.lower()
 			
@@ -145,13 +146,15 @@ def run():
 		with open('rank.json', encoding='utf8') as f:
 			ranks = json.load(f)
 		
-	ranks = pageRankIncludeUnorderedNamesAndSynonyms(ranks, orderedNames)
+	#ranks = pageRankIncludeUnorderedNamesAndSynonyms(ranks, orderedNames)
 
 	for kw in keywords:
 		if kw in ranks:
 			keywords[kw] = int(keywords[kw]*0.5 + ranks[kw]*0.5)
 		
 	for kw in synonyms:
+		if kw not in keywords:
+			print(kw)
 		keywords[synonyms[kw]] = keywords[kw] + 1
 	
 	nkw = len(keywords)
