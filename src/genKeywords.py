@@ -6,13 +6,13 @@ testing = False
 
 cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
 if testing:
-	cats = ['Buddhism']
+	cats = ['person']
 
 dataPath = '../japanese_wiki_corpus_data/'
 
 illegal = ['(', '[']
 
-synonyms = {'shisen-gumi': 'shinsengumi', 'sannan': 'yamanami', 'sannan keisuke': 'yamanami keisuke'}
+synonyms = {'shinsen-gumi': 'shinsengumi', 'sannan': 'yamanami', 'sannan keisuke': 'yamanami keisuke'}
 
 def filename2keyword(file):
 	keyword = os.path.splitext(file)[0]
@@ -60,7 +60,7 @@ def getPageRank(keywords):
 		files = os.listdir(cat)
 		for file in files:
 			if testing:
-				file = 'Ashura.html' #testing
+				file = 'Toshizo HIJIKATA.html' #testing
 			filepath = cat+"/"+file
 			inp = open(dataPath+filepath, "r", encoding="utf8")
 			content = inp.read()
@@ -80,26 +80,46 @@ def getPageRank(keywords):
 				break
 	return ranks
 
+def pageRankIncludeUnorderedNamesAndSynonyms(ranks, additional):
+	for kw in synonyms:
+		additional[synonyms[kw]] = kw
+	orderedRanks = getPageRank(additional)
+	for origName in additional:
+		ordered = additional[origName]
+		if ordered not in ranks:
+			ranks[ordered] = 0
+		ranks[ordered] += orderedRanks[origName]
+	with open('rank.json', 'w', encoding="utf8") as outfile:
+		json.dump(ranks, outfile, ensure_ascii=False)
+	return ranks
+
 def run():
 	keywords = {}
+	orderedNames = {}
 	for cat in cats:
 		print(cat, flush=True)
 		files = os.listdir(cat)
 		for file in files:
 			if testing:
-				file = 'Ashura.html' #testing
+				file = 'Toshizo HIJIKATA.html' #testing
 			filepath = cat+"/"+file
 			inp = open(dataPath+filepath, "r", encoding="utf8")
 			content = inp.read()
 			
-			kw = orderName(filename2keyword(file))
+			kw = filename2keyword(file)
 			if len(kw) < 3:
 				continue
+			lastname = getLastname(kw)
+			ordered = orderName(kw)
+			kw = kw.lower()
+			ordered.lower()
+			
+			if ordered != kw:
+				orderedNames[kw] = ordered
+			kw = ordered
 			
 			nlinks = getNLinks(content)
 			
-			lastname = getLastname(kw)
-			kw = kw.lower()
 			if kw not in keywords:
 				keywords[kw] = 1
 			keywords[kw] += nlinks
@@ -114,18 +134,23 @@ def run():
 			if testing:
 				break
 	
-	if not os.path.isfile(rank.json):
+	ranks = {}
+	if not os.path.isfile('rank.json'):
+		print('page rank', flush=True)
 		ranks = getPageRank(keywords)
 		with open('rank.json', 'w', encoding="utf8") as outfile:
 			json.dump(ranks, outfile, ensure_ascii=False)
 	else:
 		with open('rank.json', encoding='utf8') as f:
 			ranks = json.load(f)
-
-	for kw in keywords.keys():
-		keywords[kw] = int(keywords[kw]*0.5 + ranks[kw]*0.5)
 		
-	for kw in synonyms.keys():
+	ranks = pageRankIncludeUnorderedNamesAndSynonyms(ranks, orderedNames)
+
+	for kw in keywords:
+		if kw in ranks:
+			keywords[kw] = int(keywords[kw]*0.5 + ranks[kw]*0.5)
+		
+	for kw in synonyms:
 		keywords[synonyms[kw]] = keywords[kw] + 1
 	
 	nkw = len(keywords)
@@ -134,7 +159,7 @@ def run():
 	out.write('<?xml version="1.0" encoding="UTF-8"?>\n')
 	out.write('<Autocompletions start="0" num="'+str(nkw)+'" total="'+str(nkw)+'">\n')
 
-	for kw in keywords.keys():
+	for kw in keywords:
 		if keywords[kw] > 10000:
 			keywords[kw] = 10000
 		out.write('<Autocompletion term="'+kw+'" type="1" match="1" score="'+str(keywords[kw])+'"/>\n')
