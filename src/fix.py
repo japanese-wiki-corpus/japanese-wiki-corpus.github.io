@@ -3,7 +3,8 @@ import os
 import re
 
 testing = False
-replaceFile = False
+replaceFile = True
+dataPath = '../japanese_wiki_corpus_data/'
 
 def filename2keyword(file):
 	keyword = os.path.splitext(file)[0]
@@ -69,10 +70,24 @@ def getData(content):
 	content = content.replace("<a href='https://shinsengumi-archives.github.io/japanese-wiki-corpus/'>Home</a>\n", '')
 	return content
 
+def orderName(content):
+	istart = content.find('<h1>')
+	if istart == -1:
+		return content
+	istart+=4
+	iend = content.find('</h1>')
+	name = content[istart:iend]
+	
+	words = name.split(' ')
+	if len(words) > 2 and words[-2].isupper():
+		name = words[-2]+' '+(' '.join(words[:-2]))+' '+words[-1]
+
+	return content[:istart]+name+content[iend:]
+
 def fixPages():
 	cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
 	if testing:
-		cats = ['Buddhism']
+		cats = ['person']
 		
 	maxlen = 0
 	
@@ -81,9 +96,9 @@ def fixPages():
 		files = os.listdir(cat)
 		for file in files:
 			if testing:
-				file = 'Ashura.html' #testing
+				file = 'Toshizo HIJIKATA.html' #testing
 			filepath = cat+"/"+file
-			inp = open(filepath, "r", encoding="utf8")
+			inp = open(dataPath+filepath, "r", encoding="utf8")
 			content = inp.read()
 			
 			#content = removeBlacklistedLinks(content)
@@ -98,11 +113,11 @@ def fixPages():
 			#if content == "":
 			#	print(filepath)
 			
-			contentlen = len(content)
-			if contentlen > maxlen:
-				maxlen = contentlen
+			#contentlen = len(content)
+			#if contentlen > maxlen:
+			#	maxlen = contentlen
 			
-			
+			content = orderName(content)
 
 			if replaceFile:
 				if testing:

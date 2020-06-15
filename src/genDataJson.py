@@ -5,7 +5,6 @@ import json
 
 testing = False
 
-dataPath = '../japanese_wiki_corpus_data/'
 cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
 if testing:
 	cats = ['school']
@@ -23,6 +22,12 @@ def get_sentences(sa, sens):
 				first_id = id
 			break
 	return first_id
+
+def orderName(name):
+	words = name.split(' ')
+	if words[-1].isupper():
+		words.insert(0, words.pop())
+	return ' '.join(words)
 
 def parse(fn, jp, cat):
 	inp = open("../japanese_wiki_corpus_orig/"+fn[0:3]+"/"+fn, "r", encoding="utf8")
@@ -71,6 +76,8 @@ for line in file:
 	cat = val[3].split(' ')[0]
 
 	outfn, engl, jp, ln1 = parse(fn, jp, cat)
+	
+	engl = orderName(engl)
 	
 	if cat not in data:
 		data[cat] = []

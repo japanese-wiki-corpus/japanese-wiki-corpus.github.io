@@ -18,6 +18,12 @@ def filename2keyword(file):
 	keyword = keyword.strip(" .")
 	return keyword
 
+def orderName(name):
+	words = name.split(' ')
+	if words[-1].isupper():
+		words.insert(0, words.pop())
+	return ' '.join(words)
+
 def applyPageTemplate():
 	templateFile = open('templates/page.html', "r", encoding="utf8")
 	template = templateFile.read()
@@ -32,7 +38,7 @@ def applyPageTemplate():
 			inp = open(dataPath+filepath, "r", encoding="utf8")
 			content = inp.read()
 			
-			name = filename2keyword(file)
+			name = orderName(filename2keyword(file))
 			content = template.replace('{{content}}', content)
 			content = content.replace('{{name}}', name)
 			content = content.replace('{{category}}', cat)
