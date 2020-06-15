@@ -124,6 +124,8 @@ def run():
 			
 			if kw not in keywords:
 				keywords[kw] = 1
+				if lastname or cat=='history':
+					keywords[kw] = 1000 # boost people, history
 			keywords[kw] += nlinks
 			
 			if lastname:
@@ -150,7 +152,7 @@ def run():
 
 	for kw in keywords:
 		if kw in ranks:
-			keywords[kw] = int(keywords[kw]*0.5 + ranks[kw]*0.5)
+			keywords[kw] = keywords[kw] + ranks[kw]
 		
 	for kw in synonyms:
 		if kw not in keywords:
@@ -163,12 +165,17 @@ def run():
 	out.write('<?xml version="1.0" encoding="UTF-8"?>\n')
 	out.write('<Autocompletions start="0" num="'+str(nkw)+'" total="'+str(nkw)+'">\n')
 
+	maxscore = 0
 	for kw in keywords:
 		if keywords[kw] > 10000:
 			keywords[kw] = 10000
 		if keywords[kw] == 0:
 			keywords[kw] = 1
 		out.write('<Autocompletion term="'+kw+'" type="1" match="1" score="'+str(keywords[kw])+'"/>\n')
+		if keywords[kw] > maxscore:
+			maxscore = keywords[kw]
+	
+	print(maxscore)
 	
 	out.write('</Autocompletions>\n')
 	out.close()
