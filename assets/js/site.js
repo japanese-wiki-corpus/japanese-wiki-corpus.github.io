@@ -27,5 +27,3 @@ $('#main-collapsible').on('show.bs.collapse', function () {
 $('#main-collapsible').on('hidden.bs.collapse', function () {
 	$('#main-navbar').css("background-color", "transparent");
 });
-
-console.log(window.parent.location);

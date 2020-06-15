@@ -166,6 +166,8 @@ def run():
 	for kw in keywords:
 		if keywords[kw] > 10000:
 			keywords[kw] = 10000
+		if keywords[kw] == 0:
+			keywords[kw] = 1
 		out.write('<Autocompletion term="'+kw+'" type="1" match="1" score="'+str(keywords[kw])+'"/>\n')
 	
 	out.write('</Autocompletions>\n')

@@ -39,7 +39,7 @@
 <Autocompletion term="nanpo bunshi" type="1" match="1" score="5"/>
 <Autocompletion term="nanpo" type="1" match="1" score="15"/>
 <Autocompletion term="bussharito" type="1" match="1" score="6"/>
-<Autocompletion term="busso rekidai tsusai" type="1" match="1" score="0"/>
+<Autocompletion term="busso rekidai tsusai" type="1" match="1" score="1"/>
 <Autocompletion term="butsubachi" type="1" match="1" score="15"/>
 <Autocompletion term="butsudan" type="1" match="1" score="57"/>
 <Autocompletion term="butsugenbutsumo" type="1" match="1" score="5"/>
@@ -461,7 +461,7 @@
 <Autocompletion term="kankyo no tomo" type="1" match="1" score="9"/>
 <Autocompletion term="kanmuryojukyosho" type="1" match="1" score="4"/>
 <Autocompletion term="kanna zen" type="1" match="1" score="2"/>
-<Autocompletion term="kannodoko" type="1" match="1" score="0"/>
+<Autocompletion term="kannodoko" type="1" match="1" score="1"/>
 <Autocompletion term="kannon bodhisattva, kannon bosatsu" type="1" match="1" score="21"/>
 <Autocompletion term="kannon-ji temple" type="1" match="1" score="37"/>
 <Autocompletion term="kanpen" type="1" match="1" score="8"/>
@@ -604,7 +604,7 @@
 <Autocompletion term="mukyoku shigen" type="1" match="1" score="6"/>
 <Autocompletion term="murals in the kondo" type="1" match="1" score="20"/>
 <Autocompletion term="muryoju-kyo sutra" type="1" match="1" score="14"/>
-<Autocompletion term="muryoju-kyo ubadaisha ganshogechu" type="1" match="1" score="0"/>
+<Autocompletion term="muryoju-kyo ubadaisha ganshogechu" type="1" match="1" score="1"/>
 <Autocompletion term="muryoju-kyo ubataisha ganshoge" type="1" match="1" score="1"/>
 <Autocompletion term="shuho myocho" type="1" match="1" score="16"/>
 <Autocompletion term="shuho" type="1" match="1" score="54"/>
@@ -765,8 +765,8 @@
 <Autocompletion term="saigoku aizen junana reijo" type="1" match="1" score="2"/>
 <Autocompletion term="saishin" type="1" match="1" score="18"/>
 <Autocompletion term="samue" type="1" match="1" score="7"/>
-<Autocompletion term="sanborai" type="1" match="1" score="0"/>
-<Autocompletion term="sanbujo" type="1" match="1" score="0"/>
+<Autocompletion term="sanborai" type="1" match="1" score="1"/>
+<Autocompletion term="sanbujo" type="1" match="1" score="1"/>
 <Autocompletion term="sandai soron" type="1" match="1" score="3"/>
 <Autocompletion term="sandaihiho the three great secret dharmas" type="1" match="1" score="4"/>
 <Autocompletion term="sange" type="1" match="1" score="14"/>
@@ -1166,7 +1166,7 @@
 <Autocompletion term="higashidonozuka-kofun tumulus" type="1" match="1" score="3"/>
 <Autocompletion term="himuro" type="1" match="1" score="19"/>
 <Autocompletion term="hira-jiro castle" type="1" match="1" score="7"/>
-<Autocompletion term="hiyoku irimoya-zukuri style" type="1" match="1" score="0"/>
+<Autocompletion term="hiyoku irimoya-zukuri style" type="1" match="1" score="1"/>
 <Autocompletion term="hiyoshi dam" type="1" match="1" score="13"/>
 <Autocompletion term="hokenoyama-kofun tumulus" type="1" match="1" score="4"/>
 <Autocompletion term="hokyoin-to pagoda" type="1" match="1" score="13"/>
@@ -1192,7 +1192,7 @@
 <Autocompletion term="isuien garden" type="1" match="1" score="4"/>
 <Autocompletion term="itabuki no miya palace" type="1" match="1" score="11"/>
 <Autocompletion term="ito-jo castle" type="1" match="1" score="3"/>
-<Autocompletion term="iwaki-shijuhachi-date" type="1" match="1" score="0"/>
+<Autocompletion term="iwaki-shijuhachi-date" type="1" match="1" score="1"/>
 <Autocompletion term="iwakiri-jo castle" type="1" match="1" score="10"/>
 <Autocompletion term="izuka-kofun tumulus" type="1" match="1" score="3"/>
 <Autocompletion term="izumizaki yokoana cave tumulus" type="1" match="1" score="2"/>
@@ -1258,7 +1258,7 @@
 <Autocompletion term="koseyama-kofun tumuli cluster" type="1" match="1" score="1"/>
 <Autocompletion term="kozuya-bashi bridge" type="1" match="1" score="4"/>
 <Autocompletion term="kukuchi-jo castle" type="1" match="1" score="2"/>
-<Autocompletion term="kuriyama family residence" type="1" match="1" score="0"/>
+<Autocompletion term="kuriyama family residence" type="1" match="1" score="1"/>
 <Autocompletion term="kurokabe square" type="1" match="1" score="7"/>
 <Autocompletion term="kurotsuka-kofun tumulus" type="1" match="1" score="6"/>
 <Autocompletion term="kuruwa" type="1" match="1" score="56"/>
@@ -1329,7 +1329,7 @@
 <Autocompletion term="misonobashi hachimaruichi shotengai" type="1" match="1" score="3"/>
 <Autocompletion term="miyamaso" type="1" match="1" score="9"/>
 <Autocompletion term="miyazu-jo castle" type="1" match="1" score="23"/>
-<Autocompletion term="miyazuka tumulus" type="1" match="1" score="0"/>
+<Autocompletion term="miyazuka tumulus" type="1" match="1" score="1"/>
 <Autocompletion term="muchikake" type="1" match="1" score="1"/>
 <Autocompletion term="munefuda" type="1" match="1" score="4"/>
 <Autocompletion term="murin-an villa" type="1" match="1" score="3"/>
@@ -1462,7 +1462,7 @@
 <Autocompletion term="sumiya" type="1" match="1" score="25"/>
 <Autocompletion term="sumiyoshi-zukuri style" type="1" match="1" score="5"/>
 <Autocompletion term="suntory yamazaki distillery" type="1" match="1" score="8"/>
-<Autocompletion term="taga steam locomotive" type="1" match="1" score="0"/>
+<Autocompletion term="taga steam locomotive" type="1" match="1" score="1"/>
 <Autocompletion term="tago hi" type="1" match="1" score="3"/>
 <Autocompletion term="taimenjo" type="1" match="1" score="10"/>
 <Autocompletion term="taira-sanbashi bridge" type="1" match="1" score="5"/>
@@ -1781,7 +1781,7 @@
 <Autocompletion term="dohyo" type="1" match="1" score="35"/>
 <Autocompletion term="dojigiri" type="1" match="1" score="6"/>
 <Autocompletion term="dojo-ji temple" type="1" match="1" score="40"/>
-<Autocompletion term="doko copper vessels" type="1" match="1" score="0"/>
+<Autocompletion term="doko copper vessels" type="1" match="1" score="1"/>
 <Autocompletion term="domoshuzoki" type="1" match="1" score="7"/>
 <Autocompletion term="donburimono" type="1" match="1" score="13"/>
 <Autocompletion term="dorayaki cake" type="1" match="1" score="3"/>
@@ -1863,7 +1863,7 @@
 <Autocompletion term="furikake" type="1" match="1" score="10"/>
 <Autocompletion term="furisode" type="1" match="1" score="43"/>
 <Autocompletion term="furiuri" type="1" match="1" score="19"/>
-<Autocompletion term="furofuki daikon" type="1" match="1" score="0"/>
+<Autocompletion term="furofuki daikon" type="1" match="1" score="1"/>
 <Autocompletion term="furosaki byobu" type="1" match="1" score="1"/>
 <Autocompletion term="furoshiki" type="1" match="1" score="25"/>
 <Autocompletion term="furuutsubo" type="1" match="1" score="2"/>
@@ -1896,7 +1896,7 @@
 <Autocompletion term="genpuku" type="1" match="1" score="121"/>
 <Autocompletion term="genroku chushingura" type="1" match="1" score="3"/>
 <Autocompletion term="genroku culture" type="1" match="1" score="8"/>
-<Autocompletion term="genroku no daikoshu" type="1" match="1" score="0"/>
+<Autocompletion term="genroku no daikoshu" type="1" match="1" score="1"/>
 <Autocompletion term="geta" type="1" match="1" score="52"/>
 <Autocompletion term="giccho" type="1" match="1" score="4"/>
 <Autocompletion term="gigaku" type="1" match="1" score="31"/>
@@ -1994,7 +1994,7 @@
 <Autocompletion term="heiroku" type="1" match="1" score="6"/>
 <Autocompletion term="heki school" type="1" match="1" score="37"/>
 <Autocompletion term="heko obi" type="1" match="1" score="4"/>
-<Autocompletion term="henohenomoheji" type="1" match="1" score="0"/>
+<Autocompletion term="henohenomoheji" type="1" match="1" score="1"/>
 <Autocompletion term="heshiko" type="1" match="1" score="5"/>
 <Autocompletion term="hi izuru tokoro no tenshi" type="1" match="1" score="18"/>
 <Autocompletion term="hibachi" type="1" match="1" score="25"/>
@@ -2245,7 +2245,7 @@
 <Autocompletion term="kakinoha-zushi" type="1" match="1" score="4"/>
 <Autocompletion term="kakizome" type="1" match="1" score="6"/>
 <Autocompletion term="kakko" type="1" match="1" score="15"/>
-<Autocompletion term="kakoishio" type="1" match="1" score="0"/>
+<Autocompletion term="kakoishio" type="1" match="1" score="1"/>
 <Autocompletion term="kakoshu" type="1" match="1" score="6"/>
 <Autocompletion term="kakuni" type="1" match="1" score="4"/>
 <Autocompletion term="kama" type="1" match="1" score="15"/>
@@ -2499,7 +2499,7 @@
 <Autocompletion term="kuchikami-sake" type="1" match="1" score="4"/>
 <Autocompletion term="kuchiko" type="1" match="1" score="3"/>
 <Autocompletion term="kudo" type="1" match="1" score="30"/>
-<Autocompletion term="kudzukiri" type="1" match="1" score="0"/>
+<Autocompletion term="kudzukiri" type="1" match="1" score="1"/>
 <Autocompletion term="kugeaku" type="1" match="1" score="6"/>
 <Autocompletion term="kujo negi" type="1" match="1" score="4"/>
 <Autocompletion term="kuki-cha" type="1" match="1" score="3"/>
@@ -3027,7 +3027,7 @@
 <Autocompletion term="senso" type="1" match="1" score="29"/>
 <Autocompletion term="sensuogi" type="1" match="1" score="14"/>
 <Autocompletion term="sento" type="1" match="1" score="66"/>
-<Autocompletion term="senyokoutaku" type="1" match="1" score="0"/>
+<Autocompletion term="senyokoutaku" type="1" match="1" score="1"/>
 <Autocompletion term="seppuku" type="1" match="1" score="206"/>
 <Autocompletion term="sesson" type="1" match="1" score="15"/>
 <Autocompletion term="setotaisho" type="1" match="1" score="1"/>
@@ -3058,7 +3058,7 @@
 <Autocompletion term="hoshino" type="1" match="1" score="18"/>
 <Autocompletion term="shigin" type="1" match="1" score="20"/>
 <Autocompletion term="shigoto hajime" type="1" match="1" score="2"/>
-<Autocompletion term="shigoto-osame" type="1" match="1" score="0"/>
+<Autocompletion term="shigoto-osame" type="1" match="1" score="1"/>
 <Autocompletion term="shigure" type="1" match="1" score="15"/>
 <Autocompletion term="shigureni" type="1" match="1" score="3"/>
 <Autocompletion term="shihandai" type="1" match="1" score="3"/>
@@ -3108,7 +3108,7 @@
 <Autocompletion term="shitachi" type="1" match="1" score="2"/>
 <Autocompletion term="shitagasane" type="1" match="1" score="20"/>
 <Autocompletion term="shitone" type="1" match="1" score="10"/>
-<Autocompletion term="shittaku" type="1" match="1" score="0"/>
+<Autocompletion term="shittaku" type="1" match="1" score="1"/>
 <Autocompletion term="shiyu no utage" type="1" match="1" score="2"/>
 <Autocompletion term="sho" type="1" match="1" score="429"/>
 <Autocompletion term="shobuyu" type="1" match="1" score="4"/>
@@ -3256,7 +3256,7 @@
 <Autocompletion term="tanzen" type="1" match="1" score="10"/>
 <Autocompletion term="tarako" type="1" match="1" score="17"/>
 <Autocompletion term="tarutaru sauce" type="1" match="1" score="1"/>
-<Autocompletion term="tatami-iwashi" type="1" match="1" score="0"/>
+<Autocompletion term="tatami-iwashi" type="1" match="1" score="1"/>
 <Autocompletion term="tatsumi geisha" type="1" match="1" score="8"/>
 <Autocompletion term="tawawa-chan" type="1" match="1" score="5"/>
 <Autocompletion term="tazukuri" type="1" match="1" score="2"/>
@@ -3314,8 +3314,8 @@
 <Autocompletion term="the kyo top" type="1" match="1" score="2"/>
 <Autocompletion term="the kyoto prize in the category of advanced technology" type="1" match="1" score="1"/>
 <Autocompletion term="the kyoto prize" type="1" match="1" score="4"/>
-<Autocompletion term="the lactic acid for making sake" type="1" match="1" score="0"/>
-<Autocompletion term="the mifa shanshui style" type="1" match="1" score="0"/>
+<Autocompletion term="the lactic acid for making sake" type="1" match="1" score="1"/>
+<Autocompletion term="the mifa shanshui style" type="1" match="1" score="1"/>
 <Autocompletion term="the mikado company" type="1" match="1" score="4"/>
 <Autocompletion term="the milky way" type="1" match="1" score="18"/>
 <Autocompletion term="the naked festival" type="1" match="1" score="1"/>
@@ -3588,7 +3588,7 @@
 <Autocompletion term="zan-shin" type="1" match="1" score="13"/>
 <Autocompletion term="zangirimono" type="1" match="1" score="10"/>
 <Autocompletion term="zashiki" type="1" match="1" score="38"/>
-<Autocompletion term="zashikibina" type="1" match="1" score="0"/>
+<Autocompletion term="zashikibina" type="1" match="1" score="1"/>
 <Autocompletion term="zen nihon senchado renmei" type="1" match="1" score="4"/>
 <Autocompletion term="zenfusho" type="1" match="1" score="4"/>
 <Autocompletion term="zengoro" type="1" match="1" score="11"/>
@@ -3906,7 +3906,7 @@
 <Autocompletion term="imperial prince koretada" type="1" match="1" score="10"/>
 <Autocompletion term="imperial prince koretaka" type="1" match="1" score="18"/>
 <Autocompletion term="imperial prince kose" type="1" match="1" score="3"/>
-<Autocompletion term="fushiminomiya imperial prince kuninobu" type="1" match="1" score="0"/>
+<Autocompletion term="fushiminomiya imperial prince kuninobu" type="1" match="1" score="1"/>
 <Autocompletion term="fushiminomiya" type="1" match="1" score="151"/>
 <Autocompletion term="imperial prince kuniyoshi" type="1" match="1" score="21"/>
 <Autocompletion term="imperial prince kyogoku-no-miya kinhito" type="1" match="1" score="3"/>
@@ -4364,7 +4364,7 @@
 <Autocompletion term="wakamiya" type="1" match="1" score="40"/>
 <Autocompletion term="wakasa no okimi" type="1" match="1" score="6"/>
 <Autocompletion term="wakatakehiko no mikoto" type="1" match="1" score="5"/>
-<Autocompletion term="yagis double year theory" type="1" match="1" score="0"/>
+<Autocompletion term="yagis double year theory" type="1" match="1" score="1"/>
 <Autocompletion term="yamabe no okimi" type="1" match="1" score="12"/>
 <Autocompletion term="yamato hiko no mikoto" type="1" match="1" score="7"/>
 <Autocompletion term="yamatohime no mikoto" type="1" match="1" score="13"/>
@@ -4636,7 +4636,7 @@
 <Autocompletion term="enoki pass" type="1" match="1" score="2"/>
 <Autocompletion term="fukami-toge pass" type="1" match="1" score="7"/>
 <Autocompletion term="fukuchiyama city" type="1" match="1" score="133"/>
-<Autocompletion term="fukura-ko port" type="1" match="1" score="0"/>
+<Autocompletion term="fukura-ko port" type="1" match="1" score="1"/>
 <Autocompletion term="funai-gun" type="1" match="1" score="30"/>
 <Autocompletion term="fushimi momoyama-jo castle land" type="1" match="1" score="6"/>
 <Autocompletion term="fushimi no momoyama no misasagi" type="1" match="1" score="8"/>
@@ -4766,7 +4766,7 @@
 <Autocompletion term="miwa-cho" type="1" match="1" score="13"/>
 <Autocompletion term="miyagahama swimming area" type="1" match="1" score="1"/>
 <Autocompletion term="miyagawa-cho" type="1" match="1" score="13"/>
-<Autocompletion term="miyako plain" type="1" match="1" score="0"/>
+<Autocompletion term="miyako plain" type="1" match="1" score="1"/>
 <Autocompletion term="miyama" type="1" match="1" score="32"/>
 <Autocompletion term="miyama-cho" type="1" match="1" score="20"/>
 <Autocompletion term="miyazu city" type="1" match="1" score="54"/>
@@ -4983,7 +4983,7 @@
 <Autocompletion term="ashikaga no sho" type="1" match="1" score="14"/>
 <Autocompletion term="ashina clan" type="1" match="1" score="21"/>
 <Autocompletion term="ashio mining pollution" type="1" match="1" score="4"/>
-<Autocompletion term="ashio riot" type="1" match="1" score="0"/>
+<Autocompletion term="ashio riot" type="1" match="1" score="1"/>
 <Autocompletion term="asomi" type="1" match="1" score="76"/>
 <Autocompletion term="asuka culture" type="1" match="1" score="17"/>
 <Autocompletion term="asuka-fujiwara archaeological sites of japans ancient capitals and related properties" type="1" match="1" score="3"/>
@@ -5102,7 +5102,7 @@
 <Autocompletion term="choyobun" type="1" match="1" score="7"/>
 <Autocompletion term="christian daimyo" type="1" match="1" score="16"/>
 <Autocompletion term="chubunsen" type="1" match="1" score="5"/>
-<Autocompletion term="chucho jijitsu" type="1" match="1" score="0"/>
+<Autocompletion term="chucho jijitsu" type="1" match="1" score="1"/>
 <Autocompletion term="chugaisho" type="1" match="1" score="9"/>
 <Autocompletion term="chugushiki" type="1" match="1" score="24"/>
 <Autocompletion term="chuko" type="1" match="1" score="43"/>
@@ -5382,7 +5382,7 @@
 <Autocompletion term="hino incident" type="1" match="1" score="1"/>
 <Autocompletion term="hirata no sho" type="1" match="1" score="6"/>
 <Autocompletion term="hiro" type="1" match="1" score="12"/>
-<Autocompletion term="hisara" type="1" match="1" score="0"/>
+<Autocompletion term="hisara" type="1" match="1" score="1"/>
 <Autocompletion term="historic monuments of ancient nara" type="1" match="1" score="6"/>
 <Autocompletion term="history of japanese navy" type="1" match="1" score="4"/>
 <Autocompletion term="history of japanese railways" type="1" match="1" score="11"/>
@@ -5490,7 +5490,7 @@
 <Autocompletion term="ishinbo" type="1" match="1" score="5"/>
 <Autocompletion term="ishisaji" type="1" match="1" score="5"/>
 <Autocompletion term="ishiyama war" type="1" match="1" score="43"/>
-<Autocompletion term="ishiyari" type="1" match="1" score="0"/>
+<Autocompletion term="ishiyari" type="1" match="1" score="1"/>
 <Autocompletion term="isse ichigen no sei" type="1" match="1" score="2"/>
 <Autocompletion term="isshi incident" type="1" match="1" score="23"/>
 <Autocompletion term="isshinkai" type="1" match="1" score="12"/>
@@ -5501,7 +5501,7 @@
 <Autocompletion term="jako no ma shiko" type="1" match="1" score="19"/>
 <Autocompletion term="japan post office in korea" type="1" match="1" score="2"/>
 <Autocompletion term="japan socialist party" type="1" match="1" score="8"/>
-<Autocompletion term="japan-korea annexation treaty of 1907" type="1" match="1" score="0"/>
+<Autocompletion term="japan-korea annexation treaty of 1907" type="1" match="1" score="1"/>
 <Autocompletion term="japan-mexico treaty of amity, commerce, and navigation" type="1" match="1" score="2"/>
 <Autocompletion term="japan-ming trade" type="1" match="1" score="20"/>
 <Autocompletion term="japanese americans" type="1" match="1" score="8"/>
@@ -5511,7 +5511,7 @@
 <Autocompletion term="japanese history" type="1" match="1" score="203"/>
 <Autocompletion term="japanese military history" type="1" match="1" score="3"/>
 <Autocompletion term="japanese missions to tang china" type="1" match="1" score="4"/>
-<Autocompletion term="japanese pigments" type="1" match="1" score="0"/>
+<Autocompletion term="japanese pigments" type="1" match="1" score="1"/>
 <Autocompletion term="japanese race" type="1" match="1" score="4"/>
 <Autocompletion term="japanese tenkoku" type="1" match="1" score="16"/>
 <Autocompletion term="japanization education" type="1" match="1" score="1"/>
@@ -5756,7 +5756,7 @@
 <Autocompletion term="kokumori" type="1" match="1" score="6"/>
 <Autocompletion term="kokuritsu ginko shihei" type="1" match="1" score="7"/>
 <Autocompletion term="kokushi kasei joso" type="1" match="1" score="14"/>
-<Autocompletion term="kokuyaku kenpo" type="1" match="1" score="0"/>
+<Autocompletion term="kokuyaku kenpo" type="1" match="1" score="1"/>
 <Autocompletion term="kokuzekomoku" type="1" match="1" score="9"/>
 <Autocompletion term="kokyu junishi" type="1" match="1" score="7"/>
 <Autocompletion term="komatsubara honan" type="1" match="1" score="1"/>
@@ -6002,7 +6002,7 @@
 <Autocompletion term="nihon bijutsu-shi" type="1" match="1" score="93"/>
 <Autocompletion term="nihon gaishi" type="1" match="1" score="11"/>
 <Autocompletion term="nihon sandai jitsuroku" type="1" match="1" score="40"/>
-<Autocompletion term="nihon seito osyoku jiken" type="1" match="1" score="0"/>
+<Autocompletion term="nihon seito osyoku jiken" type="1" match="1" score="1"/>
 <Autocompletion term="nihongi koen" type="1" match="1" score="4"/>
 <Autocompletion term="nihongi ryaku" type="1" match="1" score="16"/>
 <Autocompletion term="nijugozanmaie" type="1" match="1" score="3"/>
@@ -6397,7 +6397,7 @@
 <Autocompletion term="suzaku" type="1" match="1" score="35"/>
 <Autocompletion term="suzakumon gate" type="1" match="1" score="8"/>
 <Autocompletion term="syakkonichi" type="1" match="1" score="1"/>
-<Autocompletion term="sydney incident" type="1" match="1" score="0"/>
+<Autocompletion term="sydney incident" type="1" match="1" score="1"/>
 <Autocompletion term="tabe" type="1" match="1" score="5"/>
 <Autocompletion term="tada-genji" type="1" match="1" score="29"/>
 <Autocompletion term="tadokoro" type="1" match="1" score="10"/>
@@ -6442,7 +6442,7 @@
 <Autocompletion term="tashidaka no sei" type="1" match="1" score="7"/>
 <Autocompletion term="tateana-shiki" type="1" match="1" score="5"/>
 <Autocompletion term="tato" type="1" match="1" score="68"/>
-<Autocompletion term="tatsumaru incident" type="1" match="1" score="0"/>
+<Autocompletion term="tatsumaru incident" type="1" match="1" score="1"/>
 <Autocompletion term="tatsuta domain" type="1" match="1" score="12"/>
 <Autocompletion term="tawaramoto domain" type="1" match="1" score="6"/>
 <Autocompletion term="teibi yakujo" type="1" match="1" score="4"/>
@@ -6563,7 +6563,7 @@
 <Autocompletion term="the gangyo war" type="1" match="1" score="10"/>
 <Autocompletion term="the goto troops in japans invasion of korea" type="1" match="1" score="8"/>
 <Autocompletion term="the government offices centralizing plan" type="1" match="1" score="2"/>
-<Autocompletion term="the gushikami restraintmurder case" type="1" match="1" score="0"/>
+<Autocompletion term="the gushikami restraintmurder case" type="1" match="1" score="1"/>
 <Autocompletion term="the hamaguri rebellion" type="1" match="1" score="10"/>
 <Autocompletion term="the heian nobles" type="1" match="1" score="14"/>
 <Autocompletion term="the heian period" type="1" match="1" score="350"/>
@@ -6859,7 +6859,7 @@
 <Autocompletion term="zenko seihyo" type="1" match="1" score="4"/>
 <Autocompletion term="zeze-jo castle" type="1" match="1" score="19"/>
 <Autocompletion term="zipangu" type="1" match="1" score="8"/>
-<Autocompletion term="zoishokenden" type="1" match="1" score="0"/>
+<Autocompletion term="zoishokenden" type="1" match="1" score="1"/>
 <Autocompletion term="zoyaku" type="1" match="1" score="14"/>
 <Autocompletion term="zoyakumen kei shoen" type="1" match="1" score="5"/>
 <Autocompletion term="zoyakumen" type="1" match="1" score="14"/>
@@ -7489,7 +7489,7 @@
 <Autocompletion term="the tale of genji emaki" type="1" match="1" score="16"/>
 <Autocompletion term="the tale of genji" type="1" match="1" score="365"/>
 <Autocompletion term="the tale of heichu" type="1" match="1" score="2"/>
-<Autocompletion term="the tale of shinobine" type="1" match="1" score="0"/>
+<Autocompletion term="the tale of shinobine" type="1" match="1" score="1"/>
 <Autocompletion term="the tale of soga" type="1" match="1" score="6"/>
 <Autocompletion term="the thousandth anniversary of the tale of genji" type="1" match="1" score="7"/>
 <Autocompletion term="the tosa diary" type="1" match="1" score="14"/>
@@ -7893,7 +7893,7 @@
 <Autocompletion term="dutch scholar" type="1" match="1" score="20"/>
 <Autocompletion term="ichikawa ebizo" type="1" match="1" score="9"/>
 <Autocompletion term="ehihime" type="1" match="1" score="4"/>
-<Autocompletion term="wada ei" type="1" match="1" score="0"/>
+<Autocompletion term="wada ei" type="1" match="1" score="1"/>
 <Autocompletion term="wada" type="1" match="1" score="104"/>
 <Autocompletion term="shibusawa eichi" type="1" match="1" score="21"/>
 <Autocompletion term="shibusawa" type="1" match="1" score="29"/>
@@ -7901,7 +7901,7 @@
 <Autocompletion term="kano" type="1" match="1" score="160"/>
 <Autocompletion term="kudo eiichi" type="1" match="1" score="3"/>
 <Autocompletion term="eiji" type="1" match="1" score="23"/>
-<Autocompletion term="wakata eikichi" type="1" match="1" score="0"/>
+<Autocompletion term="wakata eikichi" type="1" match="1" score="1"/>
 <Autocompletion term="wakata" type="1" match="1" score="1"/>
 <Autocompletion term="eikoin" type="1" match="1" score="13"/>
 <Autocompletion term="eiku" type="1" match="1" score="6"/>
@@ -8056,7 +8056,7 @@
 <Autocompletion term="fujiwara no kiyoko" type="1" match="1" score="14"/>
 <Autocompletion term="fujiwara no kiyonari" type="1" match="1" score="8"/>
 <Autocompletion term="fujiwara no kiyotsura" type="1" match="1" score="8"/>
-<Autocompletion term="fujiwara no kogikoso" type="1" match="1" score="0"/>
+<Autocompletion term="fujiwara no kogikoso" type="1" match="1" score="1"/>
 <Autocompletion term="fujiwara no korechika" type="1" match="1" score="70"/>
 <Autocompletion term="fujiwara no korefusa" type="1" match="1" score="12"/>
 <Autocompletion term="fujiwara no korekata" type="1" match="1" score="18"/>
@@ -8951,7 +8951,7 @@
 <Autocompletion term="suruga" type="1" match="1" score="230"/>
 <Autocompletion term="utsumi jiro" type="1" match="1" score="5"/>
 <Autocompletion term="utsumi" type="1" match="1" score="10"/>
-<Autocompletion term="kano jiroemon" type="1" match="1" score="0"/>
+<Autocompletion term="kano jiroemon" type="1" match="1" score="1"/>
 <Autocompletion term="hachimonjiya jisho" type="1" match="1" score="2"/>
 <Autocompletion term="hachimonjiya" type="1" match="1" score="4"/>
 <Autocompletion term="okahashi jisuke" type="1" match="1" score="1"/>
@@ -9236,7 +9236,7 @@
 <Autocompletion term="mizunoya" type="1" match="1" score="4"/>
 <Autocompletion term="mizuno katsunari" type="1" match="1" score="16"/>
 <Autocompletion term="mizuno" type="1" match="1" score="105"/>
-<Autocompletion term="kagatsume katsunoshin" type="1" match="1" score="0"/>
+<Autocompletion term="kagatsume katsunoshin" type="1" match="1" score="1"/>
 <Autocompletion term="kagatsume" type="1" match="1" score="2"/>
 <Autocompletion term="umedo katsunoshin" type="1" match="1" score="2"/>
 <Autocompletion term="umedo" type="1" match="1" score="2"/>
@@ -9843,7 +9843,7 @@
 <Autocompletion term="kamata" type="1" match="1" score="33"/>
 <Autocompletion term="nakai masakiyo" type="1" match="1" score="6"/>
 <Autocompletion term="hojo masako" type="1" match="1" score="88"/>
-<Autocompletion term="asami masakuni" type="1" match="1" score="0"/>
+<Autocompletion term="asami masakuni" type="1" match="1" score="1"/>
 <Autocompletion term="asami" type="1" match="1" score="16"/>
 <Autocompletion term="inaba masakuni" type="1" match="1" score="11"/>
 <Autocompletion term="shigeyama masakuni" type="1" match="1" score="5"/>
@@ -10208,7 +10208,7 @@
 <Autocompletion term="mino" type="1" match="1" score="501"/>
 <Autocompletion term="mino no namiuo" type="1" match="1" score="1"/>
 <Autocompletion term="mino no obayashi" type="1" match="1" score="2"/>
-<Autocompletion term="mino no otomasu" type="1" match="1" score="0"/>
+<Autocompletion term="mino no otomasu" type="1" match="1" score="1"/>
 <Autocompletion term="mino no sonoki" type="1" match="1" score="1"/>
 <Autocompletion term="mino no umakai" type="1" match="1" score="3"/>
 <Autocompletion term="kita minoru" type="1" match="1" score="10"/>
@@ -10825,7 +10825,7 @@
 <Autocompletion term="nuribe no tomose" type="1" match="1" score="11"/>
 <Autocompletion term="nuribe" type="1" match="1" score="12"/>
 <Autocompletion term="nyudo shinno" type="1" match="1" score="5"/>
-<Autocompletion term="o kikuchi" type="1" match="1" score="0"/>
+<Autocompletion term="o kikuchi" type="1" match="1" score="1"/>
 <Autocompletion term="o no honji" type="1" match="1" score="16"/>
 <Autocompletion term="o no jinenmaro" type="1" match="1" score="2"/>
 <Autocompletion term="o no tadatatsu" type="1" match="1" score="2"/>
@@ -10997,7 +10997,7 @@
 <Autocompletion term="ozawa roan" type="1" match="1" score="9"/>
 <Autocompletion term="ozawa" type="1" match="1" score="12"/>
 <Autocompletion term="roben" type="1" match="1" score="29"/>
-<Autocompletion term="atkinson robert william" type="1" match="1" score="0"/>
+<Autocompletion term="atkinson robert william" type="1" match="1" score="1"/>
 <Autocompletion term="atkinson" type="1" match="1" score="1"/>
 <Autocompletion term="kataoka roen" type="1" match="1" score="3"/>
 <Autocompletion term="naito roichi" type="1" match="1" score="3"/>
@@ -11342,7 +11342,7 @@
 <Autocompletion term="namikawa seisho" type="1" match="1" score="3"/>
 <Autocompletion term="namikawa" type="1" match="1" score="8"/>
 <Autocompletion term="ogawa seisuke" type="1" match="1" score="12"/>
-<Autocompletion term="mori seizo" type="1" match="1" score="0"/>
+<Autocompletion term="mori seizo" type="1" match="1" score="1"/>
 <Autocompletion term="toriyama sekien" type="1" match="1" score="31"/>
 <Autocompletion term="toriyama" type="1" match="1" score="4"/>
 <Autocompletion term="kiuchi sekitei" type="1" match="1" score="4"/>
@@ -11377,7 +11377,7 @@
 <Autocompletion term="mikumo" type="1" match="1" score="13"/>
 <Autocompletion term="murakami sensho" type="1" match="1" score="10"/>
 <Autocompletion term="murakami" type="1" match="1" score="73"/>
-<Autocompletion term="suzuki senzaburo" type="1" match="1" score="0"/>
+<Autocompletion term="suzuki senzaburo" type="1" match="1" score="1"/>
 <Autocompletion term="kawaguchi seppo" type="1" match="1" score="5"/>
 <Autocompletion term="kawaguchi" type="1" match="1" score="25"/>
 <Autocompletion term="okazaki sessei" type="1" match="1" score="4"/>
@@ -11873,7 +11873,7 @@
 <Autocompletion term="osada tadamune" type="1" match="1" score="13"/>
 <Autocompletion term="shimazu tadamune" type="1" match="1" score="5"/>
 <Autocompletion term="kazanin tadanaga" type="1" match="1" score="9"/>
-<Autocompletion term="sakakibara tadanaga" type="1" match="1" score="0"/>
+<Autocompletion term="sakakibara tadanaga" type="1" match="1" score="1"/>
 <Autocompletion term="shimazu tadanaga" type="1" match="1" score="5"/>
 <Autocompletion term="oe tadanari" type="1" match="1" score="2"/>
 <Autocompletion term="sato tadanobu" type="1" match="1" score="15"/>
@@ -11913,7 +11913,7 @@
 <Autocompletion term="ashikaga tadatsuna" type="1" match="1" score="9"/>
 <Autocompletion term="honda tadatsune" type="1" match="1" score="1"/>
 <Autocompletion term="kazanin tadatsune" type="1" match="1" score="8"/>
-<Autocompletion term="matsudaira tadatsune" type="1" match="1" score="0"/>
+<Autocompletion term="matsudaira tadatsune" type="1" match="1" score="1"/>
 <Autocompletion term="kishida tadauji" type="1" match="1" score="2"/>
 <Autocompletion term="nakayama tadayasu" type="1" match="1" score="35"/>
 <Autocompletion term="ashikaga tadayoshi" type="1" match="1" score="77"/>
@@ -12300,7 +12300,7 @@
 <Autocompletion term="takagi teisaku" type="1" match="1" score="3"/>
 <Autocompletion term="tsuga teisho" type="1" match="1" score="7"/>
 <Autocompletion term="tsuga" type="1" match="1" score="6"/>
-<Autocompletion term="akiyama teisuke" type="1" match="1" score="0"/>
+<Autocompletion term="akiyama teisuke" type="1" match="1" score="1"/>
 <Autocompletion term="akiyama" type="1" match="1" score="25"/>
 <Autocompletion term="matsunaga teitoku" type="1" match="1" score="11"/>
 <Autocompletion term="wado teizo" type="1" match="1" score="4"/>
@@ -12679,7 +12679,7 @@
 <Autocompletion term="rokkaku ujiyori" type="1" match="1" score="10"/>
 <Autocompletion term="yamana ujiyuki" type="1" match="1" score="9"/>
 <Autocompletion term="imagawa ujizane" type="1" match="1" score="26"/>
-<Autocompletion term="munakata ujizane" type="1" match="1" score="0"/>
+<Autocompletion term="munakata ujizane" type="1" match="1" score="1"/>
 <Autocompletion term="taguchi ukichi" type="1" match="1" score="14"/>
 <Autocompletion term="miyake ukon" type="1" match="1" score="11"/>
 <Autocompletion term="kashio umanosuke" type="1" match="1" score="11"/>
@@ -12823,7 +12823,7 @@
 <Autocompletion term="horie yayoi" type="1" match="1" score="1"/>
 <Autocompletion term="horie" type="1" match="1" score="16"/>
 <Autocompletion term="teshima yazaemon" type="1" match="1" score="6"/>
-<Autocompletion term="miyazaki yazo" type="1" match="1" score="0"/>
+<Autocompletion term="miyazaki yazo" type="1" match="1" score="1"/>
 <Autocompletion term="miyazaki" type="1" match="1" score="89"/>
 <Autocompletion term="udagawa yoan" type="1" match="1" score="6"/>
 <Autocompletion term="yoarashi okinu" type="1" match="1" score="3"/>
@@ -13986,7 +13986,7 @@
 <Autocompletion term="provincial temples" type="1" match="1" score="9"/>
 <Autocompletion term="reiun-in temple" type="1" match="1" score="7"/>
 <Autocompletion term="reizan-ji temple" type="1" match="1" score="2"/>
-<Autocompletion term="remains of sainoo abandoned temple" type="1" match="1" score="0"/>
+<Autocompletion term="remains of sainoo abandoned temple" type="1" match="1" score="1"/>
 <Autocompletion term="renge-ji temple" type="1" match="1" score="31"/>
 <Autocompletion term="renjo-ji temple" type="1" match="1" score="1"/>
 <Autocompletion term="rikyu hachiman-gu shrine" type="1" match="1" score="14"/>
@@ -14476,7 +14476,7 @@
 <Autocompletion term="shinkai" type="1" match="1" score="36"/>
 <Autocompletion term="shinko-sai festival" type="1" match="1" score="8"/>
 <Autocompletion term="shinme" type="1" match="1" score="1"/>
-<Autocompletion term="shinpu kanro" type="1" match="1" score="0"/>
+<Autocompletion term="shinpu kanro" type="1" match="1" score="1"/>
 <Autocompletion term="shinsatsu" type="1" match="1" score="9"/>
 <Autocompletion term="shinsen" type="1" match="1" score="44"/>
 <Autocompletion term="shinshoku" type="1" match="1" score="23"/>
@@ -14527,7 +14527,7 @@
 <Autocompletion term="tatsuta-hime" type="1" match="1" score="1"/>
 <Autocompletion term="tawara no onda" type="1" match="1" score="3"/>
 <Autocompletion term="tenjin-shinko faith" type="1" match="1" score="8"/>
-<Autocompletion term="tenson kigen" type="1" match="1" score="0"/>
+<Autocompletion term="tenson kigen" type="1" match="1" score="1"/>
 <Autocompletion term="the god inari" type="1" match="1" score="28"/>
 <Autocompletion term="the imperial edict" type="1" match="1" score="51"/>
 <Autocompletion term="the inbe clan" type="1" match="1" score="15"/>
@@ -14874,7 +14874,7 @@
 <Autocompletion term="sodaisho" type="1" match="1" score="8"/>
 <Autocompletion term="sojaban" type="1" match="1" score="49"/>
 <Autocompletion term="sotsuzoku" type="1" match="1" score="8"/>
-<Autocompletion term="successive ministers of education" type="1" match="1" score="0"/>
+<Autocompletion term="successive ministers of education" type="1" match="1" score="1"/>
 <Autocompletion term="suino" type="1" match="1" score="28"/>
 <Autocompletion term="suito" type="1" match="1" score="7"/>
 <Autocompletion term="suruga no kuni no miyatsuko" type="1" match="1" score="2"/>
