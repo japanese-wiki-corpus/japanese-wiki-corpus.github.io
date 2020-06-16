@@ -82,7 +82,7 @@ def orderName(content):
 	
 	words = name.split(' ')
 	if len(words) > 2 and words[-2].isupper():
-		if words[-1][0] != '(' and words[-1] not in roman:
+		if words[-1][0] != '(' and words[-1][-1] != ')' and words[-1] not in roman:
 			words.insert(0, words.pop(-2))
 		elif len(words) > 3 and words[-3].isupper(): 
 			words.insert(0, words.pop(-3))

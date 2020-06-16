@@ -48,7 +48,7 @@ def orderName(name):
 	roman = ['I', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX']
 	words = name.split(' ')
 	if words[-1].isupper():
-		if words[-1][0] != '(' and words[-1] not in roman:
+		if words[-1][0] != '(' and words[-1][-1] != ')' and words[-1] not in roman:
 			words.insert(0, words.pop())
 		elif len(words) > 2 and words[-2].isupper(): 
 			words.insert(0, words.pop(-2))
@@ -74,10 +74,10 @@ def getPageRank(keywords, additional):
 	for kw in ranks:
 		keys.discard(kw)
 	
+	print(len(keys), 'keys', flush=True)
+	
 	if len(keys) == 0:
 		return ranks
-	
-	print(len(keys), 'keys', flush=True)
 	
 	if testing:
 		keys = set(synonyms.values())
