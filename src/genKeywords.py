@@ -41,18 +41,28 @@ def getNLinks(content):
 	return len(links)
 
 def orderName(name):
+	roman = ['I', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX']
 	words = name.split(' ')
 	if words[-1].isupper():
-		words.insert(0, words.pop())
+		if words[-1][0] != '(' and words[-1] not in roman:
+			words.insert(0, words.pop())
+		elif len(words) > 2 and words[-2].isupper(): 
+			words.insert(0, words.pop(-2))
 	return ' '.join(words)
 
 def getLastname(kw):
 	words = kw.split(' ')
-	if words[0].isupper():
+	if len(words) > 1 and words[0].isupper():
 		return words[0].lower()
 	return None
 
-def getPageRank(keywords):
+def getPageRank(keywords, additional):
+	for kw in synonyms:
+		additional[synonyms[kw]] = kw
+		
+	keys = set(keywords.keys().extend(additional.keys()))
+	print(len(keys), 'keys', flush=True)
+
 	nproc = 0
 	ranks = {}
 	for cat in cats:
@@ -66,7 +76,7 @@ def getPageRank(keywords):
 			content = inp.read()
 			content = content.lower()
 			
-			for kw in keywords:
+			for kw in keys:
 				if kw not in ranks:
 					ranks[kw] = 0
 				ranks[kw] += content.count(' '+kw+' ')
@@ -78,20 +88,13 @@ def getPageRank(keywords):
 				print(nproc, flush=True)
 			if testing:
 				break
-	return ranks
-
-def pageRankIncludeUnorderedNamesAndSynonyms(ranks, additional):
-	for kw in synonyms:
-		additional[synonyms[kw]] = kw
-	print('additional kw', len(additional), flush=True)
-	orderedRanks = getPageRank(additional)
+	
 	for origName in additional:
 		ordered = additional[origName]
 		if ordered not in ranks:
 			ranks[ordered] = 0
 		ranks[ordered] += orderedRanks[origName]
-	with open('rank.json', 'w', encoding="utf8") as outfile:
-		json.dump(ranks, outfile, ensure_ascii=False)
+	
 	return ranks
 
 def run():
@@ -141,22 +144,18 @@ def run():
 	ranks = {}
 	if not os.path.isfile('rank.json'):
 		print('page rank', flush=True)
-		ranks = getPageRank(keywords)
+		ranks = getPageRank(keywords, orderedNames)
 		with open('rank.json', 'w', encoding="utf8") as outfile:
 			json.dump(ranks, outfile, ensure_ascii=False)
 	else:
 		with open('rank.json', encoding='utf8') as f:
 			ranks = json.load(f)
-		
-	#ranks = pageRankIncludeUnorderedNamesAndSynonyms(ranks, orderedNames)
 
 	for kw in keywords:
 		if kw in ranks:
 			keywords[kw] = keywords[kw] + ranks[kw]
 		
 	for kw in synonyms:
-		if kw not in keywords:
-			print(kw)
 		keywords[synonyms[kw]] = keywords[kw] + 1
 	
 	nkw = len(keywords)

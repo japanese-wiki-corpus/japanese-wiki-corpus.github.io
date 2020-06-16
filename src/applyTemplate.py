@@ -19,9 +19,13 @@ def filename2keyword(file):
 	return keyword
 
 def orderName(name):
+	roman = ['I', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX']
 	words = name.split(' ')
 	if words[-1].isupper():
-		words.insert(0, words.pop())
+		if words[-1][0] != '(' and words[-1] not in roman:
+			words.insert(0, words.pop())
+		elif len(words) > 2 and words[-2].isupper(): 
+			words.insert(0, words.pop(-2))
 	return ' '.join(words)
 
 def applyPageTemplate():
@@ -64,7 +68,7 @@ def applyCategoryTemplate():
 	listTemplateFile = open('templates/category-list.html', "r", encoding="utf8")
 	listTemplate = listTemplateFile.read()
 	
-	with open(dataPath+'data.json', encoding='utf8') as f:
+	with open('data.json', encoding='utf8') as f:
 		data = json.load(f)
 	
 	for cat in cats:

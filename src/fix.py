@@ -78,10 +78,16 @@ def orderName(content):
 	iend = content.find('</h1>')
 	name = content[istart:iend]
 	
+	roman = ['I', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX']
+	
 	words = name.split(' ')
 	if len(words) > 2 and words[-2].isupper():
-		name = words[-2]+' '+(' '.join(words[:-2]))+' '+words[-1]
-
+		if words[-1][0] != '(' and words[-1] not in roman:
+			words.insert(0, words.pop(-2))
+		elif len(words) > 3 and words[-3].isupper(): 
+			words.insert(0, words.pop(-3))
+			
+	name = ' '.join(words)
 	return content[:istart]+name+content[iend:]
 
 def fixPages():
