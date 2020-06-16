@@ -2,3 +2,11 @@
 .nav-search .gsc-control-searchbox-only {
 	background-color: transparent;
 }
+
+.nav-search .gstl_50 {
+	position: relative !important;
+}
+
+.gstl_50 {
+	position: fixed !important;
+}
