@@ -8,9 +8,12 @@ testing = False
 dataPath = '../japanese_wiki_corpus_data/'
 cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
 if testing:
-	cats = ['Buddhism']
+	cats = ['emperor']
 
 catDisplay = {'Buddhism': 'Buddhism', 'building': 'Buildings', 'culture': 'Culture', 'emperor': 'Emperors', 'family': 'Clans', 'geographical': 'Locations', 'history': 'History', 'literature': 'Literature', 'person': 'Historical Figures', 'railway': 'Railways', 'road': 'Roads', 'shrines': 'Shrines', 'school': 'Schools', 'Shinto': 'Shinto', 'title': 'Titles'}
+endPrefixes = [] # ['cloistered imperial prince ', 'imperial prince ', 'imperial prince and monk', 'imperial princess ', 'emperor ', 'empress ', 'empress dowager ']
+ignorePrefixes = ['the ', 'a ']
+ignorePrefixes.extend(endPrefixes)
 
 def filename2keyword(file):
 	keyword = os.path.splitext(file)[0]
@@ -61,6 +64,17 @@ def applyPageTemplate():
 				
 	templateFile.close()
 
+def prepPageNameSort(name):
+	n = name.lower()
+	for prefix in ignorePrefixes:
+		if n.startswith(prefix):
+			i = len(prefix)
+			if prefix in endPrefixes:
+				name += ' (' + name[0:i-1] + ')'
+			name = name[i:]
+	name = name[0].upper() + name[1:]
+	return name
+
 def applyCategoryTemplate():
 	templateFile = open('templates/category.html', "r", encoding="utf8")
 	template = templateFile.read()
@@ -74,11 +88,11 @@ def applyCategoryTemplate():
 	for cat in cats:
 		print(cat, flush=True)
 		
-		pages = sorted(data[cat], key=lambda k: k['name'].lower()) 
+		pages = sorted(data[cat], key=lambda k: prepPageNameSort(k['name']).lower()) 
 		
 		items = {}
 		for page in pages:
-			name = page['name']
+			name = prepPageNameSort(page['name'])
 			letter = name[0].upper()
 			if not letter.isalpha():
 				letter = '?'
@@ -129,5 +143,5 @@ def applyCategoryTemplate():
 	listTemplateFile.close()	
 	templateFile.close()
 
-applyPageTemplate()
+#applyPageTemplate()
 applyCategoryTemplate()
