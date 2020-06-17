@@ -185,7 +185,7 @@ def run():
 	for kw in synonyms:
 		keywords[synonyms[kw]] = keywords[kw] + 1
 	
-	with open(dataPath+'suggestions.xml', "r", encoding="utf8") as f:
+	with open('suggestions.xml', "r", encoding="utf8") as f:
 		oldSuggestions = f.read()
 		
 	nkw = len(keywords)
