@@ -195,15 +195,14 @@ def run():
 	oldKw = oldSuggestions.split('\n')
 	for old in oldKw[2:]:
 		i = old.find('"')
-		# skip excluded terms '<Autocompletion term="a plot of usa hachiman-gu oracle" type="2" match="1"/>'
-		if i == -1 or old.find('score="') == -1:
+		if i == -1:
 			continue
 		old = old[i+1:]
 		i = old.find('"')
 		old = old[:i]
 		if old not in keywords:
 			nkw += 1
-			removedKw += '<Autocompletion term="'+old+'" type="1" match="1" score="0"/>\n'
+			removedKw += '<Autocompletion term="'+old+'" type="2" match="1"/>\n'
 
 	out = open('keywords.xml', "w", encoding="utf8")	
 	out.write('<?xml version="1.0" encoding="UTF-8"?>\n')
