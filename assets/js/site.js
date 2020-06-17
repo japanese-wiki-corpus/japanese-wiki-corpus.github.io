@@ -27,3 +27,13 @@ $('#main-collapsible').on('show.bs.collapse', function () {
 $('#main-collapsible').on('hidden.bs.collapse', function () {
 	$('#main-navbar').css("background-color", "transparent");
 });
+
+
+const gcseInitCallback = function() {
+	$('.gstl_50').attr('style', 'position: fixed !important');
+	$('.nav-search .gstl_50').attr('style', 'position: relative !important');
+};
+window.__gcse = {
+  parsetags: 'onload',
+  initializationCallback: gcseInitCallback
+};
