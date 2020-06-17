@@ -30,7 +30,7 @@ def run():
 			content = inp.read()
 			
 			priority = math.exp(len(content)/maxlen) / math.e
-			sitemap.write("<url><loc>https://shinsengumi-archives.github.io/japanese-wiki-corpus/"+file+"</loc><lastmod>"+lastmod+"T03:17:57+00:00</lastmod><priority>"+str(priority)+"</priority></url>\n")
+			sitemap.write("<url><loc>https://japanese-wiki-corpus.github.io/"+file+"</loc><lastmod>"+lastmod+"T03:17:57+00:00</lastmod><priority>"+str(priority)+"</priority></url>\n")
 			
 			inp.close()
 			if testing:

@@ -16,7 +16,7 @@ def removeBlacklistedLinks(content):
 	blacklist = [['Court', 'history/Court (local administrative organ).html'], ['Village', 'geographical/Village.html'], ['Castle', 'building/Castle.html']]
 	for bl in blacklist:
 		keyword = bl[0]
-		link = "https://shinsengumi-archives.github.io/japanese-wiki-corpus/"+bl[1]
+		link = "https://japanese-wiki-corpus.github.io/"+bl[1]
 		content = content.replace('<a href="'+link+'">'+keyword+'</a>', keyword)
 		content = content.replace('<a href="'+link+'">'+keyword.lower()+'</a>', keyword.lower())
 	return content
@@ -67,7 +67,7 @@ def getData(content):
 		return content
 	iend = content.find('</body>')
 	content = content[istart+7:iend]
-	content = content.replace("<a href='https://shinsengumi-archives.github.io/japanese-wiki-corpus/'>Home</a>\n", '')
+	content = content.replace("<a href='https://japanese-wiki-corpus.github.io/'>Home</a>\n", '')
 	return content
 
 def orderName(content):

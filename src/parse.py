@@ -65,7 +65,7 @@ def parse(fn, jp, cat):
 	out.write('<link rel="shortcut icon" type="image/x-icon" href="../logo.ico" />\n')
 	out.write("</head>\n")
 	out.write("<body>\n")
-	out.write("<a href='https://shinsengumi-archives.github.io/japanese-wiki-corpus/'>Home</a>\n")
+	out.write("<a href='https://japanese-wiki-corpus.github.io/'>Home</a>\n")
 	
 	out.write("<h1>"+engl+" ("+jp+")</h1>\n")
 	
@@ -125,7 +125,7 @@ def parse(fn, jp, cat):
 	cat_file.close()
 	
 	sitemap = open("sitemap.xml", "a", encoding="utf8")
-	sitemap.write("<url><loc>https://shinsengumi-archives.github.io/japanese-wiki-corpus/"+outfn+"</loc><lastmod>2020-02-05T03:17:57+00:00</lastmod><priority>0.64</priority></url>\n")
+	sitemap.write("<url><loc>https://japanese-wiki-corpus.github.io/"+outfn+"</loc><lastmod>2020-02-05T03:17:57+00:00</lastmod><priority>0.64</priority></url>\n")
 	sitemap.close()
 
 def parseAll():
@@ -146,7 +146,7 @@ def parseAll():
 		out.write('<title>'+cat+'</title>\n')
 		out.write("</head>\n")
 		out.write("<body>\n")
-		out.write("<a href='https://shinsengumi-archives.github.io/japanese-wiki-corpus/'>Home</a>\n")
+		out.write("<a href='https://japanese-wiki-corpus.github.io/'>Home</a>\n")
 		out.write("<h1>"+cat+"</h1>\n")
 		out.close()
 		if not os.path.exists(cat):

@@ -50,6 +50,8 @@ def applyPageTemplate():
 			content = content.replace('{{name}}', name)
 			content = content.replace('{{category}}', cat)
 			
+			content = content.replace('https://shinsengumi-archives.github.io/japanese-wiki-corpus/', 'https://japanese-wiki-corpus.github.io/')
+			
 			if testing:
 				out = open("t.html", "w", encoding="utf8") #test
 			else:
@@ -128,6 +130,8 @@ def applyCategoryTemplate():
 		content = content.replace('{{category-display}}', catDisplay[cat])
 		content = content.replace('{{letters}}', letters)
 		content = content.replace('{{list}}', allItems)
+		
+		content = content.replace('https://shinsengumi-archives.github.io/japanese-wiki-corpus/', 'https://japanese-wiki-corpus.github.io/')
 		
 		if testing:
 			out = open("t.html", "w", encoding="utf8") #test

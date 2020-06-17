@@ -23,11 +23,11 @@ def getKeywords():
 				continue
 			if keyword in blacklist:
 				continue
-			link = "https://shinsengumi-archives.github.io/japanese-wiki-corpus/"+cat+"/"+file
+			link = "https://japanese-wiki-corpus.github.io/"+cat+"/"+file
 			keywords[keyword] = link
 			if len(keyword.split()) == 1:
 				keyword = keyword.lower()
-				keywords[keyword] = "https://shinsengumi-archives.github.io/japanese-wiki-corpus/"+cat+"/"+file
+				keywords[keyword] = "https://japanese-wiki-corpus.github.io/"+cat+"/"+file
 	for alias in aliases:
 		keywords[alias[0]] = keywords[alias[1]]
 	return keywords
