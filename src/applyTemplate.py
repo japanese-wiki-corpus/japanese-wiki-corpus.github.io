@@ -27,10 +27,10 @@ def orderName(name):
 	if words[-1].isupper():
 		if words[-1][0] != '(' and words[-1][-1] != ')' and words[-1] not in roman:
 			words.insert(0, words.pop())
-			words[0] = words[0].capitalize()
 		elif len(words) > 2 and words[-2].isupper(): 
 			words.insert(0, words.pop(-2))
-			words[0] = words[0].capitalize()
+	if words[0].isupper() and words[0][0] != '(' and words[0][-1] != ')' and words[0] not in roman:
+		words[0] = words[0].capitalize()
 	return ' '.join(words)
 
 def applyPageTemplate():
