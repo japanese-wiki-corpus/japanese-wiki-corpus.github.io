@@ -62,13 +62,13 @@ body {
 	padding: 29% 0px;
 	background-color: rgba(0,0,0,.4);
 }
-#categories .tile-content:hover {
+#categories .tile:hover .tile-content {
 	background-color: transparent;
+	color: transparent;
 }
-#categories a:hover {
+#categories .tile:hover h3 {
 	visibility: hidden;
 }
-
 #categories .tile-content h3 {
 	font-size: 7.5vw;
 	white-space: nowrap
