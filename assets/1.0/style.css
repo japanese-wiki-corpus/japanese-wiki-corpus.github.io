@@ -459,7 +459,8 @@ fieldset[disabled] .btn-xl.active {
 
 
 .cat-search {
-	padding-top: 2em;
+	padding-top: 30px;
+    min-height: 60px;
 }
 
 .left-corner {
