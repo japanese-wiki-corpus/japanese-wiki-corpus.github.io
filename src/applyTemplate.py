@@ -51,6 +51,7 @@ def applyPageTemplate():
 			content = template.replace('{{content}}', content)
 			content = content.replace('{{name}}', name)
 			content = content.replace('{{category}}', cat)
+			content = content.replace('{{category-display}}', catDisplay[cat])
 			
 			content = content.replace('https://shinsengumi-archives.github.io/japanese-wiki-corpus/', 'https://japanese-wiki-corpus.github.io/')
 			
@@ -106,6 +107,16 @@ def applyCategoryTemplate():
 			if letter not in items:
 				items[letter] = ''
 			items[letter] += line
+			
+			pageFile = open(page['url'], "r", encoding="utf8")
+			pageContent = pageFile.read()
+			pageContent = pageContent.replace('{{desc}}', page['desc'])
+			pageContent = pageContent.replace('{{jp}}', page['jp'])
+			pageContent = pageContent.replace('{{url}}', page['url'])
+			pageOut = open(page['url'], "w", encoding="utf8")
+			pageOut.write(pageContent)
+			pageOut.close()
+			pageFile.close()
 		
 		allItems = ""
 		letters = ""
