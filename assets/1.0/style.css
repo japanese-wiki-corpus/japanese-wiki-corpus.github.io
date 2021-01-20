@@ -371,13 +371,18 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-toggler {
 	margin-right: 1rem;
-	margin-left: 1rem;
+	margin-left: 0.25rem;
 	padding: .15rem .5rem;
 }
 
 .bg-white .navbar-toggler {
 	margin-right: 0.25rem;
-	margin-left: 0.25rem;
+}
+
+@media(min-width:500px) {
+	.bg-white .navbar-toggler {
+		margin-right: 1rem;
+	}
 }
 
 .link-item {
