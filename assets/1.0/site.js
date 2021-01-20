@@ -32,6 +32,9 @@ $('#main-collapsible').on('hidden.bs.collapse', function () {
 const gcseInitCallback = function() {
 	$('.gstl_50').attr('style', 'position: fixed !important');
 	$('.nav-search .gstl_50').attr('style', 'position: relative !important');
+	$('table.gsc-search-box td.gsc-input').attr('style', 'padding: 0px');
+	$('.gsc-input-box').attr('style', 'padding: 3px 0px;');
+	$('.gsc-search-button-v2').attr('style', 'padding: 10px 17px; margin: 0;');
 };
 window.__gcse = {
   parsetags: 'onload',
