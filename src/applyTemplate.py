@@ -47,13 +47,17 @@ def applyPageTemplate():
 			inp = open(dataPath+filepath, "r", encoding="utf8")
 			content = inp.read()
 			
+			sanitized = content.replace('"', '&quot;').replace('<p></p>', '')
+			sanitized = "\n".join(sanitized.split("\n")[1:])
+			
 			name = orderName(filename2keyword(file))
 			content = template.replace('{{content}}', content)
 			content = content.replace('{{name}}', name)
 			content = content.replace('{{category}}', cat)
 			content = content.replace('{{category-display}}', catDisplay[cat])
+			content = content.replace('{{sanitized}}', sanitized)
 			
-			content = content.replace('https://shinsengumi-archives.github.io/japanese-wiki-corpus/', 'https://japanese-wiki-corpus.github.io/')
+			content = content.replace('https://shinsengumi-archives.github.io/japanese-wiki-corpus/', 'https://www.japanese-wiki-corpus.org/')
 			
 			if testing:
 				out = open("t.html", "w", encoding="utf8") #test
@@ -144,7 +148,7 @@ def applyCategoryTemplate():
 		content = content.replace('{{letters}}', letters)
 		content = content.replace('{{list}}', allItems)
 		
-		content = content.replace('https://shinsengumi-archives.github.io/japanese-wiki-corpus/', 'https://japanese-wiki-corpus.github.io/')
+		content = content.replace('https://shinsengumi-archives.github.io/japanese-wiki-corpus/', 'https://www.japanese-wiki-corpus.org/')
 		
 		if testing:
 			out = open("t.html", "w", encoding="utf8") #test
