@@ -632,13 +632,19 @@ header .intro-text .intro-heading {
 }
 
 @media(min-width:768px) {
-	.nav-search-page {
-		width: 30%; 
+	.social-footer {
+		display: hidden; 
 	}
 }
 
 .searchbar {
 	min-height: 36px;
+}
+
+@media(min-height:760px) {
+	.nav-search-page {
+		width: 30%; 
+	}
 }
 
 section {

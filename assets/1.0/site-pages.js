@@ -11,3 +11,7 @@ $(window).on('load', function(){
   }(document, 'script', 'facebook-jssdk'));
   
 });
+
+if (document.getElementById("main-text").scrollHeight + 80 <= document.body.clientHeight) {
+	document.getElementById("social-footer").style.display = "none";
+}
