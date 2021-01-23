@@ -12,6 +12,6 @@ $(window).on('load', function(){
   
 });
 
-if (document.getElementById("main-text").scrollHeight + 80 <= document.body.clientHeight) {
+if (document.getElementById("main-text").scrollHeight <= document.body.clientHeight) {
 	document.getElementById("social-footer").style.display = "none";
 }
