@@ -47,8 +47,8 @@ def applyPageTemplate():
 			inp = open(dataPath+filepath, "r", encoding="utf8")
 			content = inp.read()
 			
+			content = "\n".join(content.split("\n")[1:])
 			sanitized = content.replace('"', '&quot;').replace('<p></p>', '')
-			sanitized = "\n".join(sanitized.split("\n")[1:])
 			
 			name = orderName(filename2keyword(file))
 			content = template.replace('{{content}}', content)
