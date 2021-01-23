@@ -40,6 +40,8 @@
 </head>
 <body class="bg-black">
 
+<div id="fb-root"></div>
+
 <nav class="navbar navbar-dark fixed-top" id="main-navbar">
 	<span class="navbar-brand"><a href="about.html" class="page-scroll"><button type="button" class="btn btn-dark">About</button></a></span>
 	
@@ -99,7 +101,7 @@
 			</li>
 			
 			<div class="dropdown-divider"></div>
-			<li class="nav-item nav-search">
+			<li class="searchbar nav-item nav-search">
 				<div class="gcse-searchbox-only" data-resultsUrl="search-results.html" data-newWindow="false"></div>
 			</li>
 			<div class="dropdown-divider bottom-border"></div>
@@ -115,10 +117,13 @@
 		<h1 class="text-white">Japanese Wiki Corpus</h1>
 		<p class="lead text-secondary">Generated from the <a href='https://alaginrc.nict.go.jp/WikiCorpus/index_E.html' target="_blank" class="text-light">Japanese-English Bilingual Corpus of Wikipedia's Kyoto Articles.</a></p>
 		<p>
-		<div class="main-search">
+		<div class="searchbar main-search">
 			<div class="gcse-searchbox-only" data-resultsUrl="search-results.html" data-newWindow="false"></div>
 		</div>
 		</p>
+		<div style="min-height: 30px;">
+			<div class="fb-like" data-href="https://www.japanese-wiki-corpus.org/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+		</div>
 	</div>
 </section>
 
@@ -217,11 +222,12 @@
 
 <footer class="text-muted" style="padding-bottom: 5px;">
   <div class="container">
-	<div class="gcse-searchbox-only" data-resultsUrl="search-results.html" data-newWindow="false"></div>
+	<div class="searchbar"><div class="gcse-searchbox-only" data-resultsUrl="search-results.html" data-newWindow="false"></div></div>
 	<p style="padding-top: 25px;">
 	  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/3.0/88x31.png"></a> 
 	  &#169; A. C. Yu &nbsp;&mdash;&nbsp; Generated from the <a href='https://alaginrc.nict.go.jp/WikiCorpus/index_E.html' target="_blank">Japanese-English Bilingual Corpus of Wikipedia's Kyoto Articles</a> which is translated by the National Institute of Information and Communications Technology (NICT) from Japanese sentences on Wikipedia, used under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.
 	</p>
+	<div style="text-align: left;margin-left: -7px;min-height: 30px;"><div class="fb-like" style="display: inline;" data-href="https://www.japanese-wiki-corpus.org/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div></div>
 	<p style="text-align: left;"><a href="https://github.com/japanese-wiki-corpus/japanese-wiki-corpus.github.io/issues">Report an issue</a></p>
   </div>
 </footer>
@@ -234,6 +240,7 @@
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <script defer src="assets/1.0/site.js"></script>
+<script defer src="assets/1.0/site-pages.js"></script>
 <script defer src="assets/1.0/cse.js"></script>
 </body>
 </html>

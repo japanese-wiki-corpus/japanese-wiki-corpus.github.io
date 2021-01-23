@@ -637,6 +637,10 @@ header .intro-text .intro-heading {
 	}
 }
 
+.searchbar {
+	min-height: 36px;
+}
+
 section {
     padding: 50px 0;
 }
