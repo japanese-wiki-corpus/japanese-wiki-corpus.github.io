@@ -1,8 +1,7 @@
 $(window).on('load', function(){
 
 $('.ap_container').each(function() {
-  console.log($( this ).height());
-  if ($(this).height() > 10) { 
+  if ($(this).height() > 50) { 
 	$(this).attr('style', 'border-style: solid; border-width: medium; margin: 40 0; width: fit-content;');
   }
 });
