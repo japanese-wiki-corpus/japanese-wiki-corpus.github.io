@@ -10,7 +10,9 @@ $(window).on('load', function(){
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
   
-  $('.ap_container').attr('style', 'border-style: solid; width: fit-content; margin: 20 0;');
+  if ($('#mys-content').length && $('.ap_container').height() > 0) {
+	$('.ap_container').attr('style', 'border-style: solid; width: fit-content; margin: 20 0;');
+  }
   
 });
 
