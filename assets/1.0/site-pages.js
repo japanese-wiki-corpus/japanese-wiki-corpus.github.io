@@ -10,8 +10,8 @@ $(window).on('load', function(){
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
   
-  if ($('#mys-content').length && $('.ap_container').height() > 0) {
-	$('.ap_container').attr('style', 'border-style: solid; width: fit-content; margin: 20 0;');
+  if ($('.ap_container').height() > 0) {
+	$('.ap_container').attr('style', 'border-style: solid; border-width: medium; width: fit-content; margin: 40 0;');
   }
   
 });
