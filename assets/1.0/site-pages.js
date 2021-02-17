@@ -10,7 +10,7 @@ $(window).on('load', function(){
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
   
-  if ($('.ap_container').height() > 0) {
+  if ($('.ap_container').height() > 10) {
 	$('.ap_container').attr('style', 'border-style: solid; border-width: medium; width: fit-content; margin: 40 0;');
   }
   
