@@ -1,8 +1,8 @@
-$(window).on('load', function(){
-
 if ($('.ap_container').height() > 10) {
 	$('.ap_container').attr('style', 'border-style: solid; border-width: medium; width: fit-content; margin: 40 0;');
 }
+
+$(window).on('load', function(){
 
 // Facebook buttons
 (function(d, s, id) {
