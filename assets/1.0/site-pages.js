@@ -10,6 +10,8 @@ $(window).on('load', function(){
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
   
+  $('.ap_container').attr('style', 'border-style: solid');
+  
 });
 
 if (document.getElementById("main-text").scrollHeight - 100 <= document.body.clientHeight) {
