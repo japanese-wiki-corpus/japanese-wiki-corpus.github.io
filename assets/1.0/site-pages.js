@@ -1,8 +1,11 @@
-$( ".ap_container" ).load(function() {
+var checkExist = setInterval(function() {
 	if ($('.ap_container').height() > 50) {
+		console.log($('.ap_container').height());
 		$('.ap_container').attr('style', 'border-style: solid; border-width: medium; width: fit-content; margin: 40 0;');
+		clearInterval(checkExist);
 	}
-});
+}, 100); // check every 100ms
+setTimeout(function(){ clearInterval(checkExist); }, 10000);
 
 $(window).on('load', function(){
 
