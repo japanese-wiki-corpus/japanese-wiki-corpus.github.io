@@ -650,6 +650,7 @@ header .intro-text .intro-heading {
 .google-ad {
 	margin: 40 0;
 	border-style: solid;
+	border-weight: medium;
 }
 
 section {

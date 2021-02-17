@@ -14,6 +14,7 @@ catDisplay = {'Buddhism': 'Buddhism', 'building': 'Buildings', 'culture': 'Cultu
 endPrefixes = [] # ['cloistered imperial prince ', 'imperial prince ', 'imperial prince and monk', 'imperial princess ', 'emperor ', 'empress ', 'empress dowager ']
 ignorePrefixes = ['the ', 'a ']
 ignorePrefixes.extend(endPrefixes)
+responsiveAd = '\n<div class="google-ad">\n<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6625151359627561" data-ad-slot="2955832603" data-ad-format="auto" data-full-width-responsive="true"></ins>\n</div>\n'
 
 def filename2keyword(file):
 	keyword = os.path.splitext(file)[0]
@@ -33,6 +34,11 @@ def orderName(name):
 		words[0] = words[0].capitalize()
 	return ' '.join(words)
 
+def injectAds(content):
+	lines = content.split("\n")
+	lines.insert(2, responsiveAd)
+	return "\n".join(lines)
+
 def applyPageTemplate():
 	templateFile = open('templates/page.html', "r", encoding="utf8")
 	template = templateFile.read()
@@ -49,6 +55,8 @@ def applyPageTemplate():
 			
 			content = "\n".join(content.split("\n")[1:])
 			sanitized = content.replace('"', '&quot;').replace('<p></p>', '')
+			
+			content = injectAds(content);
 			
 			name = orderName(filename2keyword(file))
 			content = template.replace('{{content}}', content)
