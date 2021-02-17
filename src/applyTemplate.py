@@ -36,12 +36,13 @@ def orderName(name):
 
 def injectAds(content):
 	lines = content.split("\n")
-	if len(lines[1]) < 500:
-		lines.insert(3, responsiveAd)
-	else:
-		lines.insert(2, responsiveAd)
+	for i in range(1,len(lines)):
+		if len(lines[i]) > 100 or i > 5:
+			lines.insert(i+1, responsiveAd)
+			break
+			
 	if len(lines) > 100:
-		lines.insert(-2, responsiveAd)
+		lines.insert(-3, responsiveAd)
 	return "\n".join(lines)
 
 def applyPageTemplate():
