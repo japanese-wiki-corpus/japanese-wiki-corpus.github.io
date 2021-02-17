@@ -647,6 +647,11 @@ header .intro-text .intro-heading {
 	}
 }
 
+.google-ad {
+	margin: 40 0;
+	border-style: solid;
+}
+
 section {
     padding: 50px 0;
 }
