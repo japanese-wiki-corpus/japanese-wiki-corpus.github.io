@@ -2,7 +2,7 @@ $(window).on('load', function(){
 
 $('.ap_container').each(function() {
   if ($(this).height() > 50) { 
-	$(this).attr('style', 'border-style: solid; border-width: medium; margin: 40 0; width: fit-content;');
+	$(this).attr('style', 'border-style: solid; border-width: 1; margin: 40 0; width: fit-content;');
   }
 });
 
