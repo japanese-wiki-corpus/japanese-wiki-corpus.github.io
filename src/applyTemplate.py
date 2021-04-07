@@ -14,7 +14,7 @@ catDisplay = {'Buddhism': 'Buddhism', 'building': 'Buildings', 'culture': 'Cultu
 endPrefixes = [] # ['cloistered imperial prince ', 'imperial prince ', 'imperial prince and monk', 'imperial princess ', 'emperor ', 'empress ', 'empress dowager ']
 ignorePrefixes = ['the ', 'a ']
 ignorePrefixes.extend(endPrefixes)
-responsiveAd = '\n<div class="google-ad">\n<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6625151359627561" data-ad-slot="2955832603" data-ad-format="auto" data-full-width-responsive="true"></ins>\n</div>\n'
+responsiveAd = '\n<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6625151359627561" data-ad-slot="2955832603" data-ad-format="auto" data-full-width-responsive="true"></ins>\n'
 
 def filename2keyword(file):
 	keyword = os.path.splitext(file)[0]
