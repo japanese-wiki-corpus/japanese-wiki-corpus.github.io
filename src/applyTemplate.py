@@ -62,7 +62,7 @@ def applyPageTemplate():
 			content = "\n".join(content.split("\n")[1:])
 			sanitized = content.replace('"', '&quot;').replace('<p></p>', '')
 			
-			# content = injectAds(content);
+			content = injectAds(content);
 			
 			name = orderName(filename2keyword(file))
 			content = template.replace('{{content}}', content)
