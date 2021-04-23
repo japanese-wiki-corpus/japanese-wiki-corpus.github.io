@@ -60,7 +60,7 @@ def applyPageTemplate():
 			filepath = cat+"/"+file
 			inp = open(dataPath+filepath, "r", encoding="utf8")
 			content = inp.read()
-			
+
 			content = "\n".join(content.split("\n")[1:])
 			sanitized = content.replace('"', '&quot;').replace('<p></p>', '')
 			
