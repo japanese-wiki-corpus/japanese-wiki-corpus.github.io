@@ -53,6 +53,8 @@ def applyPageTemplate():
 		print(cat, flush=True)
 		files = os.listdir(cat)
 		for file in files:
+			if file == 'Shinsen-gumi.html':
+				continue
 			if testing:
 				file = 'Ashura.html' #testing
 			filepath = cat+"/"+file
@@ -62,7 +64,7 @@ def applyPageTemplate():
 			content = "\n".join(content.split("\n")[1:])
 			sanitized = content.replace('"', '&quot;').replace('<p></p>', '')
 			
-			content = injectAds(content);
+			# content = injectAds(content);
 			
 			name = orderName(filename2keyword(file))
 			content = template.replace('{{content}}', content)
