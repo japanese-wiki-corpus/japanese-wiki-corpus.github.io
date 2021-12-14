@@ -1,0 +1,637 @@
+<html>
+<head>
+<title>Icoca - Japanese Wiki Corpus</title>
+<meta name="description" content="{{desc}}">
+<meta name="keywords" content="Icoca, Japanese Railways">
+<meta name="author" content="A. C. Yu">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<link rel="shortcut icon" type="image/x-icon" href="../../assets/1.0/logo.ico" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" async>
+<link href="../../assets/1.0/style.css" rel="stylesheet">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:title" content="Icoca - Japanese Wiki Corpus" />
+<meta property="og:description" content="{{desc}}" />
+<meta property="og:url" content="https://www.japanese-wiki-corpus.org/{{url}}" />
+
+<!-- Twitter Meta Tags -->
+<meta property="twitter:url" content="https://www.japanese-wiki-corpus.org/{{url}}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Icoca - Japanese Wiki Corpus">
+<meta name="twitter:description" content="{{desc}}">
+
+<!-- Global site tag (gtag.js) - Google Analytics --> 
+<script async src='https://www.googletagmanager.com/gtag/js?id=UA-157500608-2'></script> 
+<script> 
+ window.dataLayer = window.dataLayer || []; 
+ function gtag(){dataLayer.push(arguments);} 
+ gtag('js', new Date()); 
+ gtag('config', 'UA-157500608-2'); 
+</script>
+
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6625151359627561",
+    enable_page_level_ads: true,
+    overlays: {bottom: true}
+  });
+</script>
+</head>
+<body>
+
+<div id="fb-root"></div>
+
+<nav class="navbar navbar-light bg-white fixed-top bottom-border" style="padding: 5px 0px;">
+	<a href='../../railway.html' class="navbar-brand">
+		<svg class="bi bi-chevron-left" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+		</svg>
+	</a>
+	<div class="searchbar navbar-nav ml-auto nav-search nav-search-page" style="min-height: 43px">
+		<div class="gcse-searchbox-only" data-resultsUrl="../../search-results.html" data-newWindow="false"></div>
+	</div>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item link-item">
+				<strong><a class="nav-link" href="https://www.japanese-wiki-corpus.org/">Home</a></strong>
+			</li>
+			<li class="nav-item link-item">
+				<a class="nav-link" href="../../about.html">About</a>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					People
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="nav-link" href="../../person.html">Historical Figures</a>
+					<a class="nav-link" href="../../emperor.html">Emperors</a>
+					<a class="nav-link" href="../../family.html">Clans</a>
+				</div>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					History
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="nav-link" href="../../history.html">History</a>
+				</div>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Places
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					
+					<a class="nav-link" href="../../building.html">Buildings</a>
+					<a class="nav-link" href="../../geographical.html">Locations</a>
+					<a class="nav-link" href="../../railway.html">Railways</a>
+					<a class="nav-link" href="../../road.html">Roads</a>
+					<a class="nav-link" href="../../shrines.html">Shrines</a>
+					<a class="nav-link" href="../../school.html">Schools</a>
+				</div>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Cultural
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="nav-link" href="../../Buddhism.html">Buddhism</a>
+					<a class="nav-link" href="../../Shinto.html">Shinto</a>
+					<a class="nav-link" href="../../literature.html">Literature</a>
+					<a class="nav-link" href="../../title.html">Titles</a>
+					<a class="nav-link" href="../../culture.html">Culture</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<main role="main" id="page-top">
+<div class="container fb-quotable" id="main-text">
+<h1><h1>ICOCA (ICOCA)</h1>
+
+<span class="social" id="social-header" style="text-align: left;margin-left: -7px;min-height: 30px;">
+	<span class="fb-like" data-href="https://www.japanese-wiki-corpus.org/{{url}}" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></span>
+</span>
+</h1>
+
+<p>ICOCA（イコカ）は、西日本旅客鉄道（JR西日本）が2003年11月1日に近畿地方のアーバンネットワークで最初に導入した、主に乗車カードや電子マネー、ロッカーの鍵として利用できるICカードである。<br/>
+また、JR西日本の登録商標でもある。<br/>
+ソニーの非接触型ICカードFeliCaの技術を用いている。<br/>
+2008年4月末現在の発行枚数は約368万枚。<br/>
+</p>
+<p>概要<br/>
+ストアードフェアシステムのJスルーのICカード版で、さらに定期乗車券と電子マネーの機能を併せ持つカードである。<br/>
+ICオペレーティングカード（IC Operating CArd）の略称だが、関西弁の「行こか」（「行こう」の意味）とも掛けた、親しみやすい名称としている。<br/>
+</p>
+<p>2003年11月1日から近畿地方のアーバンネットワークで使用が開始された。<br/>
+現在は京阪神エリアの私鉄・地下鉄および一部の路線バス（PiTaPaエリア）、並びに東日本旅客鉄道（JR東日本）などのSuicaエリア、東海旅客鉄道（JR東海）のTOICAエリアでも利用可能である。<br/>
+ただし、私鉄・地下鉄・JR各社など他社での利用はストアードフェア（SF）機能に限られ、連絡定期券は発行されていない。<br/>
+</p>
+<p>このカードは、その利便性ゆえに着実に浸透し、サービス開始からわずか5か月余りで100万枚を突破した。<br/>
+また、2006年6月には京阪神地区の駅のコンビニエンスストア「ハートイン」と「デイリーイン」の全店でICOCA電子マネーが利用可能になり、ICOCA対応の自動販売機やコインロッカーも登場した。<br/>
+電子マネー機能を利用できる店舗も、駅改札内や改札周辺から街中へ本格的に拡大しており、まずは2007年4月に京都駅前地下街「ポルタ」の一部店舗で利用を開始した。<br/>
+</p>
+<p>主要駅にはホームや改札内コンコースに簡易チャージ機が設置されている。<br/>
+また、現金が手元になくても専用のクレジットカード経由でチャージ（入金）のできるSMART ICOCAも展開している。<br/>
+</p>
+<p>また、2006年1月21日からはPiTaPaと相互利用が開始され、京阪神エリアの私鉄・地下鉄のうちPiTaPaを導入している事業者でも利用が可能となった。<br/>
+SF機能の相互利用については、同様の事例であるSuica・PASMO間より1年程早く開始することになった。<br/>
+さらに2007年4月1日にはPiTaPaが近畿日本鉄道や京都市交通局などにも導入されたことにより、関西の大手もしくは準大手私鉄・公営地下鉄のほとんどの路線でICOCAが使用可能となり、さらに利便性が向上した。<br/>
+ただし、連絡定期券においてはPiTaPaのコンセプトなどもあり、まだ相互発売の実施を検討している段階にある。<br/>
+</p>
+<p>2007年9月1日からは、アーバンネットワーク以外では初めて中国地方の都市部135駅で利用可能となった。<br/>
+近畿地方以外のJR西日本の地域でのICOCA導入は初となる。<br/>
+ただし、しばらくの間は京阪神エリアと岡山・広島エリア間のエリアを跨いだ利用ができない。<br/>
+これは京阪神エリアの旧型機器の仕様が原因であり、同エリアのシステム改修に合わせて改善したいとしている。<br/>
+</p>
+<p>一方、京阪神エリアのうちアーバンネットワーク内から定期列車が乗り入れるにもかかわらず、ICOCAが利用できない線区（例：敦賀駅、福知山線の篠山口駅以北、和歌山線の高田～和歌山間など）がある。<br/>
+現在、これらの線区へのICOCAの導入予定は発表されていない。<br/>
+</p>
+<p>Suicaとは2004年8月1日から相互利用が開始された。<br/>
+これにより、現金によるチャージ、改札機・券売機・精算機・履歴の印字など、Suica・ICOCAエリアで、ほぼ同様のサービスを受けることができる。<br/>
+ただし、Suicaグリーン券や私鉄との連絡改札の利用など、相互に一部対応していないサービスも存在する。<br/>
+Suicaエリアでは乗車駅からの初乗り運賃相当額がないと入場できないなど、利用方法にも若干違いがある。<br/>
+相互利用開始当初の対象カードは大人用に限られ、こどもICOCAは利用できなかったが、2007年3月18日のこども用Suica発売開始と同時に、こどもICOCAも相互利用が可能となった。<br/>
+なお、Suicaショッピングサービスについては2008年3月18日より相互利用が可能になっている。<br/>
+</p>
+<p>JR東海のTOICAとは2008年3月29日から相互利用が開始された。<br/>
+なお、Suica・TOICA・ICOCAの各エリアを跨っての利用は不可である。<br/>
+</p>
+<p>購入・チャージ方法<br/>
+ICOCAを購入・チャージするにはいくつかの方法がある。<br/>
+なお、SMART ICOCAの購入方法は当該項目を参照。<br/>
+いずれの方法においてもICOCAにチャージできる上限額は20,000円で、1,000円・2,000円・3,000円・5,000円・10,000円の5種類の単位で何度でもチャージが可能である。<br/>
+Suicaの場合、一部の駅（ICOCAエリアのみでSuicaエリアではJR東日本のビューカードのみ）ではクレジットカードでのチャージができない駅もある。<br/>
+また、Jスルーカードやオレンジカードでの購入・チャージはできない。<br/>
+</p>
+<p>自動券売機<br/>
+新規購入<br/>
+ICOCAマークのある自動券売機で購入できる。<br/>
+デポジット500円+チャージ1,500円の2,000円での発行となる。<br/>
+感熱紙による領収書も発行できる。<br/>
+</p>
+<p>なお、一部のICOCA定期券は一部のみどりの券売機でも購入できる。<br/>
+</p>
+<p>チャージ<br/>
+あらかじめ指定された金額（1,000円・2,000円・3,000円・5,000円・10,000円）でのチャージが可能。<br/>
+これ以外の金額をチャージしたい時は複数回操作する。<br/>
+感熱紙による領収書も発行できる。<br/>
+</p>
+<p>みどりの窓口<br/>
+新規発売・チャージともに可能。<br/>
+支払いは現金・クレジットカードが使用できる（クレジットカードでチャージする場合、サインに加えカードの暗証番号も必須となる）。<br/>
+また、こどもICOCAも発売している。<br/>
+こどもICOCAの購入には健康保険証など年齢を証明できる公的証明書が必要。<br/>
+</p>
+<p>JR西日本のみどりの窓口では、Suica・PiTaPa・TOICAに対してもクレジットカードでのチャージを取り扱っている。<br/>
+ただし、VIEW Suicaカード・HANA PLUSカード（STACIAカード）・KOBE PiTaPaなどクレジットカード一体型カードの場合、クレジット部分からのチャージは端末の仕様上公式には不可とされている。<br/>
+Suica・PiTaPaカードをカード発行機に挿入した上で、クレジットカードの読み取りに端末のカードリーダーを使用する必要があるため。<br/>
+このため、これらのカードにチャージする場合は別のクレジットカードか現金を利用することになる。<br/>
+e-kenet PiTaPa・三井住友カード・ANA PiTaPaカードなど分離型であれば、クレジット部分からのチャージは可能である。<br/>
+また、別の方法を使うことで大阪駅10番窓口など一部のみどりの窓口では一体型カードへのチャージを可能としている。<br/>
+</p>
+<p>J-WESTカードのSMART ICOCAが分離型を採用したのはこうした事情からと考えられる。<br/>
+また、山陰・北陸地区など当面ICOCA導入計画のない地域も多数あることから、これらの地域在住で、なおかつICOCAエリアへの行き来の少ない人であればこの機能はすぐには必要ない場合もあるので、分離型の方が都合がよいという事情もある。<br/>
+</p>
+<p>入金機<br/>
+簡易型で、SMART ICOCA専用のものとそうでないものがある。<br/>
+</p>
+<p>ICOCAをホルダーに差し込み、チャージ金額（1,000円・2,000円・3,000円・5,000円・10,000円）をボタンによって選択し、現金を入れるとチャージが完了する。<br/>
+SMART ICOCAの場合は金額ボタンを押した段階でチャージされる。<br/>
+感熱紙による領収書も発行できるが、入金前に領収書ボタンを押す必要がある。<br/>
+</p>
+<p>なお、岡山・広島エリアに設置されている最新型の入金機には、履歴印字機能（感熱紙で出力）とSMART ICOCA用のポイントチャージが追加された。<br/>
+</p>
+<p>のりこし精算機<br/>
+現金（旧型機では硬貨および千円札に限る）でのチャージが可能。<br/>
+感熱紙による領収書も発行できる。<br/>
+</p>
+<p>岡山・広島エリアと島本駅・須磨海浜公園駅・はりま勝原駅・おおさか東線各駅に設置されている精算機は、アーバンネットワークエリア内設置機の機能に加え、5,000円と10,000円のチャージ、SMART ICOCA用のクイックチャージが可能である。<br/>
+</p>
+<p>なお、相互利用の対象であるPiTaPaエリアの一部の駅では、ICカード対応の精算機が設置されていない場合があるため、注意を要する。<br/>
+</p>
+<p>その他<br/>
+イオン (企業)グループのICOCA電子マネー対応店舗、PASPY取り扱いのバス車内でもチャージを取り扱っている。<br/>
+</p>
+<p>利用方法<br/>
+非接触型のICカードで、パスケースに入れたまま自動改札機に軽くタッチするだけで改札を入・出場することができ、通るたびにその都度パスケースから取り出す必要がない。<br/>
+ただし、ICOCAと改札機との通信を確実に行わせるため、パスケースなどを改札機に触れさせる目的で、関西では「タッチしていこか」というフレーズで浸透させている。<br/>
+もちろん、かざしての利用も可能である。<br/>
+改札を通る際に状況（定期券の有効期限・残額）によって案内音が変化する。<br/>
+ICOCAが正確に認証した場合は電子音とともにゲートが開き、正確に認証されない場合または使用できない場合は電子音が鳴って即座にゲートが閉まるようになっている。<br/>
+また、ICOCAの残額が不足したり、またはICOCA定期乗車券およびこどもICOCAの有効期限が近付いたりした場合は電子音が変わり、知らせてくれる。<br/>
+他のICカードと2枚重ねにしてかざすとエラー音が鳴って改札を通れなくなるが、IC運転免許証など、ICOCAと重ねても問題なく利用できるICカードもある。<br/>
+</p>
+<p>入場券としては使えず、乗車してエリア内の別の駅で下車する必要がある。<br/>
+また、残高が0円の場合は入場できない。<br/>
+</p>
+<p>ICOCAモニターテスト<br/>
+2003年6月28日から7月26日まで京阪神の主要駅の一部でICOCAモニターテストが行われた。<br/>
+正式導入前であくまでもテストなので、1,000名限定の募集となった。<br/>
+モニターテストが行われた駅は大阪を中心とした周辺のJR西日本の主要駅（22駅）である。<br/>
+</p>
+<p>大阪<br/>
+福知山線：塚口・猪名寺・伊丹・北伊丹・川西池田・中山寺・宝塚<br/>
+東海道本線（JR京都線）：新大阪・東淀川・吹田・岸辺・千里丘・茨木・摂津富田・高槻<br/>
+東海道本線（JR神戸線）：塚本・尼崎・立花・甲子園口・西ノ宮・芦屋<br/>
+</p>
+<p>ICOCAの他社線との乗り継ぎ<br/>
+JR西日本線と他社線との乗り換え専用自動改札機（2枚投入が可能な自動改札機）を通る際は、最初に磁気きっぷ・定期券を入れ、その次にICOCAをタッチすると自動改札機で自動精算して通ることができる。<br/>
+このタイプの改札機は鶴橋駅の近畿日本鉄道線・三国ヶ丘駅の南海電気鉄道線の各乗り換え改札口に設置されている。<br/>
+PiTaPaでも可能であるが、SuicaやTOICAの場合は連絡口を使用できないこともある。<br/>
+</p>
+<p>2006年7月1日から南海に、2007年4月1日から近鉄にそれぞれPiTaPaが導入されたことで、両駅の乗り換え改札口では、1枚のICOCAもしくは事前にチャージ済みのPiTaPaで自動改札機にタッチすれば乗り換えが可能である。<br/>
+ただし、乗り換え改札口では相互利用できるICカードの2枚タッチができないため、JRにはICOCAやSuica、TOICAを、南海や近鉄にはPiTaPaを、と使い分けたい場合は、一旦通常の改札口を出場の上、改めて乗り換え先の通常の改札口から入場しなければならない。<br/>
+</p>
+<p>なお、相互利用している交通事業者のうち、近鉄はICOCAとPiTaPaの利用が可能である（SuicaやTOICAの相互利用は行っていない）が、近鉄名古屋線の近鉄名古屋駅のJR東海との乗り換え改札口では、ICOCAまたはPiTaPaとTOICAのうち2枚を組み合わせれば、2枚重ねてタッチすることで乗り換えができる（SuicaとPiTaPaの組み合わせなど、一部に利用ができない組み合わせがある）。<br/>
+2008年3月29日からJR東海において、TOICAとICOCA、Suicaの相互利用が始まったが、乗り換え改札において、ICOCAは近鉄用のカードとしては認識されるが、JR用のカードとしては認識されないため、ICOCAについては、1枚だけをタッチすることが出来ないことになっている。<br/>
+そのためICOCA一枚だけで、名古屋駅にてJR線と近鉄線を乗り換える場合は、一旦通常の改札口を出場の上、改めて乗り換え先の通常の改札口から入場しなければならない。<br/>
+</p>
+<p>他に桑名駅は、東口がJR東海、西口が近鉄の管理であり、乗り換え改札口はないが、それぞれの自動改札機で近鉄名古屋線の乗車時にICOCAかPiTaPaが、JR線の乗車時はICOCA、TOICA、Suicaのいずれかが利用できる。<br/>
+</p>
+<p>また、柏原駅 (大阪府)ではJR線と近鉄道明寺線の互いの乗り換えの際は、近鉄線のホーム上にあるライトブルーの簡易ICカード改札機（中間改札）へのタッチが必要である。<br/>
+また、同駅から近鉄線のみを利用する場合でもJRの自動改札機と近鉄の簡易ICカード改札機の両方にタッチする必要がある。<br/>
+簡易改札機にタッチしなかった場合、実際の乗車区間と異なる運賃が減額されてしまう。<br/>
+</p>
+<p>さらに、りんくうタウン駅では南海・JRの他の駅からICOCAまたはPiTaPaを利用して乗車し、この駅で南海・JR間の乗り換えをする場合は、駅改札内に設置されたカードリーダーにカードをタッチする必要がある。<br/>
+なお同駅にはSuica・TOICA専用の自動改札機が設置されているが、こちらはICOCA・PiTaPaが利用できない。<br/>
+</p>
+<p>宣伝・広告<br/>
+ICOCAの広告は、京阪神・岡山・広島支社の駅のポスターおよび京阪神のJR宝塚・京都・神戸線で運行されているJR西日本321系電車の車内モニターで放映されている。<br/>
+イメージキャラクターは仲間由紀恵とカモノハシのイコちゃんである。<br/>
+</p>
+<p>ICOCAには「ICOCAでいこか～タッチしていこか～」、ICOCA電子マネーサービスには「ICOCAで買おか～タッチして買おか～」というキャッチフレーズがあり、テレビCMやパンフレットなどで仲間とイコちゃんが呼び掛けている。<br/>
+</p>
+<p>ICOCAとSuicaの相互利用開始時に、巨大化したイコちゃんが東京都内に出現し、仲間が「東京で～」イコちゃんが「ICOCA～」と叫ぶテレビCMや広告が数か月間に亘って宣伝された。<br/>
+仲間の背景はセットで作られた東京駅という設定で、自動改札機もJR東日本で多く使われているタイプだったが、実際には大阪駅の改札口にそっくりであった。<br/>
+</p>
+<p>種類・デザイン<br/>
+通常デザインICOCA<br/>
+ICOCAには大人用と小児用（こどもICOCA）の2種類があり、発売額はともに2,000円である。<br/>
+このうち500円がデポジット、残り1,500円が運賃などに使用可能。<br/>
+ICOCA定期券の場合は、当該定期運賃に加えてデポジット500円が必要である。<br/>
+</p>
+<p>SMART ICOCAは、ICOCAの機能に加えてキャッシュレスでチャージができるようになり、さらに鉄道の利用などでポイントがたまる機能も持つ。<br/>
+利用するにはJ-WESTカードへの入会が必要で、SMART ICOCAに定期券の機能を付けることもできる。<br/>
+</p>
+<p>また、定期券機能付き⇔定期券機能なしの切り替え手数料は不要である。<br/>
+</p>
+<p>記念デザインICOCA<br/>
+カード表面に写真などの図柄を入れた記念ICOCAが2008年3月現在5種類存在している。<br/>
+このタイプのみ定期券の機能を付けることができない。<br/>
+プリペイドでの利用は通常デザインのICOCAと何ら変わりはない。<br/>
+定期券にできるカードかどうかは、カード右下の切り欠きの数でも判別できる（1個：できる、2個：できない）。<br/>
+カードの折損などやカードの機能向上などを行う場合は通常デザインのカードへ交換することになる。<br/>
+</p>
+<p>2003年11月1日発売…ICOCA導入時の記念ICOCA（5万枚）<br/>
+2004年8月1日発売…ICOCA Suica相互利用記念（5万枚）<br/>
+2004年12月6日発売…三都・光コレクション（10万枚）<br/>
+2007年9月1日発売…岡山・広島エリアサービス開始記念（3万枚）<br/>
+2008年3月29日発売…Suica・TOICA・ICOCA相互利用開始記念（3万枚）<br/>
+</p>
+<p>有効期限・再発行<br/>
+ICOCAは、最後の利用日から10年間利用がない場合失効となり、デポジットの返却は行わない。<br/>
+</p>
+<p>紛失した場合は、無記名である「ICOCA」および「こどもICOCA」以外の、定期券のような所有者本人であることの証明が可能な券種では再発行が可能である。<br/>
+ただし、再発行には再発行手数料500円とデポジット500円の合計1,000円を現金で支払う必要がある。<br/>
+</p>
+<p>利用可能エリア<br/>
+ICOCAは、下記のJR西日本の近畿地区281駅・中国地区135駅の他、PiTaPaを導入している事業者やSuica導入5社の利用可能駅（首都圏・仙台・新潟地区の東日本旅客鉄道・東京モノレール・東京臨海高速鉄道・埼玉新都市交通・仙台空港鉄道）、JR東海のTOICAエリアでも利用できる。<br/>
+なお、東京地下鉄千代田線の北千住～綾瀬間は常磐緩行線の一部としてICOCAが利用できる。<br/>
+ただし、Suicaが導入されている事業者のうち、ジェイアールバス関東の路線バスではICOCAは利用できない。<br/>
+</p>
+<p>現在の利用可能エリア<br/>
+</p>
+<p>京阪神エリア（アーバンネットワーク）<br/>
+正式な路線名称に基づく。<br/>
+括弧内は区間内に設定されている愛称。<br/>
+</p>
+<p>大阪環状線：全線全駅<br/>
+桜島線（JRゆめ咲線）：全線全駅<br/>
+東海道本線（琵琶湖線・JR京都線・JR神戸線）：米原駅～京都駅～神戸駅<br/>
+北陸本線（琵琶湖線）：米原駅～近江塩津駅<br/>
+山陽本線（JR神戸線・和田岬線）：神戸駅～相生駅、兵庫駅～和田岬駅<br/>
+福知山線（JR宝塚線）：尼崎駅～篠山口駅<br/>
+JR東西線：全線全駅<br/>
+赤穂線：相生駅～播州赤穂駅<br/>
+関西本線（大和路線）：JR難波駅～加茂駅<br/>
+片町線（学研都市線）：全線全駅<br/>
+奈良線：全線全駅<br/>
+湖西線：全線全駅<br/>
+関西空港線：全線全駅<br/>
+阪和線：全線全駅<br/>
+和歌山線：王寺駅～高田駅<br/>
+桜井線：全線全駅<br/>
+草津線：草津駅～貴生川駅<br/>
+山陰本線（嵯峨野線）：京都駅～園部駅<br/>
+おおさか東線：全線全駅<br/>
+</p>
+<p>岡山・広島エリア<br/>
+山陽本線：和気駅～南岩国駅間<br/>
+可部線：全線全駅<br/>
+呉線（瀬戸内さざなみ線）：全線全駅<br/>
+芸備線：広島駅～狩留家駅間<br/>
+福塩線：福山駅～神辺駅間<br/>
+伯備線：倉敷駅～備中高梁駅間<br/>
+吉備線：全線全駅<br/>
+宇野線（瀬戸大橋線）：岡山駅～茶屋町駅間<br/>
+本四備讃線（瀬戸大橋線）：茶屋町駅～児島駅間<br/>
+津山線：岡山駅～法界院駅間<br/>
+赤穂線：長船駅～東岡山駅間<br/>
+</p>
+<p>備考<br/>
+1枚のICOCAで分割定期券とすることも可能である。<br/>
+例えば、生瀬～大阪間の定期券を宝塚で分割購入した場合、ICOCA定期券の券面には「生瀬←→宝塚｜宝塚←→大阪」と表示される。<br/>
+</p>
+<p>相互利用しているPiTaPaはポストペイ方式のため、アーバンネットワーク内で利用する場合は、自動券売機などであらかじめチャージしておく必要が生じる。<br/>
+また、JR西日本でのPiTaPa家族会員のキッズカードの利用はこどもICOCAに、ジュニアカードの利用は大人用ICOCAに準じた扱いとなる。<br/>
+</p>
+<p>エリア内相互の使用では、別途特急券が必要だが在来線特急にも乗車できる。<br/>
+</p>
+<p>相互利用<br/>
+相互利用により下記のSuica・TOICA・PiTaPa利用可能エリアでもICOCAの使用ができる。<br/>
+両エリア内でのチャージはSuica、PiTaPaそれぞれのカード対応の自動券売機、自動精算機、簡易入金機で可能である。<br/>
+なお、ICOCAエリア内では自動券売機、自動精算機、簡易入金機などで対応する。<br/>
+</p>
+<p>Suicaエリア<br/>
+東日本旅客鉄道<br/>
+大都市近郊区間東京近郊区間（偕楽園駅を除く）<br/>
+仙台都市圏<br/>
+大都市近郊区間新潟近郊区間<br/>
+東京臨海高速鉄道全線<br/>
+東京モノレール全線<br/>
+埼玉新都市交通全線<br/>
+仙台空港鉄道全線<br/>
+東京地下鉄（東京メトロ）（東京地下鉄千代田線綾瀬駅～北千住駅間のみ）<br/>
+</p>
+<p>SuicaエリアでのICOCAの使用には以下の制限がある。<br/>
+</p>
+<p>高田馬場駅の西武鉄道など、一部駅に設置されている他社線乗り換え自動改札機での利用ができない。<br/>
+他社線乗り換え自動改札機やカード発売機には「ICOCAはご利用になれません」又は「Suica・PASMO以外は利用できません」のステッカーが貼付されている。<br/>
+また、券売機でも新宿駅京王口にあるJR東日本の券売機など利用できないものがあり、利用できない券売機でもその旨の注記がない場合がある。<br/>
+</p>
+<p>西船橋駅の乗り換え自動改札機での利用もできない。<br/>
+そのため、東京地下鉄東西線直通電車と他のJR東日本の列車を西船橋駅で乗り継ぐ場合、ICOCAで西船橋駅の乗り換え自動改札機を通過することができない。<br/>
+</p>
+<p>グリーン車SuicaシステムによるSuicaグリーン券の購入ができない。<br/>
+</p>
+<p>ビューカードでチャージが可能なカード発売機でも、ICOCAの場合は現金によるチャージのみで、ビューカードには対応していない。<br/>
+またビューアルッテでのICOCAのチャージも対応していない。<br/>
+</p>
+<p>自動改札機にICOCAをタッチした場合でも、ディスプレイにはSuicaと表示される。<br/>
+</p>
+<p>TOICAエリア<br/>
+東海旅客鉄道<br/>
+名古屋・静岡エリア<br/>
+</p>
+<p>PiTaPaエリア<br/>
+阪急電鉄<br/>
+能勢電鉄（ケーブル線を除く）<br/>
+京阪電気鉄道（同上）<br/>
+京都市交通局（地下鉄のみ）<br/>
+大阪市交通局（地下鉄・ニュートラム・バス）<br/>
+阪神電気鉄道（鉄道のみ）<br/>
+大阪高速鉄道（大阪モノレール）<br/>
+北大阪急行電鉄<br/>
+近畿日本鉄道（一部路線を除く）<br/>
+南海電気鉄道<br/>
+大阪府都市開発（大阪府都市開発泉北高速鉄道線）<br/>
+神戸高速鉄道<br/>
+山陽電気鉄道（鉄道のみ）<br/>
+神戸電鉄<br/>
+神戸新交通（神戸新交通ポートアイランド線・神戸新交通六甲アイランド線）<br/>
+大阪高速鉄道（大阪モノレール）<br/>
+北神急行電鉄<br/>
+阪急バス（路線・営業所毎に順次拡大）<br/>
+阪急田園バス<br/>
+京阪バス（路線・営業所毎に順次拡大）<br/>
+京阪京都交通（一部路線を除く）<br/>
+大阪空港交通（大阪国際空港発着の自社運行便〈姫路・奈良方面は全便〉。<br/>
+蛍池駅～大阪空港～関西国際空港を含む関西空港発着はカード読取装置搭載車であっても使用不可）<br/>
+</p>
+<p>高槻市交通部<br/>
+※PiTaPaエリアでは、一部を除き運賃不足時に現金やスルッとKANSAIカードで差額精算できない。<br/>
+チャージは可能。<br/>
+</p>
+<p>片利用<br/>
+CI-CAエリア<br/>
+奈良交通（路線・営業所毎に順次拡大）<br/>
+エヌシーバス<br/>
+NicoPaエリア<br/>
+神姫バス<br/>
+神姫ゾーンバス<br/>
+Harecaエリア<br/>
+岡山電気軌道（軌道線全線・路線バス全路線・岡山空港リムジンバス (岡山～岡山空港線)）<br/>
+両備ホールディングス（路線バス全路線）<br/>
+下津井電鉄（岡山空港リムジンバス (倉敷～岡山空港線)・路線バス全路線）<br/>
+中鉄バス（路線バス一部路線、2008年7月から導入予定）<br/>
+</p>
+<p>LuLuCaエリア<br/>
+静岡鉄道<br/>
+しずてつジャストライン（特急静岡相良線と中部国道線の全線および国道静岡清水線と静岡日本平線の一部を除く、静岡市内）<br/>
+</p>
+<p>PASPYエリア<br/>
+広島電鉄　電車広島電鉄白島線（2008年3月1日利用開始）<br/>
+広島電鉄　一部<br/>
+広島バス　一部<br/>
+広島交通　一部<br/>
+芸陽バス　一部<br/>
+中国ジェイアールバス　一部<br/>
+備北交通　一部<br/>
+鞆鉄道　一部<br/>
+呉市交通局　一部<br/>
+エイチ・ディー西広島　全線対応済<br/>
+広島高速交通（アストラムライン）（2009年春に導入予定）<br/>
+</p>
+<p>itappyエリア<br/>
+伊丹市交通局<br/>
+</p>
+<p>備考<br/>
+CI-CA・NicoPa・Hareca・LuLuCaエリアはいずれもPiTaPaを重複して導入しているために、その相互利用によってICOCAが利用可能となっている。<br/>
+ただし、これらのカードはICOCAエリアでの利用やICOCAへのチャージには対応していない。<br/>
+</p>
+<p>PASPYもICOCAエリアでの利用はできない。<br/>
+ただし、PASPYを導入しているバスなどでICOCAにチャージは可能。<br/>
+</p>
+<p>静岡鉄道静岡清水線（静鉄電車）各駅の機器・しずてつジャストラインのLuLuCa取り扱い車両ではICOCAへのチャージは行っておらず、しずてつジャストラインの新静岡バスセンターのみでの対応になる。<br/>
+静鉄電車降車時に残高不足となった場合は、全額現金精算となる（なおTOICAとの相互利用開始に伴い、周辺のJR東海の駅でもチャージ可能となっている）。<br/>
+</p>
+<p>履歴表示・印字について<br/>
+Suicaエリアの乗・降車駅名の履歴表示・印字は「（JR東）」「（東モノ）」「（東臨）」「（埼新）」「（仙空）」などと表示されるため、駅名を含む詳細な履歴が必要な場合はSuicaエリア内で表示・印字することになる。<br/>
+PASMOエリアでSuicaを利用した場合、ICOCAで北千住～綾瀬間を利用した場合、八丁畷駅、厚木駅、小川町駅_(埼玉県)の簡易改札機を利用した場合の各駅改札から簡易改札までの履歴は「他社線」と印字される。<br/>
+</p>
+<p>逆にSuicaエリアで近畿地区281駅・中国地区135駅やPiTaPaエリアで使用した履歴を表示・印字した場合は、「JR西日本」「阪神電鉄」「阪急電鉄」「バス等」などと表示される。<br/>
+</p>
+<p>PiTaPaエリアの乗・降車駅名の履歴表示・印字については「OC梅田」「KC京都」などと、会社名と駅名が詳細に表示される他、路面電車やバスを利用した場合には社名が表示される（但し静岡鉄道のみ（静鉄）と表示される）。<br/>
+なお、相互利用開始から2007年3月18日までは、PiTaPaエリアの乗・降車駅名の履歴表示・印字が「阪急」「京阪」「大市交」「阪神」などと表示されたため、駅名を含む詳細な履歴が必要な場合はPiTaPaエリア内で表示・印字する必要があった。<br/>
+なお、東福寺駅や天満橋駅、三国ヶ丘駅などJRとの乗り継ぎ割引範囲内にある京阪や南海の一部の駅を利用した場合は「KH東福」「KH天満」「NK三国」などと当初より会社名と駅名が出るようになっていた。<br/>
+また、路面電車やバスを利用した場合は「バス等」と表示された。<br/>
+岡電については阪急の最新型紫色券売機の印字で「電車岡電」と表示されていた。<br/>
+</p>
+<p>PiTaPaエリアで表示・印字の場合も京阪・南海など一部を除き、「JR西京都」「阪急梅田」のように会社名と使用駅名が出るようになっている。<br/>
+ただし、Suicaエリアで使用した分については「JR東＊＊＊」と、駅名は表示されない。<br/>
+2007年3月開業のさくら夙川、2007年9月より利用開始の岡山・広島エリアのICOCA利用駅も「JR西＊＊＊」となって、駅名は表示されない。<br/>
+また、さくら夙川と開業と同時に改称した西宮も西ノ宮のままである。<br/>
+</p>
+<p>印字は通常20件までだが、窓口に申し出れば50件までの履歴を得ることができる。<br/>
+また、カードに履歴が残っている間は何度でも印字できる。<br/>
+</p>
+<p>今後の予定など<br/>
+首都圏の私鉄・路線バス・公営交通のPASMOについては、当面相互利用を行わないため、PASMOエリアでのICOCAの利用はできない。<br/>
+</p>
+<p>現在、鉄道だけでなく、宮島連絡船への導入を検討している。<br/>
+</p>
+<p>一方、他のJR系ICカードである北海道旅客鉄道（JR北海道）が発行予定のKitaca、及び九州旅客鉄道（JR九州）が発行予定のSUGOCAとの相互利用の計画及び見解は現時点では各事業者からは正式には公表されていない。<br/>
+ただし、JR九州側は石原進社長が記者会見で相互利用実現への意欲を見せている（東海道・山陽新幹線を介して利用エリアとの接続があるため）。<br/>
+</p>
+<p>ICOCAの改札での利用率も半数を超えていることから、将来的にはICOCA専用改札機が設置される可能性がある。<br/>
+かつてPiTaPaとの相互利用開始以前には、りんくうタウン駅に設置されていた。<br/>
+また京阪神エリアの一部の駅において、1～2台程度磁気券部分を使用停止してICOCA専用としている例がある。<br/>
+</p>
+<p>発行枚数<br/>
+ICOCAの発行枚数は、サービス開始の2003年11月からわずか5か月余りで100万枚を突破した。<br/>
+2008年3月現在では約354万枚を突破している。<br/>
+これに伴い、京阪神地区での自動改札機の利用数に対するICOCAの利用率は約50%に達している。<br/>
+</p>
+<p>電子マネー機能<br/>
+詳細はICOCA電子マネーを参照<br/>
+</p>
+<p>混雑した駅構内では物販の支払いにICOCA電子マネーを活用することで、釣り銭のやりとりが省けてスピーディーな買い物が可能となった。<br/>
+JR西日本ではまず2005年2月1日から大阪駅に導入し、それが好評だったため、利用可能な店舗が京阪神のハートイン全店に拡大した。<br/>
+さらに2007年2月1日からはICOCA電子マネー対応のコインロッカーが登場した。<br/>
+「ICOCAが鍵に…」とキャッチフレーズの様なイラストがコインロッカーに印刷されている。<br/>
+</p>
+<p>ICOCAを用いた犯罪<br/>
+JR西日本の駅員59名と委託社員10名が、ICOCAで乗車した後、窓口の処理機で乗車記録を消去するという手段で不正乗車（キセルに類似した行為）を繰り返したとする不祥事があり、その行為はサービスが開始された2003年11月から2004年8月まで行われていたとされる。<br/>
+不正利用の総額は104,630円に上った。<br/>
+このうち駅員10名と委託社員5名の計15名は懲戒解雇となった。<br/>
+</p>
+<p>歴史<br/>
+2003年6月28日～7月26日 - ICOCAモニターテストがJR神戸線大阪～芦屋間・福知山線大阪～宝塚間・JR京都線大阪～高槻間の22駅に於いて1,000名限定で開始。<br/>
+</p>
+<p>2003年11月1日 - ICOCAサービスがアーバンネットワーク内で正式に開始。<br/>
+</p>
+<p>2004年3月 - 発行枚数が100万枚を突破。<br/>
+</p>
+<p>2004年8月1日 - ICOCA・Suica相互利用開始。<br/>
+JR東日本のSuica利用エリアでICOCAが使用可能になった。<br/>
+同時にこどもICOCAサービスも開始し、小学生以下の子供もICOCAの使用が可能になったが、この時は相互利用には対応していない。<br/>
+</p>
+<p>2005年3月1日 - 利用可能エリアを拡大し、桜井線全線での利用が可能に。<br/>
+</p>
+<p>2005年6月 - 発行枚数が200万枚を突破。<br/>
+</p>
+<p>2005年10月1日 - ICOCA電子マネーサービス開始。<br/>
+これによりICOCAでショッピングが可能に。<br/>
+</p>
+<p>2005年11月10日 - PiTaPaとの相互利用開始を正式発表。<br/>
+</p>
+<p>2006年1月21日 - ICOCA・PiTaPa相互利用開始。<br/>
+これにより近畿圏の私鉄でも利用が可能になる。<br/>
+またJR東日本の新潟近郊区間の一部でのSuicaサービス導入により、新潟近郊区間の一部でもICOCAが利用可能になった。<br/>
+</p>
+<p>2006年1月28日 - モバイルSuicaサービス開始。<br/>
+Suicaとの相互利用によりICOCAエリアでも使用可能。<br/>
+ただしICOCAエリアでは乗車券機能のみ利用可能で定期券機能と電子マネー機能は利用不可。<br/>
+利用するには対応携帯電話機の購入とクレジットカード「ビューカード」の申し込みが必要。<br/>
+</p>
+<p>2006年2月1日 - SMART ICOCA発行開始。<br/>
+J-WESTカードとセットになっており、同カード決済によりチャージ機などでキャッシュレスで素早くクイックチャージが可能になる。<br/>
+ICOCA・NicoPa片利用開始。<br/>
+</p>
+<p>2006年6月 - ICOCA電子マネーの利用可能店舗が京阪神地区の駅のコンビニ「ハートイン」「デイリーイン」の全店で利用可能に。<br/>
+</p>
+<p>2006年10月1日 - ICOCA・Hareca片利用開始。<br/>
+</p>
+<p>2006年10月21日 - 利用可能エリアを拡大し、湖西線全駅と北陸線（近江塩津以南）での利用が可能になる。<br/>
+これらの各駅には簡易ICカード改札機を導入。<br/>
+</p>
+<p>2007年2月1日 - ICOCA電子マネーの新サービス「ICOCAコインロッカーサービス」開始。<br/>
+これによりコインロッカーのICOCA決済が可能になり、ICOCAが鍵代わりになった。<br/>
+</p>
+<p>2007年3月18日 - こどもICOCA・こども用Suica相互利用開始。<br/>
+</p>
+<p>2007年4月1日 - ICOCA・CI-CA片利用開始。<br/>
+</p>
+<p>2007年7月- 発行枚数が300万枚を突破。<br/>
+</p>
+<p>2007年9月1日 - 利用可能エリアを拡大し、岡山・広島地区の135駅での利用が可能に（一部駅には簡易ICカード改札機を導入）。<br/>
+ICOCA・LuLuCa片利用開始。<br/>
+</p>
+<p>2007年10月16日 - ビル入退館管理システムにおけるSuicaとの相互利用開始。<br/>
+</p>
+<p>2007年12月10日 - ファミリーマート関西地方の一部店舗（JR南田辺駅前店）にICOCAを導入。<br/>
+</p>
+<p>2008年3月1日 - ICOCA・PASPY片利用開始。<br/>
+</p>
+<p>2008年3月18日 - Suicaと電子マネーの相互利用開始。<br/>
+</p>
+<p>2008年3月18日 - 近畿地方、三重県の一部、岡山・広島・山口各地区にあるイオン (企業)の商業施設の直営売り場でのICOCAへのチャージサービスを開始。<br/>
+</p>
+<p>2008年3月29日 - ICOCA・TOICA相互利用開始。<br/>
+</p>
+<p>2008年4月1日 - ICOCA・itappy片利用開始。<br/>
+</p>
+<p>モバイルSuicaにおけるSuicaとの相互利用<br/>
+モバイルSuicaはJR東日本が2006年1月28日から開始した、おサイフケータイにSuica定期券やSuica乗車券、Suicaショッピングサービスの機能を追加できるものである。<br/>
+乗車券機能とSuicaショッピングサービスについては、ICOCAエリアでも問題なく使用可能である。<br/>
+</p>
+<p>携帯電話でICOCAを利用できるサービスについては2008年3月現在発表されていないが、モバイルSuicaを利用すればICOCAエリアで携帯電話を使った乗降、およびICOCA電子マネー対応店舗でのショッピングは可能となる。<br/>
+なお、おサイフケータイアプリ上での履歴の確認は、ログインしていれば全駅JW○○駅、ログインしない場合は全駅****で表示される。<br/>
+携帯電話アプリのため日本のどこにいても申し込みが可能であり、オンラインチャージについても同様。<br/>
+詳しくはモバイルSuicaの項を参照。<br/>
+</p>
+<p>ICOCAエリアでは、ICカードのSF利用時でも振替輸送ICOCA対象であるが、モバイルSuicaに関しては除外される。<br/>
+</p>
+<p>非公式の方法ではあるが、広島エリアのICOCA入金機ではモバイルSuicaにチャージ（薄い携帯電話じゃないとはっきりいって厳しい）をすることができる。<br/>
+</p>
+
+
+<div class="social" id="social-footer" style="text-align: right;">
+	<div class="fb-like" style="margin-right: -10px;min-height: 30px;" data-href="https://www.japanese-wiki-corpus.org/{{url}}" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+</div>
+
+<div class="fb-quote"></div>
+</div>
+</main>
+
+<footer class="text-muted bg-light" style="padding-bottom: 5px;">
+  <div class="container">
+	<div class="searchbar"><div class="gcse-searchbox-only" data-resultsUrl="../../search-results.html" data-newWindow="false"></div></div>
+	<p style="padding-top: 25px;">
+	  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/3.0/88x31.png"></a> 
+	  &#169; A. C. Yu &nbsp;&mdash;&nbsp; Generated from the <a href='https://alaginrc.nict.go.jp/WikiCorpus/index_E.html' target="_blank">Japanese-English Bilingual Corpus of Wikipedia's Kyoto Articles</a> which is translated by the National Institute of Information and Communications Technology (NICT) from Japanese sentences on Wikipedia, used under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>.
+	</p>
+	<p style="text-align: left;"><a href="https://github.com/japanese-wiki-corpus/japanese-wiki-corpus.github.io/issues">Report an issue</a></p>
+  </div>
+</footer>
+
+<div class="right-corner"><a href="#page-top" class="page-scroll"><button type="button" class="btn btn-light">
+	<svg class="bi bi-chevron-bar-up" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  <path fill-rule="evenodd" d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zM2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4z"/>
+	</svg>
+</button></a></div>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script defer src="../../assets/1.0/site.js"></script>
+<script defer src="../../assets/1.0/site-pages.js"></script>
+<script async src="https://cse.google.com/cse.js?cx=000697064956386539004:7tmutmwt6uy"></script>
+
+</body>
+</html>
