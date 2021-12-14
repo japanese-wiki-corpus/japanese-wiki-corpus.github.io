@@ -1,7 +1,6 @@
 <html>
 <head>
 <title>{{name}} - Japanese Wiki Corpus</title>
-<meta name="description" content="{{desc}}">
 <meta name="keywords" content="{{name}}, Japanese {{category-display}}">
 <meta name="author" content="A. C. Yu">
 <meta charset="UTF-8">
@@ -14,14 +13,12 @@
 
 <!-- Facebook Meta Tags -->
 <meta property="og:title" content="{{name}} - Japanese Wiki Corpus" />
-<meta property="og:description" content="{{desc}}" />
 <meta property="og:url" content="https://www.japanese-wiki-corpus.org/{{url}}" />
 
 <!-- Twitter Meta Tags -->
 <meta property="twitter:url" content="https://www.japanese-wiki-corpus.org/{{url}}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{name}} - Japanese Wiki Corpus">
-<meta name="twitter:description" content="{{desc}}">
 
 <!-- Global site tag (gtag.js) - Google Analytics --> 
 <script async src='https://www.googletagmanager.com/gtag/js?id=UA-157500608-2'></script> 
@@ -123,7 +120,7 @@
 
 <main role="main" id="page-top">
 <div class="container fb-quotable" id="main-text">
-<h1>{{title}}
+<h1>{{name}} (<a href="../../{{engl_url}}">{{engl}}</a>)
 
 <span class="social" id="social-header" style="text-align: left;margin-left: -7px;min-height: 30px;">
 	<span class="fb-like" data-href="https://www.japanese-wiki-corpus.org/{{url}}" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></span>
@@ -131,6 +128,8 @@
 </h1>
 
 {{content}}
+
+<p><a href="../../{{engl_url}}">[English Translation]</a></p>
 
 <div class="social" id="social-footer" style="text-align: right;">
 	<div class="fb-like" style="margin-right: -10px;min-height: 30px;" data-href="https://www.japanese-wiki-corpus.org/{{url}}" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>

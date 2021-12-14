@@ -122,8 +122,15 @@ def applyCategoryTemplate():
 			if not letter.isalpha():
 				letter = '?'
 			
+			jp_url = 'jp/'+cat+'/'+page['jp']+'.html'
+			has_jp = os.path.isfile(jp_url)
+			
 			# <p><a href='school/Kyoto University.html'>Kyoto University</a> (jp name) - University</p>
-			line = "<p><a href='"+page['url']+"'>"+name+'</a> ('+page['jp']+') - '+page['desc']+'</p>\n'
+			if has_jp:
+				line = "<p><a href='"+page['url']+"'>"+name+'</a> (<a href="'+jp_url+'">'+page['jp']+'</a>) - '+page['desc']+'</p>\n'
+			else:
+				print(page['url'], page['jp'])
+				line = "<p><a href='"+page['url']+"'>"+name+'</a> ('+page['jp']+') - '+page['desc']+'</p>\n'
 			if letter not in items:
 				items[letter] = ''
 			items[letter] += line
@@ -137,6 +144,17 @@ def applyCategoryTemplate():
 			pageOut.write(pageContent)
 			pageOut.close()
 			pageFile.close()
+			
+			if has_jp:
+				pageFile = open(jp_url, "r", encoding="utf8")
+				pageContent = pageFile.read()
+				pageContent = pageContent.replace('{{engl}}', name)
+				pageContent = pageContent.replace('{{engl_url}}', page['url'])
+				pageOut = open(jp_url, "w", encoding="utf8")
+				pageOut.write(pageContent)
+				pageOut.close()
+				pageFile.close()
+				
 		
 		allItems = ""
 		letters = ""
