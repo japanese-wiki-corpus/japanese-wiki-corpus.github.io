@@ -512,10 +512,10 @@ fieldset[disabled] .btn-xl.active {
         border: 0;
         /*background-color: transparent;*/
 
-		background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 10%, rgba(255,255,255,0.8)  40%, rgba(255,255,255,0.4) 70%, rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
-		background: -o-linear-gradient(bottom, rgba(255,255,255,1) 10%, rgba(255,255,255,0.8)  40%, rgba(255,255,255,0.4) 70%, rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
-		background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 10%, rgba(255,255,255,0.8)  40%, rgba(255,255,255,0.4) 70%, rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
-		background: linear-gradient(to bottom, rgba(255,255,255,1) 10%, rgba(255,255,255,0.8)  40%, rgba(255,255,255,0.4) 70%, rgba(255,255,255,0)); /* Standard syntax (must be last) */
+		background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0)); /* Standard syntax (must be last) */
 
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
