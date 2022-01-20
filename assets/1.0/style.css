@@ -426,8 +426,8 @@ fieldset[disabled] .btn-xl.active {
 	padding-right: 5rem !important;
 }
 .dropdown-menu .nav-link {
-	padding-left: 3rem;
-	padding-right: 3rem;
+	padding-left: 6rem;
+	padding-right: 6rem;
 }
 .nav-link:hover {
 	background-color: #f5f5f5;
