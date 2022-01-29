@@ -5,7 +5,6 @@ from string import ascii_uppercase
 
 testing = False
 
-dataPath = '../../japanese_wiki_corpus_data_jp/'
 cats = ['Buddhism', 'building', 'culture', 'emperor', 'family', 'geographical', 'history', 'literature', 'person', 'railway', 'road', 'shrines', 'school', 'Shinto', 'title']
 if testing:
 	cats = ['Buddhism']
@@ -35,19 +34,18 @@ def orderName(name):
 	return ' '.join(words)
 
 def applyPageTemplate():
-	templateFile = open('templates/page.html', "r", encoding="utf8")
+	dataPathJP = '../japanese_wiki_corpus_data_jp/'
+	templateFile = open('templates/pageJP.html', "r", encoding="utf8")
 	template = templateFile.read()
 	
 	for cat in cats:
 		print(cat, flush=True)
-		files = os.listdir(cat)
+		files = os.listdir("jp/"+cat)
 		for file in files:
-			if file == 'Shinsen-gumi.html':
-				continue
 			if testing:
 				file = '一心院.html' #testing
 			filepath = cat+"/"+file
-			inp = open(dataPath+filepath, "r", encoding="utf8")
+			inp = open(dataPathJP+filepath, "r", encoding="utf8")
 			content = inp.read()
 
 			lines = content.split("\n")
@@ -68,7 +66,7 @@ def applyPageTemplate():
 			if testing:
 				out = open("t.html", "w", encoding="utf8") #test
 			else:
-				out = open(filepath, "w", encoding="utf8")
+				out = open("jp/"+filepath, "w", encoding="utf8")
 	
 			out.write(content)
 			out.close()
