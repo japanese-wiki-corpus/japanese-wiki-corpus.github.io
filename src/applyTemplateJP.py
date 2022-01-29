@@ -33,49 +33,5 @@ def orderName(name):
 		words[0] = words[0].capitalize()
 	return ' '.join(words)
 
-def applyPageTemplate():
-	dataPathJP = '../japanese_wiki_corpus_data_jp/'
-	templateFile = open('templates/pageJP.html', "r", encoding="utf8")
-	template = templateFile.read()
-	
-	for cat in cats:
-		print(cat, flush=True)
-		files = os.listdir("jp/"+cat)
-		for file in files:
-			if testing:
-				file = '一心院.html' #testing
-			filepath = cat+"/"+file
-			inp = open(dataPathJP+filepath, "r", encoding="utf8")
-			content = inp.read()
-
-			lines = content.split("\n")
-			title = lines[0]
-			content = "\n".join(lines[1:])
-			sanitized = content.replace('"', '&quot;').replace('<p></p>', '')
-			
-			name = orderName(filename2keyword(file))
-			content = template.replace('{{content}}', content)
-			content = content.replace('{{name}}', name)
-			content = content.replace('{{category}}', cat)
-			content = content.replace('{{url}}', 'jp/'+cat+'/'+name+'html')
-			content = content.replace('{{category-display}}', catDisplay[cat])
-			content = content.replace('{{sanitized}}', sanitized)
-			
-			content = content.replace('https://shinsengumi-archives.github.io/japanese-wiki-corpus/', 'https://www.japanese-wiki-corpus.org/')
-			
-			if testing:
-				out = open("t.html", "w", encoding="utf8") #test
-			else:
-				out = open("jp/"+filepath, "w", encoding="utf8")
-	
-			out.write(content)
-			out.close()
-			
-			inp.close()
-			if testing:
-				break #test
-				
-	templateFile.close()
-
 
 applyPageTemplate()
